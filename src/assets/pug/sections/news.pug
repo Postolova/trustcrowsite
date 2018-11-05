@@ -6,30 +6,32 @@ section.main-section.news
                 span.news__socials-title Быстрее в наших социальных сетях:
                 ul.socials__list
                     li.socials__item
-                        a.socials__link(href="#0")
+                        a.socials__link(href="#0", target="_blank")
                             +image('social-fb.svg', 'icon', 'socials-icon')
                     li.socials__item
-                        a.socials__link(href="#0")
+                        a.socials__link(href="#0", target="_blank")
                             +image('social-twitter.svg', 'icon', 'socials-icon')
                     li.socials__item
-                        a.socials__link(href="#0")
+                        a.socials__link(href="#0", target="_blank")
                             +image('social-insta.svg', 'icon', 'socials-icon')
                     li.socials__item
-                        a.socials__link(href="#0")
+                        a.socials__link(href="#0", target="_blank")
                             +image('social-telegram.svg', 'icon', 'socials-icon')
         .news__blocks
             ul.block__list
                 li.block__item
-                    .block__img
-                        +image("news-network.png", "переходы по ссылкам", "news-img")
-                    .block__content
-                        .block__content-text Почему по моим ссылкам никто не переходит или как не потратить кучу денег в пустую?
-                        .block__content-date 28 ноября 2018
+                    a(href="#0").block__item-link
+                        .block__img
+                            +image("news-network.png", "переходы по ссылкам", "news-img")
+                        .block__content
+                            .block__content-text Почему по моим ссылкам никто не переходит или как не потратить кучу денег в пустую?
+                            .block__content-date 28 ноября 2018
                 li.block__item
-                    .block__img
-                        +image("news-context.png", "контекстная реклама лого", "news-img")
-                    .block__content
-                        .block__content-text Почему контекстная реклама не дала вам результат? Разбираемся в проблеме
-                        .block__content-date 28 ноября 2018
+                    a(href="#0").block__item-link
+                        .block__img
+                            +image("news-context.png", "контекстная реклама лого", "news-img")
+                        .block__content
+                            .block__content-text Почему контекстная реклама не дала вам результат? Разбираемся в проблеме
+                            .block__content-date 28 ноября 2018
         .news__button-place
             a(href="news.html").news__btn Все новости
