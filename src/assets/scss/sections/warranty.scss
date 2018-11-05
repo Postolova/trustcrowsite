@@ -19,8 +19,8 @@
     padding-top: rem(30px);
     padding-bottom: rem(30px);
     display: flex;
-    border-top: 1px solid lightgrey;
-    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid  #35373a1f;
+    border-bottom: 1px solid #35373a1f;
 }
 
 .features__item {
@@ -32,7 +32,8 @@
         margin-left: 0;
     }
     margin-left: rem(30px);
-    border-right: 2px solid lightgrey;
+    border-radius: 4px;
+    border-right: 4px solid #ebebebb4;
     &:nth-child(4) {
         border: none;
     }
@@ -72,12 +73,14 @@
 
 .steps__item {
     display: inline-block;
-    width: 22%;
-    padding: rem(15px);
+    width: 23%;
+    padding: rem(25px);
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
 }
-
+.steps__item-tariff {
+    width: 24%;
+}
 .steps__block {
     border-bottom: 1px solid lightgrey;
 }
