@@ -105,6 +105,7 @@
     color: #35373a;
     font-weight: 600;
     position: relative;
+    cursor: pointer;
     &::before {
         content: url('assets/images/arrow.png');
         position: absolute;

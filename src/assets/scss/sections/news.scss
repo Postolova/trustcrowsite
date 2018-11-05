@@ -67,7 +67,19 @@
     width: 100%;
     display: flex;
     margin-bottom: rem(30px);
+    &-link {
+        height: rem(160px);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        margin-bottom: rem(30px);
+    }
 }
+
+
+
 
 .news__button-place {
     display: flex;
