@@ -1,0 +1,69 @@
+@mixin absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin circle($width, $color) {
+  width: $width;
+  height: $width;
+  border-radius: $width/2;
+  background-color: $color;
+}
+
+//responsive
+@function rem($px) {
+  @return $px / 16px+0rem;
+}
+
+// Desktop First mixin
+@mixin hd {
+  @media screen and (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phones-big {
+  @media screen and (max-width: 414px) {
+    @content;
+  }
+}
+
+
+@mixin phones {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
+
+// Mobile First mixin
+// @mixin hd {
+//   @media screen and (min-width: 1440px) {
+//     @content;
+//   }
+// }
+
+// @mixin desktop {
+//   @media screen and (min-width: 1200px) {
+//     @content;
+//   }
+// }
+
+// @mixin laptop {
+//   @media screen and (min-width: 1048px) {
+//     @content;
+//   }
+// }
+
+// @mixin tablets {
+//   @media screen and (min-width: 768px) {
+//     @content;
+//   }
+// }

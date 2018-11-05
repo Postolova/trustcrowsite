@@ -1,0 +1,335 @@
+.form {
+    display: flex;
+    width: 100%;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+}
+
+.order {
+    min-height: rem(650px);
+    background-color: #333589;
+    padding: rem(60px) 0 rem(50px) 0;
+}
+
+.order__title {
+    margin-bottom: rem(20px);
+}
+
+.order__subtitle {
+    color: #fff;
+    font-size: rem(18px);
+    width: rem(660px);
+    margin-bottom: rem(30px);
+}
+
+.order-box {
+    width: 100%;
+    min-height: rem(500px);
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    display: flex;
+}
+
+.order__options {
+    border-radius: 4px;
+    width: 25%;
+    height: 100%;
+    padding: rem(25px) rem(10px) rem(25px) rem(25px);
+}
+
+.order__options-title {
+    margin-bottom: rem(15px);
+    text-transform: uppercase;
+    font-family: "Druk-Wide";
+    font-weight: 500;
+    margin-bottom: rem(30px);
+    color: #1f364a;
+}
+
+.form-main {
+    width: 73%;
+    color: #1f364a;
+    padding: rem(30px) 0;
+    margin: rem(10px);
+    border-radius: 3px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.form-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.options__item {
+    margin-bottom: rem(10px);
+}
+
+.option__item-tariff {
+    display: none;
+    &:checked {
+        transform: scale(1);
+    }
+}
+
+.option__item-tariff:checked+.option__item-tariff--styling::before {
+    transform: scale(1);
+    background-color: #fff;
+    height: rem(30px);
+    width: rem(30px);
+}
+
+.option__item-tariff:checked+.option__item-tariff--styling {
+    background-color: #44bbff;
+    color: #fff;
+}
+
+.option__item-tariff:checked+.option__item-tariff--styling>.option__item-name {
+    color: #fff;
+}
+
+.option__item-tariff:checked+.option__item-tariff--styling>.option__item-price {
+    color: #fff;
+}
+
+.option__item-tariff--styling {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    height: rem(80px);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: rem(15px) 0 rem(15px) rem(20px);
+    color: #35373a;
+    font-weight: 600;
+    position: relative;
+    &::before {
+        content: url('assets/images/arrow.png');
+        position: absolute;
+        top: 27%;
+        left: 78%;
+        padding-left: 2px;
+        padding-top: 4px;
+        background-color: #fff;
+        border-radius: 50%;
+        width: rem(17px);
+        height: rem(17px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+    }
+}
+
+.option__item-tariff--styling:hover {
+    box-shadow: -1px 1px 7px #44bbff;
+}
+
+.option__item-arrow {
+    width: rem(30px);
+    height: rem(30px);
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 5%;
+    top: 22%;
+}
+
+.option__item-name {
+    font-family: "Druk-Wide";
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: rem(12px);
+    color: #3fad89;
+}
+
+.option__item-price {
+    font-size: rem(24px);
+    color: #35373a;
+}
+
+.right-arrow {
+    height: rem(25px);
+    fill: #44bbff;
+}
+
+.form__block {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: rem(10px);
+    position: relative;
+}
+
+.form__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: rem(25px) 0;
+    &:nth-child(2) {
+        border-bottom: 2px solid lightgrey;
+        padding-bottom: rem(20px);
+    }
+}
+
+.form__row-areas {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.form__input {
+    width: 100%;
+    height: rem(45px);
+    padding-left: rem(10px);
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.form__input:focus {
+    border: 1px solid #31baff;
+}
+
+.form__title {
+    margin-bottom: rem(10px);
+}
+
+.form__select {
+    border: 1px solid #ddd;
+    background-color: transparent;
+    color: #1f364a;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+}
+
+.form__select-arrow-circle {
+    display: block;
+    width: rem(24px);
+    height: rem(24px);
+    right: 9px;
+    top: 41px;
+    border-radius: 50%;
+    background-color: #3fad89;
+    position: absolute;
+}
+
+.form__select-arrow {
+    display: block;
+    right: 0px;
+    top: 1px;
+    width: rem(24px);
+    height: rem(24px);
+    border-radius: 50%;
+    position: absolute;
+    background: url('./assets/images/arrow-down.png') center no-repeat;
+}
+
+.form__area {
+    height: 100px;
+    resize: none;
+    padding: 5px;
+}
+
+.form__input-file {
+    display: none;
+}
+
+.form__block-label {
+    border: 2px dashed #3fad89;
+    height: rem(100px);
+    display: flex;
+    border-radius: 4px;
+    font-size: rem(14px);
+    align-items: center;
+    font-weight: 600;
+    text-align: center;
+    background-color: #f4fcf9;
+}
+
+.form__filename {
+    display: block;
+    color: #3fad89;
+    font-size: rem(14px);
+    font-weight: 600;
+}
+
+.form__row-checkbox {
+    border-bottom: 2px solid lightgray;
+    padding-bottom: rem(15px);
+}
+
+.form__block-check {
+    display: flex;
+    align-items: center;
+    color: #000;
+    margin: rem(10px) 0;
+}
+
+.form__checkbox {
+    display: none;
+    &:checked {
+        transform: scale(1);
+    }
+}
+
+.form__checkbox:checked+.form__checkbox--styling::before {
+    transform: scale(1);
+}
+
+.form__checkbox--styling {
+    display: block;
+    position: relative;
+    min-width: rem(19px);
+    height: rem(19px);
+    border-radius: 50%;
+    margin-right: 8px;
+    border: 1px solid lightgrey;
+    background: url('./assets/images/checkmark.png') center center no-repeat;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 6px;
+        bottom: 6px;
+        background: url('./assets/images/checkmark.png') center center no-repeat;
+        background-color: #44bbff;
+        border-radius: 50%;
+        width: rem(17px);
+        height: rem(17px);
+        transform: scale(0);
+    }
+}
+
+.form__checkbox--styling:hover {
+    background-color: #44bbff;
+    opacity: 0.3;
+}
+
+.form__submit {
+    width: 100%;
+    background-color: #44bbff;
+    color: #fff;
+    font-family: "Druk-Wide";
+    text-transform: uppercase;
+    height: rem(50px);
+    border-radius: 4px;
+    &:hover {
+        box-shadow: 1px 1px 7px #44bbff;
+    }
+}
+
+.form__radio-percent {
+    font-weight: 600;
+    color: grey;
+    padding-left: rem(15px);
+}
+
+.form__radio-name {
+    font-size: rem(15px);
+}

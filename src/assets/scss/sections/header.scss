@@ -1,0 +1,156 @@
+.header__nav {
+    @include phones {
+        display: none;
+    }
+}
+
+.header {
+    position: relative;
+    margin-bottom: rem(140px);
+}
+
+.popup-menu {
+    width: 90%;
+    position: absolute;
+    height: rem(300px);
+    top: -9999px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    font-size: rem(12px);
+    font-weight: 500;
+    transition: height .7s;
+}
+
+.popup-links {
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+}
+
+.close-btn {
+    position: absolute;
+    width: rem(40px);
+    height: rem(40px);
+    top: -44px;
+    right: 22px;
+}
+
+.popup-menu--active {
+    top: 68px;
+}
+
+.hamburger {
+    display: none;
+    @include phones {
+        display: block;
+    }
+    cursor: pointer;
+}
+
+.hamburger__button {
+    width: rem(40px);
+    height: rem(40px);
+    border: 1px solid #eee;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.line {
+    width: re,(20px);
+    height: 2px;
+    border-radius: 1px;
+    background-color: #3fad89;
+    margin: 2px;
+}
+
+.header__content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: rem(81px);
+    width: rem(135px);
+}
+
+.header__logo-link {
+    color: #35373a;
+    text-transform: uppercase;
+    font-family: 'Druk-Wide';
+    font-weight: 500;
+    font-size: rem(15px);
+    &:first-child {
+        margin-left: 1px;
+    }
+}
+
+.header_logo-link--color {
+    color: #333589;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__item {
+    margin-right: rem(40px);
+    font-size: rem(12px);
+    position: relative;
+    &:last-child {
+        margin-right: 0;
+    }
+    @include phones {
+        margin: 0;
+    }
+}
+
+.header__link {
+    font-family: 'Druk-Wide';
+    font-weight: 500;
+    color: #35373a;
+    text-transform: uppercase;
+    position: relative;
+    &:hover {
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -38px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: rem(100px);
+            height: 5px;
+            background-color: #333589;
+            border-radius: 0 0 5px 5px;
+            @include phones {
+                display: none;
+            }
+        }
+    }
+}
+
+.active-link {
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -38px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: rem(80px);
+        height: 5px;
+        background-color: #333589;
+        border-radius: 0 0 5px 5px;
+    }
+}

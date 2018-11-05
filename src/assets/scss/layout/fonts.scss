@@ -1,0 +1,38 @@
+// Druk-Wide Font
+@font-face {
+    font-family: "Druk-Wide";
+    src: url("./assets/fonts/Druk-Wide-Medium/DrukTextWide-Medium.woff") format("woff"), 
+    url("/Druk-Wide-Medium/DrukTextWide-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: block;
+}
+
+// Gotham-Pro Font
+@font-face {
+    font-family: "Gotham-Pro";
+    src: url("./assets/fonts/Gotham-Pro/GothamPro-Medium.woff") format("woff"), 
+    url("./assets/fonts/Gotham-Pro/GothamPro-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: block;
+}
+
+// SourceSansPro Font
+@font-face {
+    font-family: "SourceSansPro";
+    src: url("./assets/fonts/SourceSansPro/SourceSansPro-Regular.woff") format("woff"), 
+    url("./assets/fonts/SourceSansPro/SourceSansPro-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "SourceSansPro";
+    src: url("./assets/fonts/SourceSansPro/SourceSansPro-Semibold.woff") format("woff"), 
+    url("./assets/fonts/SourceSansPro/SourceSansPro-Semibold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: block;
+}

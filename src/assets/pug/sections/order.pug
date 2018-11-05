@@ -1,0 +1,93 @@
+section.main-section.order
+    .main-content
+        h1.main-title--white.order__title Заказ крауд-маркетинга
+        h5.order__subtitle Заполните форму ниже чтобы заказать услугу. После отправки с вами свяжется менеджер чтобы уточнить детали.
+        .order-box
+            form.form(action="form")
+                aside.order__options
+                    .order__options-title Выберите тариф
+                    .options
+                        ul.options__list
+                            li.options__item
+                                label.option__label
+                                    input.option__item-tariff(type="radio", name="radio" checked)
+                                    span.option__item-tariff--styling
+                                        span.option__item-name Новые темы
+                                        span.option__item-price 3,5$/1,1$
+                            li.options__item
+                                label.option__label
+                                    input.option__item-tariff(type="radio", name="radio")
+                                    span.option__item-tariff--styling
+                                        span.option__item-name Обычный 
+                                        span.option__item-price 4$/1,25$
+                            li.options__item
+                                label.option__label
+                                    input.option__item-tariff(type="radio", name="radio")
+                                    span.option__item-tariff--styling
+                                        span.option__item-name VIP
+                                        span.option__item-price 8$/3,5$
+                            li.options__item
+                                label.option__label
+                                    input.option__item-tariff(type="radio", name="radio")
+                                    span.option__item-tariff--styling
+                                        span.option__item-name Комментарии
+                                        span.option__item-price 3,5$
+                .form-main
+                    .form-container
+                        .form__row
+                            label.form__block
+                                span.form__title Количество рассылок
+                                input(type="text").form__input
+                            label.form__block
+                                span.form__title Регион
+                                span.form__select-arrow-circle
+                                    span.form__select-arrow
+                                select.form__select.form__input
+                                    option(value="ukr") Украина
+                                    option(value="bel") Белорусия
+                                    option(value="rus") Россия
+                                    option(value="kzh") Казахстан
+                            label.form__block
+                                span.form__title Ссылка на сайт проекта
+                                input(type="text").form__input
+                        .form__row-areas
+                            label.form__block.form__block--area
+                                span.form__title Дополнительная информация о вашем проекте. Так же можете задать тут интересующие вас вопросы:
+                                textarea.form__area.form__input
+                            label.form__block.form__block--file
+                                span.form__title Загрузить Excel файл со списком ссылок и анкоров
+                                span.form__block-label
+                                    input.form__input.form__input-file(type="file")
+                                    span.form__filename Перетащите или кликните сюда чтобы выбрать .xls файл
+                        .form__row-checkbox
+                            label.form__block-check 
+                                input(type="checkbox").form__checkbox
+                                span.form__checkbox--styling
+                                span.form__radio-name Размещение исключительно кликабельных ссылок
+                                    span.form__radio-percent +20% к стоимости
+                            label.form__block-check 
+                                input(type="checkbox").form__checkbox
+                                span.form__checkbox--styling
+                                span.form__radio-name Использование уникальных площадок без повторов в рамках одного проекта
+                                    span.form__radio-percent +25% к стоимости
+                            label.form__block-check 
+                                input(type="checkbox").form__checkbox
+                                span.form__checkbox--styling
+                                span.form__radio-name Использование уникальных площадок без повторов из прошлых проектов
+                                    span.form__radio-percent +30% к стоимости
+                            label.form__block-check 
+                                input(type="checkbox").form__checkbox
+                                span.form__checkbox--styling
+                                span.form__radio-name Размещение в темах где нет не одной ссылки
+                                    span.form__radio-percent +30% к стоимости
+                        .form__row
+                            label.form__block
+                                span.form__title Имя
+                                input(type="text").form__input
+                            label.form__block
+                                span.form__title Email
+                                input(type="text").form__input
+                            label.form__block
+                                span.form__title Телефон
+                                input(type="text").form__input
+                        button(type="submit").form__submit заказать

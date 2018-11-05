@@ -1,0 +1,19 @@
+include ./assets/pug/common/_mixins
+<!DOCTYPE html>
+html(lang="ru-Ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Trustcrow.link
+    body
+        .wrapper
+            main.main
+                include ./assets/pug/sections/hero
+                include ./assets/pug/sections/tariffs
+                include ./assets/pug/sections/works
+                include ./assets/pug/sections/warranty
+                include ./assets/pug/sections/order
+                include ./assets/pug/sections/partners
+                include ./assets/pug/sections/news
+            include ./assets/pug/sections/footer

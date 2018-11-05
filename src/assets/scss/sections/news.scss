@@ -1,0 +1,123 @@
+.news {
+    background-color: #f9f9f9;
+    padding: rem(80px) 0 rem(80px) 0;
+}
+
+.news__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem(30px);
+}
+
+.news__socials-title {
+    color: #1f364a79;
+    font-size: rem(13px);
+    margin-bottom: rem(10px);
+}
+
+.news-img {
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+    &-first {
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 4px 4px 0 0;
+    }
+}
+
+.socials__list {
+    display: flex;
+    justify-content: flex-end;
+    margin: rem(10px) 0 rem(10px) rem(10px);
+}
+
+.socials__item {
+    display: inline-block;
+    margin-left: rem(10px);
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.socials__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.socials-icon {
+    width: rem(30px);
+    height: rem(30px);
+}
+
+.block__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.block__item {
+    height: rem(160px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    margin-bottom: rem(30px);
+}
+
+.news__button-place {
+    display: flex;
+    justify-content: center;
+}
+
+.news__btn {
+    background-color: #44bbff;
+    font-family: "Druk-Wide";
+    color: #fff;
+    font-size: rem(12px);
+    font-weight: 500;
+    border-radius: 4px;
+    text-transform: uppercase;
+    margin-top: rem(30px);
+    width: rem(210px);
+    padding: rem(14px);
+    text-align: center;
+    transition: all .1s;
+    &:hover {
+        background-color: #31dbff;
+        box-shadow: 1px 1px 7px #44bbff;
+    }
+}
+
+.block__img {
+    width: 20%;
+}
+
+.block__content {
+    width: 80%;
+    padding: rem(20px) rem(100px) rem(20px) rem(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block__content-text {
+    margin-bottom: rem(15px);
+    font-weight: 600;
+    max-width: rem(565px);
+    padding-right: rem(5px);
+    padding-bottom: rem(15px);
+}
+
+.block__content-date {
+    color: #35373a6e;
+}
+
+.news-title {
+    width: rem(210px);
+    line-height: 1.1;
+}
