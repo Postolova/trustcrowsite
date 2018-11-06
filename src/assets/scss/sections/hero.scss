@@ -1,11 +1,8 @@
 .hero {
-    padding-bottom: rem(30px);
-    background-image: url('./assets/images/hero-gradient-bg.png');
-    background-position-x: 15%;
-    height: 100vh;
+    background: url('./assets/images/hero-gradient-bg.png') center no-repeat;
+    min-height: 100vh;
     @include phones {
-        background-image: url('./assets/images/hero-mobile.png');
-        background-position: center;
+        background: url('./assets/images/hero-mobile.png') center no-repeat;
         background-size: contain;
     }
 }
@@ -52,7 +49,7 @@
     background-color: #44bbff;
     color: #ffffff;
     font-size: rem(12px);
-    transition: all .1s;
+    transition: all .3s;
     &:hover {
         background-color: #31dbff;
         box-shadow: 1px 1px 7px #44bbff;

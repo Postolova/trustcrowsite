@@ -125,11 +125,11 @@
 }
 
 .payment {
-    width: 75%;
+    width: 80%;
     margin: rem(40px) auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     @include phones {
         width: 100%;
         flex-direction: column;
@@ -140,9 +140,12 @@
 
 .payment__title {
     font-family: "Druk-Wide";
-    color: grey;
+    font-weight: 500;
+    color: #1f364a;
+    opacity: .5;
     font-size: rem(24px);
     width: rem(200px);
+    margin-right: rem(80px);
     @include phones {
         width: 100%;
         margin-bottom: rem(20px);
@@ -150,9 +153,8 @@
 }
 
 .payment__pic {
-    width: 50%;
-    &:nth-child(1) {
-        margin-right: rem(40px);
+    &:last-child {
+        margin-left: rem(60px);
     }
     @include phones {
         align-self: center;

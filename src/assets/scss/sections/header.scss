@@ -6,7 +6,6 @@
 
 .header {
     position: relative;
-    
 }
 
 .popup-menu {
@@ -64,7 +63,7 @@
 }
 
 .line {
-    width: re,(20px);
+    width: rem(20px);
     height: 2px;
     border-radius: 1px;
     background-color: #3fad89;
@@ -116,20 +115,21 @@
 }
 
 .header__link {
+    display: block;
+    padding: 34px 0;
     font-family: 'Druk-Wide';
     font-weight: 500;
     color: #35373a;
     text-transform: uppercase;
     position: relative;
+    transition: all .3s;
     &:hover {
         &::before {
-            content: "";
             display: block;
+            content: "";
+            width: 100%;
             position: absolute;
-            top: -38px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: rem(100px);
+            top: -2px;
             height: 5px;
             background-color: #333589;
             border-radius: 0 0 5px 5px;

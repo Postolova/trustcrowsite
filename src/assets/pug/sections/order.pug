@@ -57,7 +57,7 @@ section.main-section.order
                             label.form__block.form__block--file
                                 span.form__title Загрузить Excel файл со списком ссылок и анкоров
                                 span.form__block-label
-                                    input.form__input.form__input-file(type="file")
+                                    input.form__input.form__input-file(type="file" required)
                                     span.form__filename Перетащите или кликните сюда чтобы выбрать .xls файл
                         .form__row-checkbox
                             label.form__block-check 
@@ -83,11 +83,11 @@ section.main-section.order
                         .form__row
                             label.form__block
                                 span.form__title Имя
-                                input(type="text").form__input
+                                input(type="text" required).form__input
                             label.form__block
                                 span.form__title Email
-                                input(type="text").form__input
+                                input(type="email" required).form__input
                             label.form__block
                                 span.form__title Телефон
-                                input(type="text").form__input
+                                input(type="tel" required).form__input
                         button(type="submit").form__submit заказать

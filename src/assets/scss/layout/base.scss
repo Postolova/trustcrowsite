@@ -58,11 +58,11 @@ address {
 }
 
 :valid {
-    border: 1px solid #31baff;
+    outline: 1px solid #31baff;
 }
 
 :invalid {
-    border: 2px solid #ff9292;
+    outline: 2px solid #ff9292;
 }
 
 // instead of display: none;
@@ -119,4 +119,3 @@ address {
     color: #fff;
     font-size: 38px;
 }
-

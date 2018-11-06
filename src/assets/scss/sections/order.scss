@@ -28,6 +28,7 @@
     width: 100%;
     background-color: #f4f4f4;
     border-radius: 4px;
+    outline: 0px solid #f4f4f4;
     @include phones {
         flex-direction: column;
     }
@@ -117,6 +118,7 @@
     font-weight: 600;
     position: relative;
     cursor: pointer;
+    transition: all .3s;
     &::before {
         content: url('assets/images/arrow.png');
         position: absolute;
@@ -204,10 +206,11 @@
     padding-left: rem(10px);
     border-radius: 4px;
     border: 1px solid #ddd;
+    background-color: #fff;
 }
 
 .form__input:focus {
-    border: 1px solid #31baff;
+    outline: 1px solid #dddddd;
 }
 
 .form__title {
@@ -257,7 +260,7 @@
 }
 
 .form__block-label {
-    border: 2px dashed #3fad89;
+    border: 1px dashed #3fad89;
     height: rem(100px);
     display: flex;
     border-radius: 4px;
@@ -270,6 +273,8 @@
 
 .form__filename {
     display: block;
+    padding: 32px 10px;
+    text-align: center;
     color: #3fad89;
     font-size: rem(14px);
     font-weight: 600;
@@ -340,6 +345,7 @@
     text-transform: uppercase;
     height: rem(50px);
     border-radius: 4px;
+    transition: all .3s;
     &:hover {
         box-shadow: 1px 1px 7px #44bbff;
     }
@@ -352,5 +358,6 @@
 }
 
 .form__radio-name {
-    font-size: rem(15px);
+    // font-size: rem(15px);
+    width: 100%;
 }
