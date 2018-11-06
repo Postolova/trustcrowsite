@@ -5,6 +5,8 @@
     height: 100vh;
     @include phones {
         background-image: url('./assets/images/hero-mobile.png');
+        background-position: center;
+        background-size: contain;
     }
 }
 
@@ -16,7 +18,7 @@
     margin-top: rem(140px);
     @include phones {
         margin: 0;
-        font-size: rem(27px);
+        font-size: rem(30px);
     }
 }
 
@@ -25,7 +27,10 @@
     margin-bottom: rem(34px);
     font-size: rem(18px);
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 800;
+    @include phones {
+        font-size: rem(24px);
+    }
 }
 
 .hero__subtitle--add-text {
@@ -33,7 +38,7 @@
     font-weight: 400;
     text-transform: lowercase;
     @include phones {
-        font-size: rem(21px);
+        font-size: rem(24px);
     }
 }
 
