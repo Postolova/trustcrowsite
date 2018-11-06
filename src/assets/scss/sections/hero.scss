@@ -3,7 +3,7 @@
     min-height: 100vh;
     @include phones {
         background: url('./assets/images/hero-mobile.png') center no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
 }
 
