@@ -2,10 +2,9 @@
     padding-bottom: rem(30px);
     background-image: url('./assets/images/hero-gradient-bg.png');
     background-position-x: 15%;
-    min-height: 100vh;
+    height: 100vh;
     @include phones {
         background-image: url('./assets/images/hero-mobile.png');
-        min-height: rem(565px);
     }
 }
 

@@ -4,7 +4,6 @@ export const worksSwiper = new Swiper('.swiper-container', {
 	direction: 'horizontal',
 	loop: true,
 	initialSlide: 0,
-	effect: 'coverflow',
 	grabCursor: true,
 	allowTouchMove: true,
 	touchEventsTarget: '.swiper-container',

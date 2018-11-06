@@ -20,7 +20,7 @@
     display: flex;
     width: 33.3%;
     align-items: center;
-    margin-right: 20px;
+    margin-right: rem(20px);
     &:last-child {
         margin-right: 0;
     }
@@ -67,7 +67,7 @@
     border-radius: 4px;
     background-color: #3fad881b;
     padding: rem(17px) 0;
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
     color: #3fad89;
     font-size: rem(14px);
     font-weight: 500;
@@ -81,7 +81,7 @@
 }
 
 .tariffs__forum-item {
-    box-shadow: 0 5px 10px rgba(0,0,0, 0.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
     width: 32%;
     margin-right: rem(10px);
     border-radius: 4px;
@@ -163,6 +163,7 @@
 .tariffs__item-name--color {
     color: #35373a;
 }
+
 .tariffs__item-desc {
     display: flex;
     flex-wrap: wrap;
@@ -200,7 +201,7 @@
 .tariffs__item-btn {
     align-self: flex-end;
     position: relative;
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
     font-family: 'Druk-Wide';
     font-weight: 500;
@@ -215,11 +216,15 @@
         background-color: #31dbff;
         box-shadow: 1px 1px rem(7px) #44bbff;
     }
+    &--width {
+        width: 90%;
+    }
 }
+
 
 .tariffs__item-line {
     align-self: flex-end;
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
     height: 4px;
     border-radius: 4px;

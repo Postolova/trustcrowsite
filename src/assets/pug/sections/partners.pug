@@ -1,23 +1,51 @@
 section.main-section.partners
     .main-content
-        .partners__head
-            h1.main-title.partners-title Партнеры
-            span.partners__subtitle Наши партнеры и клиенты это более 150 агенств, SEO специалистов и маркетологов
-        .partners__block
-            ul.partners__list
-                li.partners__item
-                    +image("partner-rocs.png", 'компания rocs лого', 'partner__logo')
-                li.partners__item
-                    +image("partner-old_town.png", 'компания old town лого', 'partner__logo')
-                li.partners__item
-                    +image("partner-xtrig.png", 'компания xtrig лого', 'partner__logo')
-                li.partners__item
-                    +image("partner-knowless.png", 'компания knowless лого', 'partner__logo')
-                li.partners__item
-                    +image("partner-aplic.png", 'компания aplic resolit лого', 'partner__logo')
-        .partners__desc
-            .desc-text
-                .desc-text__content Сложившаяся структура организации позволяет оценить значение соответствующий условий активизации. Товарищи! новая модель организационной деятельности позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации модели развития. С другой стороны консультация с широким активом требуют от нас анализа направлений прогрессивного развития.
-            .desc-person
-                .desc-person__name Евгений Дробовой
-                .desc-person__position Глава маркетингового отдела ООО "ROCS"
+        h2.main-title.partners-title Партнеры
+        .partners__subtitle Наши партнеры и клиенты это более 150 агенств, SEO специалистов и маркетологов
+        .partners__logo-tabs
+            input.partners__logo-tab#partners__tab-1(type="radio" name="partners__tabs" checked)
+            label.partners__logo-tab--styling(for="partners__tab-1")
+                +image("partner-rocs.png", 'компания rocs лого', 'partner__logo')
+            input.partners__logo-tab#partners__tab-2(type="radio" name="partners__tabs")
+            label.partners__logo-tab--styling(for="partners__tab-2")
+                +image("partner-old_town.png", 'компания old town лого', 'partner__logo')
+            input.partners__logo-tab#partners__tab-3(type="radio" name="partners__tabs")
+            label.partners__logo-tab--styling(for="partners__tab-3")
+                +image("partner-xtrig.png", 'компания xtrig лого', 'partner__logo')
+            input.partners__logo-tab#partners__tab-4(type="radio" name="partners__tabs")
+            label.partners__logo-tab--styling(for="partners__tab-4")
+                +image("partner-knowless.png", 'компания knowless лого', 'partner__logo')
+            input.partners__logo-tab#partners__tab-5(type="radio" name="partners__tabs")
+            label.partners__logo-tab--styling(for="partners__tab-5")
+                +image("partner-aplic.png", 'компания aplic resolit лого', 'partner__logo')
+            
+            #partners__logo-tab1.partners__logo-desc
+                .desc-text
+                    .desc-text__content Сложившаяся структура организации позволяет оценить значение соответствующий условий активизации. Товарищи! новая модель организационной деятельности позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации модели развития. С другой стороны консультация с широким активом требуют от нас анализа направлений прогрессивного развития.
+                .desc-person
+                    .desc-person__name Евгений Дробовой
+                    .desc-person__position Глава маркетингового отдела ООО "ROCS"
+            #partners__logo-tab2.partners__logo-desc
+                .desc-text
+                    .desc-text__content text 2 Сложившаяся структура организации позволяет оценить значение соответствующий условий активизации. Товарищи! новая модель организационной деятельности позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации модели развития. С другой стороны консультация с широким активом требуют от нас анализа направлений прогрессивного развития.
+                .desc-person
+                    .desc-person__name Евгений Дробовой
+                    .desc-person__position Глава маркетингового отдела ООО "Old Town"
+            #partners__logo-tab3.partners__logo-desc
+                .desc-text
+                    .desc-text__content text 3 Сложившаяся структура организации позволяет оценить значение соответствующий условий активизации. Товарищи! новая модель организационной деятельности позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации модели развития. С другой стороны консультация с широким активом требуют от нас анализа направлений прогрессивного развития.
+                .desc-person
+                    .desc-person__name Евгений Дробовой
+                    .desc-person__position Глава маркетингового отдела ООО "X-Trig"
+            #partners__logo-tab4.partners__logo-desc
+                .desc-text
+                    .desc-text__content text 4 Сложившаяся структура организации позволяет оценить значение соответствующий условий активизации. Товарищи! новая модель организационной деятельности позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации модели развития. С другой стороны консультация с широким активом требуют от нас анализа направлений прогрессивного развития.
+                .desc-person
+                    .desc-person__name Евгений Дробовой
+                    .desc-person__position Глава маркетингового отдела ООО "Knowless Maui"
+            #partners__logo-tab5.partners__logo-desc
+                .desc-text
+                    .desc-text__content text 5 Сложившаяся структура организации позволяет оценить значение соответствующий условий активизации. Товарищи! новая модель организационной деятельности позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации модели развития. С другой стороны консультация с широким активом требуют от нас анализа направлений прогрессивного развития.
+                .desc-person
+                    .desc-person__name Евгений Дробовой
+                    .desc-person__position Глава маркетингового отдела ООО "Aplic Resolit"

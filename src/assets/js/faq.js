@@ -10,14 +10,6 @@ Array.from(panelItem).forEach(function (item) {
 	});
 });
 
-/* function getIcons() {
-  for (var i = 0; i < panelItem.length; i++) {
-    let element = panelItem[i];
-    let nextEl = element.nextSibling;
-    let plusButton = nextEl.nextSibling;
-  }
-}
-getIcons(); */
 const openBTN = document.querySelector('.hamburger');
 const closeBTN = document.querySelector('.close-btn');
 const links = document.querySelector('.header__list');
