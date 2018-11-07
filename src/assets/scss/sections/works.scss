@@ -31,6 +31,11 @@
     color: #fff;
 }
 
+.works__tabs-rbtn:hover+.works__tabs-rbtn--styling {
+    background-color: #31baff;
+    color: #fff;
+}
+
 .works__tabs-rbtn--styling {
     display: block;
     margin-bottom: rem(10px);
@@ -46,6 +51,7 @@
     font-weight: 500;
     font-size: rem(12px);
     font-family: "Druk-Wide";
+    transition: all .3s;
     cursor: pointer;
     @include phones {
         min-width: rem(170px);
@@ -195,17 +201,17 @@
     width: rem(180px);
     height: rem(40px);
     border-radius: 4px;
-    background-color: #ffffff;
-    color: #35373a;
+    background-color: #ffffff77;
+    color: #35373a7e;
     text-align: right;
     text-transform: uppercase;
     font-weight: 500;
     font-size: rem(12px);
     font-family: "Druk-Wide";
-    opacity: .5;
+    transition: all .3s;
     &:hover {
         opacity: 1;
-        background-color: #fff;
+        background-color: #ffffff;
         color: #31baff;
     }
     @include phones {
