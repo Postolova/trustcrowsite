@@ -81,6 +81,7 @@
         &:hover {
             color: #31baff;
         }
+        height: 100%;
         @include phones {
             flex-direction: column;
             box-shadow: 0 0;

@@ -21,6 +21,7 @@
     font-size: rem(12px);
     font-weight: 500;
     transition: height .7s;
+    z-index: 100;
 }
 
 .popup-links {
@@ -171,7 +172,7 @@
         top: 50%;
         left: 50%;
         margin-bottom: 6px;
-        margin-right: 3px;
+        margin-right: 4px;
         transform: translate(-50%, -50%);
     }
     
