@@ -84,6 +84,7 @@
 .question-btn {
     position: absolute;
     right: -2%;
+    top: 30px;
     @include phones {
         right: 1%;
     }
