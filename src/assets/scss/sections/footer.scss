@@ -2,7 +2,6 @@
     height: rem(160px);
     width: 100%;
     background-color: #333589;
-    color: lightgray;
 }
 
 .footer-copyright {
@@ -100,4 +99,8 @@
     color: #fff;
     font-family: "Druk-Wide";
     font-size: rem(25px);
+}
+
+.footer__linl-pointer {
+    transition: all .3s;
 }
