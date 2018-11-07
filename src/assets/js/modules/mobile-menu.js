@@ -1,7 +1,6 @@
 
 const openBTN = document.querySelector('.hamburger');
 const hamburgerBtn = document.querySelector('.hamburger__button');
-/* const closeBTN = document.querySelector('.close-btn'); */
 const links = document.querySelector('.header__list');
 const headerLinks = document.querySelectorAll('.header__link');
 const lineTop = document.querySelector('.line__top');

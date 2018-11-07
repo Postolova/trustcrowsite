@@ -55,6 +55,7 @@
 
 .answer--active {
     display: block;
+    color: #3fad89!important;
 }
 
 .answer--active+.answer {
@@ -86,6 +87,9 @@
 .question-btn {
     position: absolute;
     right: -2%;
+    @include phones {
+        right: 1%;
+    }
 }
 
 .queston-btn__image {
