@@ -27,9 +27,6 @@
     width: 29%;
     align-items: center;
     padding-right: rem(20px);
-    &:last-child {
-        padding-right: 0;
-    }
     @include phones {
         width: 100%;
     }
@@ -102,7 +99,6 @@
 }
 
 .tariffs__forum-item {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
     width: 32%;
     margin-right: rem(10px);
     border-radius: 4px;
@@ -195,6 +191,7 @@
     background-color: #fff;
     padding: rem(20px) rem(15px) rem(40px) rem(15px);
     border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
 
 .tariffs__item-list {
@@ -239,7 +236,7 @@
     height: rem(40px);
     border-radius: 4px;
     background-color: #44bbff;
-    transition: all 0.1s;
+    transition: all 0.3s;
     &:hover {
         background-color: #31dbff;
         box-shadow: 1px 1px rem(7px) #44bbff;
@@ -289,7 +286,7 @@
 .tariffs__comments-list {
     border-radius: 4px;
     background-color: #f6f6f6;
-    padding: rem(20px) rem(5px) rem(40px) rem(15px);
+    padding: rem(20px) rem(20px) rem(40px);
     margin-bottom: rem(33px);
     min-height: rem(380px);
     @include phones {

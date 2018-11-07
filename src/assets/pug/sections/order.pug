@@ -57,7 +57,7 @@ section.main-section.order
                             label.form__block.form__block--file
                                 span.form__title Загрузить Excel файл со списком ссылок и анкоров
                                 span.form__block-label
-                                    input.form__input.form__input-file(type="file" required)
+                                    input.form__input.form__input-file(type="file")
                                     span.form__filename Перетащите или кликните сюда чтобы выбрать .xls файл
                         .form__row-checkbox
                             label.form__block-check 
@@ -83,11 +83,35 @@ section.main-section.order
                         .form__row
                             label.form__block
                                 span.form__title Имя
-                                input(type="text" required).form__input
+                                input.form__input(
+                                    type="text",
+                                    name="name",
+                                    inputmode="text",
+                                    title="Введите Ваше имя. Поле должно содержать только буквы и иметь минимум два символа."
+                                    minlength="2",
+                                    spellcheck="true",
+                                    autocorrect="on",
+                                    pattern="[A-Za-zА-Яа-яЁё]+",
+                                    mozactionhint="send"
+                                    )
                             label.form__block
                                 span.form__title Email
-                                input(type="email" required).form__input
+                                input.form__input(
+                                    type="email",
+                                    name="email",
+                                    inputmode="email",
+                                    mozactionhint="send",
+                                    title="Введите Ваш Email. Поле обязательно должно содержать символ @ "
+                                )
                             label.form__block
                                 span.form__title Телефон
-                                input(type="tel" required).form__input
+                                input.form__input(
+                                    type="tel",
+                                    name="phone",
+                                    inputmode="numeric",
+                                    spellcheck="true",
+                                    autocorrect="on",
+                                    mozactionhint="send",
+                                    title="Введите контактный номер телефона."
+                                )
                         button(type="submit").form__submit заказать

@@ -43,19 +43,17 @@
 .question__item {
     border-bottom: 4px solid #e6e6e6;
     border-radius: 4px;
-    margin: 30px 0;
 }
 
 .answer {
     padding-bottom: 20px;
     width: 80%;
     display: none;
-    padding-top: 10px;
 }
 
 .answer--active {
     display: block;
-    color: #3fad89!important;
+    color: #3fad89 !important;
 }
 
 .answer--active+.answer {
@@ -69,7 +67,6 @@
 
 .question {
     width: 97%;
-    margin-bottom: rem(20px);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -102,7 +99,8 @@
     font-size: rem(14px);
     text-transform: uppercase;
     display: block;
-    width: 100%;
+    max-width: rem(564px);
+    padding: 30px 30px 30px 0;
     height: 100%;
     font-weight: 500;
     display: block;
@@ -133,9 +131,12 @@
     font-size: rem(18px);
     font-weight: 500;
     color: #1f364a;
+    max-width: rem(201px);
+    margin-bottom: rem(18px);
 }
 
 .faq__form-subtitle {
+    max-width: rem(308px);
     color: #35373a;
 }
 

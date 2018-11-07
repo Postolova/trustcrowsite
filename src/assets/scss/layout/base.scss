@@ -30,7 +30,9 @@ h6 {
     font-weight: normal;
     margin: 0;
 }
-
+input, textarea {
+    outline: none;
+}
 button {
     border: 0;
     cursor: pointer;
@@ -56,11 +58,7 @@ p {
 address {
     font-style: normal;
 }
-/* 
-:valid {
-    outline: 1px solid #31baff;
-    border-radius: 4px;
-} */
+
 
 input:invalid {
     border: 2px solid #ff9292;

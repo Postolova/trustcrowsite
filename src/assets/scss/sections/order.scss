@@ -126,6 +126,9 @@
     cursor: pointer;
     transition: all .3s;
     &::before {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         content: url('assets/images/arrow.png');
         position: absolute;
         top: 27%;
@@ -136,15 +139,8 @@
         border-radius: 50%;
         width: rem(17px);
         height: rem(17px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
         transform: scale(0);
     }
-}
-
-.option__item-tariff--styling:hover {
-    box-shadow: -1px 1px 7px #44bbff;
 }
 
 .option__item-arrow {
@@ -213,6 +209,7 @@
     border-radius: 4px;
     border: 1px solid #ddd;
     background-color: #fff;
+    transition: all .3s;
     &:hover {
         border: 1px solid #31baff;
     }
@@ -277,6 +274,7 @@
     font-weight: 600;
     text-align: center;
     background-color: #f4fcf9;
+    cursor: pointer;
 }
 
 .form__filename {
