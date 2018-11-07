@@ -6,13 +6,19 @@
 
 .order__title {
     margin-bottom: rem(20px);
+    @include phones {
+        text-align: center;
+    }
 }
 
 .order__subtitle {
     color: #fff;
     font-size: rem(18px);
-    width: rem(660px);
+    max-width: rem(660px);
     margin-bottom: rem(30px);
+    @include phones {
+        text-align: center;
+    }
 }
 
 .order-box {
@@ -207,10 +213,12 @@
     border-radius: 4px;
     border: 1px solid #ddd;
     background-color: #fff;
-}
-
-.form__input:focus {
-    outline: 1px solid #dddddd;
+    &:hover {
+        border: 1px solid #31baff;
+    }
+    &:focus {
+        border: 1px solid #31baff;
+    }
 }
 
 .form__title {

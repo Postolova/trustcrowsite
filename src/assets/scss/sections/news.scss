@@ -85,6 +85,7 @@
         width: 100%;
         display: flex;
         margin-bottom: rem(30px);
+        height: 100%;
         @include phones {
             flex-direction: column;
             box-shadow: 0 0;

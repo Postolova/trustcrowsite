@@ -157,6 +157,12 @@
     border-radius: rem(4px);
     padding-left: rem(10px);
     border: 1px solid lightgrey;
+    &:hover {
+        border: 1px solid #31baff;
+    }
+    &:focus {
+        border: 1px solid #31baff;
+    }
 }
 
 .faq-area {

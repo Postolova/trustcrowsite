@@ -1,9 +1,9 @@
 .hero {
     background: url('./assets/images/hero-gradient-bg.png') center no-repeat;
     min-height: 100vh;
+    background-size: cover;
     @include phones {
         background: url('./assets/images/hero-mobile.png') center no-repeat;
-        background-size: cover;
     }
 }
 

@@ -56,13 +56,15 @@ p {
 address {
     font-style: normal;
 }
-
+/* 
 :valid {
     outline: 1px solid #31baff;
-}
+    border-radius: 4px;
+} */
 
-:invalid {
-    outline: 2px solid #ff9292;
+input:invalid {
+    border: 2px solid #ff9292;
+    border-radius: 4px;
 }
 
 // instead of display: none;
@@ -111,6 +113,9 @@ address {
     font-weight: 500;
     color: #1f364a;
     font-size: 38px;
+    @include phones {
+        font-size: rem(28px);
+    }
 }
 
 .main-title--white {
@@ -118,4 +123,7 @@ address {
     font-family: "Druk-Wide";
     color: #fff;
     font-size: 38px;
+    @include phones {
+        font-size: rem(28px);
+    }
 }
