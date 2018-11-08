@@ -1,11 +1,14 @@
-let panelItem = document.querySelectorAll('.question-text');
-let active = document.getElementsByClassName('.answer--active');
+var acc = document.getElementsByClassName('accordion');
+var i;
 
-Array.from(panelItem).forEach(function (item) {
-	item.addEventListener('click', function () {
-		if (active.length > 0 && active[0] !== this) {
-			active[0].classList.remove('answer--active');
+for (i = 0; i < acc.length; i++) {
+	acc[i].addEventListener('click', function () {
+		this.classList.toggle('active');
+		var panel = this.nextElementSibling;
+		if (panel.style.maxHeight) {
+			panel.style.maxHeight = null;
+		} else {
+			panel.style.maxHeight = panel.scrollHeight + 'px';
 		}
-		this.classList.toggle('answer--active');
 	});
-});
+}
