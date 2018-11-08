@@ -9,11 +9,17 @@
     margin-bottom: rem(19px);
 }
 
+.works__subtitle {
+    margin-bottom: rem(40px);
+}
+
 .works__slider-box {
     position: relative;
     display: flex;
     flex-direction: column;
-    min-height: rem(500px);
+    flex-wrap: wrap;
+    align-items: flex-start;
+    min-height: rem(550px);
     @include phones {
         flex-direction: row;
         flex-wrap: wrap;
@@ -39,9 +45,10 @@
 .works__tabs-rbtn--styling {
     display: block;
     margin-bottom: rem(10px);
+    margin-right: 20px;
     padding-top: rem(13px);
-    min-width: rem(180px);
-    max-width: rem(180px);
+    min-width: 15.5%;
+    max-width: 15.5%;
     height: rem(40px);
     border-radius: 4px;
     background-color: #fff;
@@ -68,9 +75,10 @@
 #works__tab-3:checked~#slider__tab-3,
 #works__tab-4:checked~#slider__tab-4 {
     display: block;
-    width: 80%;
+    min-width: 83.5%;
+    max-width: 83.5%;
     position: absolute;
-    top: 0;
+    top: -20px;
     right: 0;
     @include phones {
         width: 100%;
@@ -88,6 +96,7 @@
 .works__slider-pic {
     max-width: 80%;
     max-height: 100%;
+    margin-bottom: 25px;
     @include phones {
         min-width: 100%;
     }
@@ -101,6 +110,7 @@
 
 .works__slider-description {
     display: flex;
+    margin-top: rem(20px);
     flex-direction: column;
     min-width: rem(180px);
     max-width: rem(180px);
@@ -116,7 +126,7 @@
     font-weight: 400;
     font-size: rem(14px);
     line-height: 20px;
-    margin-bottom: rem(20px);
+    margin-bottom: rem(21px);
     @include phones {
         width: 70%;
         margin: 0 auto;
@@ -138,8 +148,6 @@
 
 .works__pagination {
     position: absolute;
-    bottom: -5px !important;
-    left: -55px !important;
     right: 20px;
     z-index: 99;
     @include phones {
@@ -166,10 +174,10 @@
 .works__slider-button-box {
     position: absolute;
     right: 0px;
-    bottom: 0px;
+    bottom: 30px;
     z-index: 99;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     @include phones {
         flex-direction: row;
         bottom: 65px;

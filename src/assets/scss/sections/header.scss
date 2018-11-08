@@ -129,8 +129,24 @@
     text-transform: uppercase;
     position: relative;
     transition: all .3s;
+    &::before {
+        display: block;
+        content: "";
+        width: 100%;
+        position: absolute;
+        top: -2px;
+        height: 5px;
+        background-color: #333589;
+        border-radius: 0 0 5px 5px;
+        transition: all .3s;
+        opacity: 0;
+        @include phones {
+            display: none;
+        }
+    }
     &:hover {
         &::before {
+            opacity: 1;
             display: block;
             content: "";
             width: 100%;
@@ -175,7 +191,6 @@
         margin-right: 4px;
         transform: translate(-50%, -50%);
     }
-    
 }
 
 .line__top--active {
@@ -183,12 +198,13 @@
     transform: rotate(-45deg);
     background-color: #fff;
 }
+
 .line__bottom--active {
     position: absolute;
     transform: rotate(45deg);
     background-color: #fff;
 }
+
 .line__middle--active {
     display: none;
 }
-
