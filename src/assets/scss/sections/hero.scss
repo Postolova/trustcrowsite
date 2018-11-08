@@ -40,6 +40,9 @@
 }
 
 .hero__button {
+    display: block;
+    text-align: center;
+    padding-top: 11px;
     width: rem(214px);
     height: rem(40px);
     text-transform: uppercase;
