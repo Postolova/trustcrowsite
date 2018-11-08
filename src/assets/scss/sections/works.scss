@@ -57,26 +57,26 @@
 }
 
 .works__slider {
-    display: none;
+    display: block;
     float: left;
-    width: 90%;
+    width: 70%;
 }
 
-#works__tab-1:checked~#slider__tab-1,
-#works__tab-2:checked~#slider__tab-2,
-#works__tab-3:checked~#slider__tab-3,
-#works__tab-4:checked~#slider__tab-4 {
-    display: block;
-    min-width: 83.5%;
-    max-width: 83.5%;
-    position: absolute;
-    top: -20px;
-    right: 0;
-    @include phones {
-        width: 100%;
-        position: relative;
-    }
-}
+// #works__tab-1:checked~#slider__tab-1,
+// #works__tab-2:checked~#slider__tab-2,
+// #works__tab-3:checked~#slider__tab-3,
+// #works__tab-4:checked~#slider__tab-4 {
+//     display: block;
+//     min-width: 83.5%;
+//     max-width: 83.5%;
+//     position: absolute;
+//     top: -20px;
+//     right: 0;
+//     @include phones {
+//         width: 100%;
+//         position: relative;
+//     }
+// }
 
 .works__slider-item {
     display: flex;
