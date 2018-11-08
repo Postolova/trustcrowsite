@@ -3,14 +3,11 @@ section.main-section.works
         h2.main-title.works__title Наши работы
         h3.tariffs__subtitle.works__subtitle Ознакомтесь с кейсами наших клиентов, вы можете сортировать работы по интересующему вас тарифу 
         .works__slider-box
-            input.works__tabs-rbtn#works__tab-1(type="radio" name="works__tabs" checked)
-            label.works__tabs-rbtn--styling(for="works__tab-1") новые темы
-            input.works__tabs-rbtn#works__tab-2(type="radio" name="works__tabs")
-            label.works__tabs-rbtn--styling(for="works__tab-2") обычный
-            input.works__tabs-rbtn#works__tab-3(type="radio" name="works__tabs")
-            label.works__tabs-rbtn--styling(for="works__tab-3") vip
-            input.works__tabs-rbtn#works__tab-4(type="radio" name="works__tabs")
-            label.works__tabs-rbtn--styling(for="works__tab-4") комментарии
+            .works__slider-tabs
+                button.works__slider-btn.works__slider-btn--active(type="button" onclick="openBlock (event, 'slider__tab-1')") новые темы
+                button.works__slider-btn(type="button" onclick="openBlock(event, 'slider__tab-2')") обычный
+                button.works__slider-btn(type="button" onclick="openBlock(event, 'slider__tab-3')") vip
+                button.works__slider-btn(type="button" onclick="openBlock(event, 'slider__tab-4')") комментарии
             #slider__tab-1.works__slider.swiper-container
                 .swiper-wrapper
                     .works__slider-item.swiper-slide

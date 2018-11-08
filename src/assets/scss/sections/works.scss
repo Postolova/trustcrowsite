@@ -13,61 +13,53 @@
     margin-bottom: rem(40px);
 }
 
-.works__slider-box {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    min-height: rem(550px);
-    @include phones {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        min-height: rem(540px);
-    }
-}
-
-.works__tabs-rbtn {
-    display: none;
-}
-
-.works__tabs-rbtn:checked+.works__tabs-rbtn--styling {
-    background-color: #31baff;
-    color: #fff;
-}
-
-.works__tabs-rbtn:hover+.works__tabs-rbtn--styling {
-    background-color: #31baff;
-    color: #fff;
-}
-
-.works__tabs-rbtn--styling {
-    display: block;
-    margin-bottom: rem(10px);
+// .works__slider-box {
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//     align-items: flex-start;
+//     min-height: rem(550px);
+//     @include phones {
+//         flex-direction: row;
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+//         min-height: rem(540px);
+//     }
+// }
+.works__slider-tabs {
+    float: left;
+    width: 180px;
     margin-right: 20px;
-    padding-top: rem(13px);
-    min-width: 15.5%;
-    max-width: 15.5%;
-    height: rem(40px);
+    height: 100%;
+}
+
+.works__slider-btn {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
     border-radius: 4px;
     background-color: #fff;
     color: #35373a;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: rem(12px);
     font-family: "Druk-Wide";
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
     transition: all .3s;
-    cursor: pointer;
-    @include phones {
-        min-width: rem(170px);
-        max-width: rem(170px);
+    &:hover {
+        background-color: #31baff;
+        color: #fff;
+    }
+    &--active {
+        background-color: #31baff;
+        color: #fff;
     }
 }
 
 .works__slider {
     display: none;
+    float: left;
+    width: 90%;
 }
 
 #works__tab-1:checked~#slider__tab-1,
