@@ -14,6 +14,16 @@
     }
 }
 
+.active,
+.accordion:hover {
+    color: #ccc;
+}
+
+.active:after {
+    transform: rotate(-45deg);
+    transition: all .3s;
+}
+
 .faq-title {
     width: 100%;
     margin: rem(24px) 0 rem(30px) 0;
@@ -49,26 +59,11 @@
 .answer {
     padding-bottom: 20px;
     width: 80%;
-    display: none;
     padding-top: 10px;
 }
 
-.answer--active {
-    display: block;
-    color: #3fad89!important;
-}
-
-.answer--active+.answer {
-    display: block;
-}
-
-.answer--active+.question-btn__image {
-    transform: rotate(-45deg);
-    transition: transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
 .question {
-    width: 97%;
+    width: 100%;
     margin-bottom: rem(20px);
     display: flex;
     justify-content: space-between;
@@ -86,7 +81,7 @@
 
 .question-btn {
     position: absolute;
-    right: -2%;
+    right: 3%;
     @include phones {
         right: 1%;
     }
@@ -107,6 +102,7 @@
     font-weight: 500;
     display: block;
     transition: all .3s;
+    padding-right: 100px;
     @include phones {
         width: 90%;
         font-size: rem(12px);
@@ -230,4 +226,32 @@
 
 .uppercase-link {
     text-transform: uppercase;
+}
+
+.accordion {
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    position: relative;
+    transition: 0.4s;
+    &:after {
+        content: url("./assets/images/plus.svg");
+        position: absolute;
+        right: 1%;
+        top: 0;
+    }
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    left: -18px;
+    position: relative;
+    top: 10px;
 }
