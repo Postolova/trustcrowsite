@@ -7,6 +7,9 @@
 .header {
     position: relative;
 }
+.header-shadow {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
 
 .popup-menu {
     width: 90%;
@@ -48,6 +51,8 @@
     display: none;
     @include phones {
         display: block;
+        position: absolute;
+        right: 3%;
     }
     cursor: pointer;
 }

@@ -126,7 +126,7 @@
     cursor: pointer;
     transition: all .3s;
     &::before {
-        content: url('assets/images/arrow.png');
+        content: url('assets/images/arrow.svg');
         position: absolute;
         top: 27%;
         left: 78%;
@@ -254,7 +254,7 @@
     height: rem(24px);
     border-radius: 50%;
     position: absolute;
-    background: url('./assets/images/arrow-down.png') center no-repeat;
+    background: url('./assets/images/arrow-down.svg') center no-repeat;
 }
 
 .form__area {
@@ -303,11 +303,6 @@
     cursor: pointer;
 }
 
-.form__block-check:hover+.form__checkbox--styling:hover {
-    background-color: #44bbff;
-    opacity: 0.3;
-}
-
 .form__checkbox {
     display: none;
     &:checked {
@@ -319,6 +314,10 @@
     transform: scale(1);
 }
 
+/* .form__block-check:hover + .form__checkbox--styling:hover{
+    background-color: #000;
+}
+ */
 .form__checkbox--styling {
     display: block;
     position: relative;
@@ -327,11 +326,11 @@
     border-radius: 50%;
     margin-right: 8px;
     border: 1px solid #eeeeee;
-    background: url('./assets/images/checkmark.png') center center no-repeat;
+    background: url('./assets/images/checkmark.svg') center center no-repeat;
     &::before {
         display: block;
         content: "";
-        background: url('./assets/images/checkmark.png') center center no-repeat;
+        background: url('./assets/images/checkmark.svg') center center no-repeat;
         background-color: #44bbff;
         border-radius: 50%;
         width: rem(17px);
