@@ -1,4 +1,4 @@
-import './modules/slider';
+import './assets/js/modules/slider';
 const worksSlide = document.querySelectorAll('.works__slider');
 const tabs = document.querySelector('.works__slider-tabs');
 const worksBtn = document.querySelectorAll('.works__slider-btn');
