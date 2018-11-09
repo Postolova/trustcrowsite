@@ -1,6 +1,9 @@
 .warranty {
     background-color: #fff;
     padding-top: rem(60px);
+    @include tablets {
+        padding-top: rem(50px);
+    }
 }
 
 .warranty__head {

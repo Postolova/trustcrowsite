@@ -1,7 +1,7 @@
 .news {
     background-color: #f9f9f9;
     padding: rem(80px) 0 rem(80px) 0;
-    @include phones {
+    @include tablets {
         padding: 40px 0;
     }
 }
@@ -40,7 +40,7 @@
 
 .socials__list {
     display: flex;
-    justify-content: flex-end; // margin: rem(10px) 0 rem(10px) rem(10px);
+    justify-content: flex-end;
 }
 
 .socials__link {
@@ -61,22 +61,18 @@
 }
 
 .block__item {
-    height: rem(160px);
+    height: 100%;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
     border-radius: 4px;
     background-color: #fff;
     width: 100%;
-    margin-bottom: rem(20px);
-    @include phones {
-        height: 100%;
-    }
+    margin-bottom: 20px;
     &-link {
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
         border-radius: 4px;
         background-color: #fff;
         width: 100%;
         display: flex;
-        margin-bottom: rem(30px);
         transition: all .3s;
         &:hover {
             color: #31baff;
@@ -102,7 +98,7 @@
     font-weight: 500;
     border-radius: 4px;
     text-transform: uppercase;
-    margin-top: rem(30px);
+    margin-top: rem(20px);
     width: rem(210px);
     padding: rem(14px);
     text-align: center;

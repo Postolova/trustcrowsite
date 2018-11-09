@@ -1,4 +1,5 @@
 import './assets/js/modules/slider';
+import './assets/js/modules/hover-inputs';
 const worksSlide = document.querySelectorAll('.works__slider');
 const tabs = document.querySelector('.works__slider-tabs');
 const worksBtn = document.querySelectorAll('.works__slider-btn');

@@ -6,7 +6,7 @@
 
 .order__title {
     margin-bottom: rem(20px);
-    @include phones {
+    @include tablets {
         text-align: center;
     }
 }
@@ -16,7 +16,7 @@
     font-size: rem(18px);
     max-width: rem(660px);
     margin-bottom: rem(30px);
-    @include phones {
+    @include tablets {
         text-align: center;
     }
 }
@@ -35,7 +35,7 @@
     background-color: #f4f4f4;
     border-radius: 4px;
     outline: 0px solid #f4f4f4;
-    @include phones {
+    @include tablets {
         flex-direction: column;
     }
 }
@@ -45,9 +45,10 @@
     width: 25%;
     height: 100%;
     padding: rem(25px) rem(10px) rem(25px) rem(25px);
-    @include phones {
-        width: 100%;
-        padding: 25px;
+    @include tablets {
+        width: 95%;
+        margin: 0 auto;
+        padding: rem(25px) rem(0px) rem(0px) rem(0px);
     }
 }
 
@@ -68,9 +69,9 @@
     border-radius: 3px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    @include phones {
-        width: 100%;
-        margin: 0;
+    @include tablets {
+        width: 95%;
+        margin: 0 auto;
     }
 }
 
@@ -79,8 +80,18 @@
     margin: 0 auto;
 }
 
+.options__list {
+    @include tablets {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 .options__item {
     margin-bottom: rem(10px);
+    @include tablets {
+        width: 23%;
+    }
 }
 
 .option__item-tariff {
@@ -95,6 +106,9 @@
     background-color: #fff;
     height: rem(30px);
     width: rem(30px);
+    @include tablets {
+        transform: rotate(90deg);
+    }
 }
 
 .option__item-tariff:checked+.option__item-tariff--styling {
@@ -140,6 +154,14 @@
         height: rem(17px);
         transform: scale(0);
     }
+    @include tablets {
+        width: 100%;
+        padding: 15px 0 15px 10px;
+        &::before {
+            top: 32px;
+            right: 7px;
+        }
+    }
 }
 
 .option__item-arrow {
@@ -161,6 +183,9 @@
     text-transform: uppercase;
     font-size: rem(12px);
     color: #3fad89;
+    @include tablets {
+        font-size: 12px;
+    }
 }
 
 .option__item-price {
@@ -293,11 +318,18 @@
 }
 
 .form__block-check {
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    vertical-align: middle;
     color: #000;
     margin: rem(10px) 0;
     cursor: pointer;
+}
+
+.form__radio-name:hover~.form__checkbox--styling::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: red;
 }
 
 .form__checkbox {
@@ -312,9 +344,11 @@
 }
 
 .form__checkbox--styling {
-    display: block;
+    display: inline-block;
     position: relative;
     min-width: rem(19px);
+    max-width: rem(19px);
+    top: 3px;
     height: rem(19px);
     border-radius: 50%;
     margin-right: 8px;
@@ -337,13 +371,6 @@
     opacity: 0.3;
 }
 
-// .form__radio-name:hover {
-//     position: absolute;
-//     background-color: red;
-//     width: 100px;
-//     height: 100px;
-// }
-
 .form__submit {
     width: 100%;
     background-color: #44bbff;
@@ -363,8 +390,4 @@
     font-weight: 600;
     color: #3fad89;
     margin-left: rem(15px);
-}
-
-.form__radio-name {
-    width: 100%;
 }

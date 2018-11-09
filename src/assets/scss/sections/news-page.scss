@@ -1,3 +1,13 @@
+.news {
+    background-color: #f9f9f9;
+    min-height: rem(600px);
+    padding-bottom: rem(51px);
+    padding-top: rem(16px);
+    @include tablets {
+        padding-bottom: rem(57px);
+    }
+}
+
 .news-page__heading {
     display: flex;
     width: 100%;
@@ -34,6 +44,7 @@
     width: 40px;
     height: 20px;
     line-height: 1;
+    background: transparent;
     &:hover {
         width: 40px;
         height: 20px;

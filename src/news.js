@@ -9,7 +9,6 @@ for (const block of newsBlocks) {
 document.getElementById('news__blocks-tab1').style.display = 'block';
 
 function openBeforeBlock (e) {
-
 }
 function openNextBlock (e) {
 	console.log('after');

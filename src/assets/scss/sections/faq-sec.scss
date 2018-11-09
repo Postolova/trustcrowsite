@@ -3,6 +3,13 @@
     min-height: rem(600px);
     padding-bottom: rem(51px);
     padding-top: rem(16px);
+    @include tablets {
+        &::after {
+            display: block;
+            content: '';
+            height: 133px;
+        }
+    }
 }
 
 .header__faq {
@@ -15,7 +22,7 @@
 }
 
 .active {
-    color: #3fad89!important;
+    color: #3fad89 !important;
 }
 
 .accordion:hover {
@@ -25,7 +32,6 @@
 .active:after {
     transform: rotate(-45deg);
 }
-
 
 .faq-title {
     width: 100%;
@@ -48,7 +54,7 @@
 
 .questions {
     width: 65%;
-    @include phones {
+    @include tablets {
         width: 100%;
     }
 }
@@ -58,7 +64,6 @@
     border-radius: 4px;
 }
 
-
 .question {
     width: 100%;
     padding-bottom: rem(30px);
@@ -66,7 +71,7 @@
     justify-content: space-between;
     flex-direction: column;
     position: relative;
-    @include phones {
+    @include tablets {
         width: 100%;
     }
 }
@@ -79,7 +84,7 @@
 .question-btn {
     position: absolute;
     right: 3%;
-    @include phones {
+    @include tablets {
         right: 1%;
     }
 }
@@ -87,7 +92,6 @@
 .queston-btn__image {
     transition: transform .3s;
 }
-
 
 .faq__form {
     width: 30%;
@@ -97,7 +101,7 @@
     margin-top: 30px;
     border: 1px solid lightgrey;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    @include phones {
+    @include tablets {
         display: none;
     }
 }
@@ -173,7 +177,7 @@
 
 .bread-crumbs__list {
     display: flex;
-    @include phones {
+    @include tablets {
         display: none;
     }
 }
@@ -227,7 +231,7 @@
     font-weight: 500;
     display: block;
     padding-right: 100px;
-    @include phones {
+    @include tablets {
         width: 90%;
         font-size: rem(12px);
     }
