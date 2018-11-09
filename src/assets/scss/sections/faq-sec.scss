@@ -14,15 +14,19 @@
     }
 }
 
-.active,
+.active {
+    color: #3fad89!important;
+}
+
 .accordion:hover {
-    color: #ccc;
+    color: #3fad89;
 }
 
 .active:after {
     transform: rotate(-45deg);
     transition: all .3s;
 }
+
 
 .faq-title {
     width: 100%;
@@ -92,24 +96,8 @@
 }
 
 .question-text {
-    color: #35373a;
-    font-family: "Druk-Wide";
-    font-size: rem(14px);
-    text-transform: uppercase;
-    display: block;
-    width: 100%;
-    height: 100%;
-    font-weight: 500;
-    display: block;
-    transition: all .3s;
-    padding-right: 100px;
-    @include phones {
-        width: 90%;
-        font-size: rem(12px);
-    }
-    &:hover {
-        color: #3fad89
-    }
+
+    
 }
 
 .faq__form {
@@ -229,15 +217,27 @@
 }
 
 .accordion {
-    color: #444;
     cursor: pointer;
-    width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
     position: relative;
     transition: 0.4s;
+    color: #35373a;
+    font-family: "Druk-Wide";
+    font-size: rem(14px);
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    display: block;
+    transition: all .3s;
+    padding-right: 100px;
+    @include phones {
+        width: 90%;
+        font-size: rem(12px);
+    }
     &:after {
         content: url("./assets/images/plus.svg");
         position: absolute;
