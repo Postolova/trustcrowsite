@@ -1,14 +1,13 @@
-var acc = document.getElementsByClassName('accordion');
-var i;
+const accordions = document.querySelectorAll('.accordion');
 
-for (i = 0; i < acc.length; i++) {
-	acc[i].addEventListener('click', function () {
+for (const accordion of accordions) {
+	accordion.addEventListener('click', function () {
 		this.classList.toggle('active');
-		var panel = this.nextElementSibling;
+		const panel = this.nextElementSibling;
 		if (panel.style.maxHeight) {
 			panel.style.maxHeight = null;
 		} else {
-			panel.style.maxHeight = panel.scrollHeight + 'px';
+			panel.style.maxHeight = 100 + '%';
 		}
 	});
 }
