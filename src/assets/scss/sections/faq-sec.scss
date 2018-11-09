@@ -58,11 +58,6 @@
     border-radius: 4px;
 }
 
-.answer {
-    padding-bottom: 20px;
-    width: 80%;
-    padding-top: 10px;
-}
 
 .question {
     width: 100%;
@@ -221,6 +216,7 @@
     text-align: left;
     outline: none;
     position: relative;
+    padding-top: 30px;
     transition: 0.4s;
     color: #35373a;
     font-family: "Druk-Wide";
