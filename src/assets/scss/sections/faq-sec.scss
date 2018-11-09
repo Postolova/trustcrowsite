@@ -234,7 +234,7 @@
 .accordion {
     color: #444;
     cursor: pointer;
-    width: 100%;
+    min-width: 100%;
     border: none;
     text-align: left;
     outline: none;
@@ -245,8 +245,8 @@
         display: block;
         content: url("./assets/images/plus.svg");
         position: absolute;
-        right: -16%;
-        top: 30px;
+        right: 0;
+        top: rem(30px);
         transition: all .3s;
     }
 }

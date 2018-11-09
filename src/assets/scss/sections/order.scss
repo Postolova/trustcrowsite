@@ -126,13 +126,14 @@
     cursor: pointer;
     transition: all .3s;
     &::before {
-
+        display: block;
+        text-align: center;
         content: url('assets/images/arrow.svg');
         position: absolute;
-        top: 27%;
-        left: 78%;
+        top: 24px;
+        right: 24px;
         padding-left: 2px;
-        padding-top: 4px;
+        padding-top: 6px;
         background-color: #fff;
         border-radius: 50%;
         width: rem(17px);
@@ -310,10 +311,6 @@
     transform: scale(1);
 }
 
-/* .form__block-check:hover + .form__checkbox--styling:hover{
-    background-color: #000;
-}
- */
 .form__checkbox--styling {
     display: block;
     position: relative;
@@ -340,6 +337,13 @@
     opacity: 0.3;
 }
 
+// .form__radio-name:hover {
+//     position: absolute;
+//     background-color: red;
+//     width: 100px;
+//     height: 100px;
+// }
+
 .form__submit {
     width: 100%;
     background-color: #44bbff;
@@ -358,7 +362,7 @@
 .form__radio-percent {
     font-weight: 600;
     color: #3fad89;
-    padding-left: rem(15px);
+    margin-left: rem(15px);
 }
 
 .form__radio-name {

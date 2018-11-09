@@ -74,6 +74,17 @@
     @include phones {
         margin-right: 10px;
     }
+    &::after {
+        position: relative;
+        transition: all .3s;
+        top: -175px;
+        display: block;
+        height: 100%;
+        content: '';
+        transition: all .3s;
+        background-image: radial-gradient(circle closest-side at center, #98ddff 0%, #ffffff 100%);
+        opacity: 0;
+    }
 }
 
 .partner__logo {
