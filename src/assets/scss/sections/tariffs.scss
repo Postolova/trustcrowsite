@@ -27,9 +27,6 @@
     width: 29%;
     align-items: center;
     padding-right: rem(20px);
-    &:last-child {
-        padding-right: 0;
-    }
     @include phones {
         width: 100%;
     }
@@ -102,7 +99,6 @@
 }
 
 .tariffs__forum-item {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
     width: 32%;
     margin-right: rem(10px);
     border-radius: 4px;
@@ -193,8 +189,9 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: #fff;
-    padding: rem(20px) rem(15px) rem(40px) rem(15px);
+    padding: rem(20px) rem(15px) rem(30px) rem(15px);
     border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
 
 .tariffs__item-list {
@@ -239,10 +236,10 @@
     height: rem(40px);
     border-radius: 4px;
     background-color: #44bbff;
-    transition: all 0.1s;
+    transition: all 0.3s;
     &:hover {
         background-color: #31dbff;
-        box-shadow: 1px 1px rem(7px) #44bbff;
+        box-shadow: 0px 1px 7px #44bbff;
     }
     &--width {
         width: 90%;
@@ -256,7 +253,7 @@
     height: 4px;
     border-radius: 4px;
     background-color: #eeeeee;
-    margin-bottom: rem(30px);
+    margin-bottom: rem(15px);
 }
 
 .tariffs__comments {
@@ -283,14 +280,14 @@
     border-radius: 4px;
     border: 1px solid #ededed;
     background-color: #fff;
-    padding: rem(30px) rem(10px) rem(50px) rem(10px);
+    padding: rem(30px) rem(10px) rem(38px);
 }
 
 .tariffs__comments-list {
     border-radius: 4px;
     background-color: #f6f6f6;
-    padding: rem(20px) rem(5px) rem(40px) rem(15px);
-    margin-bottom: rem(33px);
+    padding: rem(20px) rem(20px) rem(40px);
+    margin-bottom: rem(18px);
     min-height: rem(380px);
     @include phones {
         min-height: 100%;
@@ -298,7 +295,13 @@
 }
 
 .tariffs__addServices {
+    width: 100%;
     text-align: left;
+}
+
+.tariffs__addServices-titles {
+    margin-left: rem(30px);
+    max-width: rem(550px);
 }
 
 .services-title {
@@ -310,7 +313,6 @@
 }
 
 .services-subtitle {
-    width: rem(550px);
     height: rem(53px);
     color: #5d6368;
     font-size: rem(18px);
@@ -319,7 +321,7 @@
 }
 
 .steps__top {
-    min-height: rem(130px);
+    min-height: rem(167px);
 }
 
 .steps-line {
@@ -345,4 +347,63 @@
 
 .steps__to {
     color: #3fad89;
+}
+
+.steps__title {
+    font-family: "Druk-Wide";
+    font-weight: 500;
+    margin-bottom: rem(30px);
+}
+
+.steps__link {
+    color: #31baff;
+}
+
+.steps__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: rem(40px);
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.steps__item {
+    display: inline-block;
+    width: 25%;
+    padding: rem(26px) rem(40px) rem(17px) rem(30px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-right: rem(20px);
+    &:last-child {
+        margin-right: 0;
+    }
+    @include phones {
+        width: 100%;
+    }
+}
+
+.steps__item-tariff {
+    width: 24%;
+    @include phones {
+        width: 100%;
+    }
+}
+
+.steps__block {
+    border-bottom: 1px solid #35373a1f;
+}
+
+.steps__number {
+    color: #333589;
+    font-size: rem(24px);
+    font-family: "Druk-Wide";
+}
+
+.steps__desc {
+    font-weight: 600;
+    font-size: rem(18px);
+    line-height: 28px;
+    color: #35373a;
 }

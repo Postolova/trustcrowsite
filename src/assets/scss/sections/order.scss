@@ -126,25 +126,20 @@
     cursor: pointer;
     transition: all .3s;
     &::before {
+        display: block;
+        text-align: center;
         content: url('assets/images/arrow.svg');
         position: absolute;
-        top: 27%;
-        left: 78%;
+        top: 24px;
+        right: 24px;
         padding-left: 2px;
-        padding-top: 4px;
+        padding-top: 6px;
         background-color: #fff;
         border-radius: 50%;
         width: rem(17px);
         height: rem(17px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
         transform: scale(0);
     }
-}
-
-.option__item-tariff--styling:hover {
-    box-shadow: -1px 1px 7px #44bbff;
 }
 
 .option__item-arrow {
@@ -213,6 +208,7 @@
     border-radius: 4px;
     border: 1px solid #ddd;
     background-color: #fff;
+    transition: all .3s;
     &:hover {
         border: 1px solid #31baff;
     }
@@ -277,6 +273,7 @@
     font-weight: 600;
     text-align: center;
     background-color: #f4fcf9;
+    cursor: pointer;
 }
 
 .form__filename {
@@ -314,10 +311,6 @@
     transform: scale(1);
 }
 
-/* .form__block-check:hover + .form__checkbox--styling:hover{
-    background-color: #000;
-}
- */
 .form__checkbox--styling {
     display: block;
     position: relative;
@@ -344,6 +337,13 @@
     opacity: 0.3;
 }
 
+// .form__radio-name:hover {
+//     position: absolute;
+//     background-color: red;
+//     width: 100px;
+//     height: 100px;
+// }
+
 .form__submit {
     width: 100%;
     background-color: #44bbff;
@@ -354,17 +354,17 @@
     border-radius: 4px;
     transition: all .3s;
     &:hover {
-        box-shadow: 1px 1px 7px #44bbff;
+        background-color: #31dbff;
+        box-shadow: 0px 1px 7px #44bbff;
     }
 }
 
 .form__radio-percent {
     font-weight: 600;
     color: #3fad89;
-    padding-left: rem(15px);
+    margin-left: rem(15px);
 }
 
 .form__radio-name {
-    // font-size: rem(15px);
     width: 100%;
 }
