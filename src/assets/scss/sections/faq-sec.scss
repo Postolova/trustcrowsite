@@ -254,8 +254,9 @@
 .panel {
     padding: 0 18px;
     max-height: 0;
+    width: 90%;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: all 0.3s ease-out;
     left: -18px;
     position: relative;
     top: 10px;

@@ -7,7 +7,7 @@ for (const accordion of accordions) {
 		if (panel.style.maxHeight) {
 			panel.style.maxHeight = null;
 		} else {
-			panel.style.maxHeight = 100 + '%';
+			panel.style.maxHeight = panel.scrollHeight + 'px';
 		}
 	});
 }
