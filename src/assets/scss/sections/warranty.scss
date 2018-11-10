@@ -17,6 +17,9 @@
     font-size: rem(20px);
     font-weight: 400;
     line-height: rem(30px);
+    @include phones-sm {
+        min-width: 98%;
+    }
 }
 
 .features__list {
