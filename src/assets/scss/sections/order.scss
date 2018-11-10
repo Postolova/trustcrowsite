@@ -85,12 +85,19 @@
         display: flex;
         justify-content: space-between;
     }
+    @include phones {
+        overflow: auto;
+    }
 }
 
 .options__item {
     margin-bottom: rem(10px);
     @include tablets {
         width: 23%;
+    }
+    @include tablets {
+        min-width: rem(230px);
+        margin-right: rem(20px);
     }
 }
 
@@ -130,7 +137,7 @@
     width: 100%;
     height: rem(80px);
     border-radius: 4px;
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
     display: flex;
     flex-direction: column;
     padding: rem(15px) 0 rem(15px) rem(20px);
@@ -144,10 +151,10 @@
         text-align: center;
         content: url('assets/images/arrow.svg');
         position: absolute;
-        top: 24px;
-        right: 24px;
-        padding-left: 2px;
-        padding-top: 6px;
+        top: rem(24px);
+        right: rem(24px);
+        padding-left: rem(2px);
+        padding-top: rem(6px);
         background-color: #fff;
         border-radius: 50%;
         width: rem(17px);
@@ -156,10 +163,17 @@
     }
     @include tablets {
         width: 100%;
-        padding: 15px 0 15px 10px;
+        padding: rem(15px) 0 rem(15px) rem(10px);
         &::before {
-            top: 32px;
-            right: 7px;
+            top: rem(32px);
+            right: rem(7px);
+        }
+    }
+    @include phones {
+        padding: rem(15px) 0 rem(15px) rem(20px);
+        &::before {
+            top: rem(24px);
+            right: rem(24px);
         }
     }
 }
@@ -184,7 +198,7 @@
     font-size: rem(12px);
     color: #3fad89;
     @include tablets {
-        font-size: 12px;
+        font-size: rem(12px);
     }
 }
 
@@ -204,6 +218,10 @@
     flex: 1;
     margin-right: rem(10px);
     position: relative;
+    @include phones {
+        margin-right: 0;
+        margin-bottom: rem(20px);
+    }
 }
 
 .form__row {
@@ -260,8 +278,8 @@
     display: block;
     width: rem(24px);
     height: rem(24px);
-    right: 9px;
-    top: 41px;
+    right: rem(9px);
+    top: rem(41px);
     border-radius: 50%;
     background-color: #3fad89;
     position: absolute;
@@ -279,9 +297,9 @@
 }
 
 .form__area {
-    height: 100px;
+    height: rem(100px);
     resize: none;
-    padding: 5px;
+    padding: rem(5px);
 }
 
 .form__input-file {
@@ -303,7 +321,7 @@
 
 .form__filename {
     display: block;
-    padding: 32px 10px;
+    padding: rem(32px) rem(10px);
     text-align: center;
     color: #3fad89;
     font-size: rem(14px);
@@ -348,10 +366,10 @@
     position: relative;
     min-width: rem(19px);
     max-width: rem(19px);
-    top: 3px;
+    top: rem(3px);
     height: rem(19px);
     border-radius: 50%;
-    margin-right: 8px;
+    margin-right: rem(8px);
     border: 1px solid #eeeeee;
     background: url('./assets/images/checkmark.svg') center center no-repeat;
     &::before {
