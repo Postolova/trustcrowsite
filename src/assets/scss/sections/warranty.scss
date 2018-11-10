@@ -17,7 +17,7 @@
     font-size: rem(20px);
     font-weight: 400;
     line-height: rem(30px);
-    @include phones-sm {
+    @include phones {
         min-width: 98%;
     }
 }

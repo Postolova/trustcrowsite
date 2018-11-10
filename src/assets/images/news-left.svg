@@ -3,7 +3,7 @@
         <path id="2lhva" d="M18.108 2602l1.892 1.867-6.216 6.133 6.216 6.133-1.892 1.867-8.108-8z"/>
     </defs>
     <g>
-        <g opacity=".1" transform="translate(-10 -2602)">
+        <g opacity="1" fill="#fff" transform="translate(-10 -2602)">
             <use xlink:href="#2lhva"/>
         </g>
     </g>

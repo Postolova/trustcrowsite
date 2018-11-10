@@ -66,16 +66,29 @@
     height: 20px;
     color: #fff;
     border-radius: 4px;
-    font-size: 20px;
-    line-height: 1;
+    line-height: 1.3;
 }
 
 .news__pagination-back {
     margin-right: 10px;
     background-color: #5d636821;
+    &::before {
+        display: inline-block;
+        content: url('./assets/images/news-left.svg');
+        width: 8px;
+        height: 12px;
+        fill: #fff;
+    }
 }
 
 .news__pagination-next {
     margin-left: 54px;
     background-color: #31baff;
+    &::before {
+        display: inline-block;
+        content: url('./assets/images/news-right.svg');
+        width: 8px;
+        height: 12px;
+        fill: #fff;
+    }
 }

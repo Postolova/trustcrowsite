@@ -207,13 +207,17 @@
         color: #31baff;
     }
     @include tablets {
-        width: rem(60px);
-        height: rem(60px);
+        width: rem(35px);
+        height: rem(40px);
         padding-right: 0;
         &:hover {
             background: transparent;
             color: #35373a7e;
         }
+    }
+    @include phones {
+        width: rem(25px);
+        height: rem(30px);
     }
 }
 
@@ -227,11 +231,7 @@
         text-align: left;
         background: transparent;
         &::before {
-            content: '<';
-            width: rem(30px);
-            height: rem(30px);
-            font-size: rem(50px);
-            line-height: 1;
+            content: url('./assets/images/slide-left.svg');
         }
     }
 }
@@ -245,11 +245,7 @@
     @include tablets {
         background: transparent;
         &::before {
-            content: '>';
-            width: rem(30px);
-            height: rem(30px);
-            font-size: rem(50px);
-            line-height: 1;
+            content: url('./assets/images/slide-right.svg');
         }
     }
 }
