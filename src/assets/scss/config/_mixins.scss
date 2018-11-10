@@ -30,14 +30,13 @@
   }
 }
 
-@mixin phones-big {
+
+@mixin phones {
   @media screen and (max-width: 414px) {
     @content;
   }
 }
-
-
-@mixin phones {
+@mixin phones-sm {
   @media screen and (max-width: 320px) {
     @content;
   }

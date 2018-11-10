@@ -1,8 +1,15 @@
 .faq {
     background-color: #f9f9f9;
-    min-height: 600px;
-    padding-bottom: 50px;
-    padding-top: 15px;
+    min-height: rem(600px);
+    padding-bottom: rem(51px);
+    padding-top: rem(16px);
+    @include tablets {
+        &::after {
+            display: block;
+            content: '';
+            height: rem(133px);
+        }
+    }
 }
 
 .header__faq {
@@ -10,18 +17,31 @@
     z-index: 100;
     @include phones {
         box-shadow: 0 0;
-        border-bottom: 1px solid lightgrey;
+        border-bottom: 1px solid #e6e6e6;
     }
+}
+
+.active {
+    color: #3fad89 !important;
+}
+
+.accordion:hover {
+    color: #3fad89;
+}
+
+.active:after {
+    transform: rotate(-45deg);
 }
 
 .faq-title {
     width: 100%;
-    margin: 30px 0;
-    padding-bottom: 30px;
-    border-bottom: 3px solid lightgrey;
+    margin: rem(24px) 0 rem(0px) 0;
+    padding-bottom: rem(28px);
+    border-bottom: 4px solid #e6e6e6;
+    border-radius: 4px;
     @include phones {
         margin: 0;
-        font-size: 26px;
+        font-size: rem(26px);
     }
 }
 
@@ -34,44 +54,24 @@
 
 .questions {
     width: 65%;
-    @include phones {
+    @include tablets {
         width: 100%;
     }
 }
 
 .question__item {
-    border-bottom: 3px solid lightgray;
-    margin: 20px 0;
-}
-
-.answer {
-    padding-bottom: 20px;
-    width: 80%;
-    display: none;
-    padding-top: 10px;
-}
-
-.answer--active {
-    display: block;
-}
-
-.answer--active + .answer {
-    display: block;
-}
-
-.answer--active + .question-btn__image {
-    transform: rotate(-45deg);
-    transition: transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-bottom: 4px solid #e6e6e6;
+    border-radius: 4px;
 }
 
 .question {
-    width: 97%;
-    margin-bottom: rem(20px);
+    width: 100%;
+    padding-bottom: rem(30px);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     position: relative;
-    @include phones {
+    @include tablets {
         width: 100%;
     }
 }
@@ -83,28 +83,14 @@
 
 .question-btn {
     position: absolute;
-    right: -2%;
+    right: 3%;
+    @include tablets {
+        right: 1%;
+    }
 }
 
 .queston-btn__image {
-    width: rem(24px);
-    height: rem(24px);
-    fill: #3fad89;
-    transition: transform .4s;
-}
-
-.question-text {
-    color: #35373a;
-    font-family: "Druk-Wide";
-    font-size: rem(14px);
-    text-transform: uppercase;
-    width: 100%;
-    font-weight: 500;
-    display: block;
-    @include phones {
-        width: 90%;
-        font-size: rem(12px);
-    }
+    transition: transform .3s;
 }
 
 .faq__form {
@@ -112,9 +98,10 @@
     height: 100%;
     background-color: #fff;
     padding: rem(20px);
+    margin-top: 30px;
     border: 1px solid lightgrey;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    @include phones {
+    @include tablets {
         display: none;
     }
 }
@@ -124,9 +111,12 @@
     font-size: rem(18px);
     font-weight: 500;
     color: #1f364a;
+    max-width: rem(201px);
+    margin-bottom: rem(18px);
 }
 
 .faq__form-subtitle {
+    max-width: rem(308px);
     color: #35373a;
 }
 
@@ -148,6 +138,12 @@
     border-radius: rem(4px);
     padding-left: rem(10px);
     border: 1px solid lightgrey;
+    &:hover {
+        border: 1px solid #31baff;
+    }
+    &:focus {
+        border: 1px solid #31baff;
+    }
 }
 
 .faq-area {
@@ -167,10 +163,10 @@
     background-color: #44bbff;
     color: #ffffff;
     font-size: rem(12px);
-    transition: all .1s;
+    transition: all .3s;
     &:hover {
         background-color: #31dbff;
-        box-shadow: 1px 1px 7px #44bbff;
+        box-shadow: 0px 1px 7px #44bbff;
     }
 }
 
@@ -181,14 +177,16 @@
 
 .bread-crumbs__list {
     display: flex;
-    @include phones {
+    @include tablets {
         display: none;
     }
 }
+
 .bread-crumbs__link {
     color: #35373a;
     opacity: 0.5;
 }
+
 .bread-crumbs__item {
     font-size: rem(12px);
     display: flex;
@@ -213,4 +211,55 @@
 
 .uppercase-link {
     text-transform: uppercase;
+}
+
+.accordion {
+    cursor: pointer;
+    min-width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    position: relative;
+    padding-top: rem(30px);
+    transition: 0.4s;
+    color: #35373a;
+    font-family: "Druk-Wide";
+    font-size: rem(14px);
+    text-transform: uppercase;
+    display: block;
+    height: 100%;
+    font-weight: 500;
+    display: block;
+    padding-right: rem(100px);
+    @include tablets {
+        width: 90%;
+        font-size: rem(12px);
+    }
+    @include phones {
+        padding-right: rem(70px);
+    }
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    &:after {
+        display: block;
+        content: url("./assets/images/plus.svg");
+        position: absolute;
+        right: 0;
+        top: rem(30px);
+        transition: all .3s;
+    }
+}
+
+.panel {
+    padding: 0 rem(18px);
+    max-height: 0;
+    width: 90%;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    left: rem(-18px);
+    position: relative;
+    top: rem(10px);
+    @include phones {
+        top: rem(15px);
+        width: 98%;
+    }
 }

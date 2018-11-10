@@ -1,10 +1,3 @@
-.form {
-    display: flex;
-    width: 100%;
-    background-color: #f4f4f4;
-    border-radius: 4px;
-}
-
 .order {
     min-height: rem(650px);
     background-color: #333589;
@@ -13,13 +6,19 @@
 
 .order__title {
     margin-bottom: rem(20px);
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .order__subtitle {
     color: #fff;
     font-size: rem(18px);
-    width: rem(660px);
+    max-width: rem(660px);
     margin-bottom: rem(30px);
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .order-box {
@@ -30,11 +29,27 @@
     display: flex;
 }
 
+.form {
+    display: flex;
+    width: 100%;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    outline: 0px solid #f4f4f4;
+    @include tablets {
+        flex-direction: column;
+    }
+}
+
 .order__options {
     border-radius: 4px;
     width: 25%;
     height: 100%;
     padding: rem(25px) rem(10px) rem(25px) rem(25px);
+    @include tablets {
+        width: 95%;
+        margin: 0 auto;
+        padding: rem(25px) rem(0px) rem(0px) rem(0px);
+    }
 }
 
 .order__options-title {
@@ -54,6 +69,10 @@
     border-radius: 3px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    @include tablets {
+        width: 95%;
+        margin: 0 auto;
+    }
 }
 
 .form-container {
@@ -61,8 +80,25 @@
     margin: 0 auto;
 }
 
+.options__list {
+    @include tablets {
+        display: flex;
+        justify-content: space-between;
+    }
+    @include phones {
+        overflow: auto;
+    }
+}
+
 .options__item {
     margin-bottom: rem(10px);
+    @include tablets {
+        width: 23%;
+    }
+    @include tablets {
+        min-width: rem(230px);
+        margin-right: rem(20px);
+    }
 }
 
 .option__item-tariff {
@@ -77,6 +113,9 @@
     background-color: #fff;
     height: rem(30px);
     width: rem(30px);
+    @include tablets {
+        transform: rotate(90deg);
+    }
 }
 
 .option__item-tariff:checked+.option__item-tariff--styling {
@@ -98,33 +137,45 @@
     width: 100%;
     height: rem(80px);
     border-radius: 4px;
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
     display: flex;
     flex-direction: column;
     padding: rem(15px) 0 rem(15px) rem(20px);
     color: #35373a;
     font-weight: 600;
     position: relative;
+    cursor: pointer;
+    transition: all .3s;
     &::before {
-        content: url('assets/images/arrow.png');
+        display: block;
+        text-align: center;
+        content: url('assets/images/arrow.svg');
         position: absolute;
-        top: 27%;
-        left: 78%;
-        padding-left: 2px;
-        padding-top: 4px;
+        top: rem(24px);
+        right: rem(24px);
+        padding-left: rem(2px);
+        padding-top: rem(6px);
         background-color: #fff;
         border-radius: 50%;
         width: rem(17px);
         height: rem(17px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
         transform: scale(0);
     }
-}
-
-.option__item-tariff--styling:hover {
-    box-shadow: -1px 1px 7px #44bbff;
+    @include tablets {
+        width: 100%;
+        padding: rem(15px) 0 rem(15px) rem(10px);
+        &::before {
+            top: rem(32px);
+            right: rem(7px);
+        }
+    }
+    @include phones {
+        padding: rem(15px) 0 rem(15px) rem(20px);
+        &::before {
+            top: rem(24px);
+            right: rem(24px);
+        }
+    }
 }
 
 .option__item-arrow {
@@ -146,6 +197,9 @@
     text-transform: uppercase;
     font-size: rem(12px);
     color: #3fad89;
+    @include tablets {
+        font-size: rem(12px);
+    }
 }
 
 .option__item-price {
@@ -164,21 +218,30 @@
     flex: 1;
     margin-right: rem(10px);
     position: relative;
+    @include phones {
+        margin-right: 0;
+        margin-bottom: rem(20px);
+    }
 }
 
 .form__row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: rem(25px) 0;
-    &:nth-child(2) {
-        border-bottom: 2px solid lightgrey;
-        padding-bottom: rem(20px);
+    @include phones {
+        display: flex;
+        flex-direction: column;
     }
 }
 
 .form__row-areas {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    margin-bottom: rem(20px);
+    @include phones {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .form__input {
@@ -187,10 +250,14 @@
     padding-left: rem(10px);
     border-radius: 4px;
     border: 1px solid #ddd;
-}
-
-.form__input:focus {
-    border: 1px solid #31baff;
+    background-color: #fff;
+    transition: all .3s;
+    &:hover {
+        border: 1px solid #31baff;
+    }
+    &:focus {
+        border: 1px solid #31baff;
+    }
 }
 
 .form__title {
@@ -211,8 +278,8 @@
     display: block;
     width: rem(24px);
     height: rem(24px);
-    right: 9px;
-    top: 41px;
+    right: rem(9px);
+    top: rem(41px);
     border-radius: 50%;
     background-color: #3fad89;
     position: absolute;
@@ -226,13 +293,13 @@
     height: rem(24px);
     border-radius: 50%;
     position: absolute;
-    background: url('./assets/images/arrow-down.png') center no-repeat;
+    background: url('./assets/images/arrow-down.svg') center no-repeat;
 }
 
 .form__area {
-    height: 100px;
+    height: rem(100px);
     resize: none;
-    padding: 5px;
+    padding: rem(5px);
 }
 
 .form__input-file {
@@ -240,7 +307,7 @@
 }
 
 .form__block-label {
-    border: 2px dashed #3fad89;
+    border: 1px dashed #3fad89;
     height: rem(100px);
     display: flex;
     border-radius: 4px;
@@ -249,25 +316,38 @@
     font-weight: 600;
     text-align: center;
     background-color: #f4fcf9;
+    cursor: pointer;
 }
 
 .form__filename {
     display: block;
+    padding: rem(32px) rem(10px);
+    text-align: center;
     color: #3fad89;
     font-size: rem(14px);
     font-weight: 600;
 }
 
 .form__row-checkbox {
-    border-bottom: 2px solid lightgray;
-    padding-bottom: rem(15px);
+    border-radius: 4px;
+    border-top: 4px solid #eeeeee;
+    border-bottom: 4px solid #eeeeee;
+    padding: rem(15px) 0;
 }
 
 .form__block-check {
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    vertical-align: middle;
     color: #000;
     margin: rem(10px) 0;
+    cursor: pointer;
+}
+
+.form__radio-name:hover~.form__checkbox--styling::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: red;
 }
 
 .form__checkbox {
@@ -282,22 +362,20 @@
 }
 
 .form__checkbox--styling {
-    display: block;
+    display: inline-block;
     position: relative;
     min-width: rem(19px);
+    max-width: rem(19px);
+    top: rem(3px);
     height: rem(19px);
     border-radius: 50%;
-    margin-right: 8px;
-    border: 1px solid lightgrey;
-    background: url('./assets/images/checkmark.png') center center no-repeat;
+    margin-right: rem(8px);
+    border: 1px solid #eeeeee;
+    background: url('./assets/images/checkmark.svg') center center no-repeat;
     &::before {
+        display: block;
         content: "";
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        right: 6px;
-        bottom: 6px;
-        background: url('./assets/images/checkmark.png') center center no-repeat;
+        background: url('./assets/images/checkmark.svg') center center no-repeat;
         background-color: #44bbff;
         border-radius: 50%;
         width: rem(17px);
@@ -319,17 +397,15 @@
     text-transform: uppercase;
     height: rem(50px);
     border-radius: 4px;
+    transition: all .3s;
     &:hover {
-        box-shadow: 1px 1px 7px #44bbff;
+        background-color: #31dbff;
+        box-shadow: 0px 1px 7px #44bbff;
     }
 }
 
 .form__radio-percent {
     font-weight: 600;
-    color: grey;
-    padding-left: rem(15px);
-}
-
-.form__radio-name {
-    font-size: rem(15px);
+    color: #3fad89;
+    margin-left: rem(15px);
 }

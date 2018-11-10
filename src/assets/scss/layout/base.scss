@@ -31,6 +31,11 @@ h6 {
     margin: 0;
 }
 
+input,
+textarea {
+    outline: none;
+}
+
 button {
     border: 0;
     cursor: pointer;
@@ -57,12 +62,9 @@ address {
     font-style: normal;
 }
 
-:valid {
-    border: 1px solid #31baff;
-}
-
-:invalid {
+input:invalid {
     border: 2px solid #ff9292;
+    border-radius: 4px;
 }
 
 // instead of display: none;
@@ -89,7 +91,6 @@ address {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 .main-section {
@@ -100,8 +101,10 @@ address {
 .main-content {
     width: 80%;
     margin: 0 auto;
-    @include phones {
+    @include tablets {
         width: 90%;
+    }
+    @include phones {
         overflow: hidden;
     }
 }
@@ -111,6 +114,9 @@ address {
     font-weight: 500;
     color: #1f364a;
     font-size: 38px;
+    @include phones {
+        font-size: rem(28px);
+    }
 }
 
 .main-title--white {
@@ -118,5 +124,7 @@ address {
     font-family: "Druk-Wide";
     color: #fff;
     font-size: 38px;
+    @include phones {
+        font-size: rem(28px);
+    }
 }
-

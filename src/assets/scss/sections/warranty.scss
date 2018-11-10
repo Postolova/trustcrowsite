@@ -1,16 +1,22 @@
 .warranty {
     background-color: #fff;
-    padding: rem(60px) 0 rem(50px) 0;
+    padding-top: rem(60px);
+    @include tablets {
+        padding-top: rem(50px);
+    }
 }
-
 
 .warranty__head {
     text-align: center;
 }
 
 .warranty-subtitle {
-    width: rem(600px);
-    margin: rem(20px) auto;
+    max-width: 72%;
+    margin: rem(20px) auto 0;
+    color: #5d6368;
+    font-size: rem(20px);
+    font-weight: 400;
+    line-height: rem(30px);
 }
 
 .features__list {
@@ -19,8 +25,11 @@
     padding-top: rem(30px);
     padding-bottom: rem(30px);
     display: flex;
-    border-top: 1px solid lightgrey;
-    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid #35373a1f;
+    border-bottom: 1px solid #35373a1f;
+    @include phones {
+        overflow: auto;
+    }
 }
 
 .features__item {
@@ -32,11 +41,14 @@
         margin-left: 0;
     }
     margin-left: rem(30px);
-    border-right: 2px solid lightgrey;
+    border-radius: 4px;
+    border-right: 4px solid #ebebeb7e;
     &:nth-child(4) {
         border: none;
     }
-    
+    @include phones {
+        min-width: rem(200px);
+    }
 }
 
 .features__name {
@@ -53,68 +65,49 @@
     color: #35373a;
 }
 
-.steps__title {
-    font-family: "Druk-Wide";
-    font-weight: 500;
-    margin-bottom: rem(30px);
-}
-
-.steps__link {
-    color: #31baff;
-    text-decoration: underline;
-}
-
-.steps__list {
-    display: flex;
-    justify-content:  space-between;
-    width: 100%;
-    margin-bottom: rem(40px);
-}
-
-.steps__item {
-    display: inline-block;
-    width: 22%;
-    padding: rem(15px);
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-}
-
-.steps__block {
-    border-bottom: 1px solid lightgrey;
-}
-
-.steps__number {
-    color: #333589;
-    font-size: rem(24px);
-    font-family: "Druk-Wide";
-}
-
-.steps__desc {
-    font-weight: 600;
-    font-size: rem(18px);
-    line-height: 28px;
-    color: #35373a;
-}
-
 .payment {
-    width: 75%;
-    margin: rem(40px) auto;
+    width: 80%;
+    margin: rem(50px) auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    @include phones {
+        width: 100%;
+        align-items: center;
+    }
 }
 
 .payment__title {
     font-family: "Druk-Wide";
-    color: grey;
+    font-weight: 500;
+    color: #1f364a;
+    opacity: .5;
     font-size: rem(24px);
     width: rem(200px);
-}
-
-.payment__pic {
-    width: 50%;
-    &:nth-child(1) {
-        margin-right: rem(40px);
+    margin-right: rem(80px);
+    @include phones {
+        display: none;
     }
 }
 
+.payment__pic {
+    &:last-child {
+        margin-left: rem(60px);
+    }
+    @include phones {
+        width: 60%;
+        margin-bottom: rem(20px);
+        &:last-child {
+            margin-left: rem(30px);
+            width: 30%;
+        }
+    }
+    @include phones-sm {
+        width: 55%;
+        margin-bottom: rem(20px);
+        &:last-child {
+            margin-left: rem(30px);
+            width: 25%;
+        }
+    }
+}

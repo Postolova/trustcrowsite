@@ -1,4 +1,4 @@
-section.main-section.faq
+section.main-section.news
     .main-content
         .bread-crumbs
             ul.bread-crumbs__list
@@ -13,48 +13,147 @@ section.main-section.faq
                 span.news__socials-title Быстрее в наших социальных сетях:
                 ul.socials__list
                     li.socials__item
-                        a.socials__link(href="#0")
+                        a.socials__link(href="#0", target="_blank")
                             +image('social-fb.svg', 'icon', 'socials-icon')
                     li.socials__item
-                        a.socials__link(href="#0")
+                        a.socials__link(href="#0", target="_blank")
                             +image('social-twitter.svg', 'icon', 'socials-icon')
                     li.socials__item
-                        a.socials__link(href="#0")
+                        a.socials__link(href="#0", target="_blank")
                             +image('social-insta.svg', 'icon', 'socials-icon')
                     li.socials__item
-                        a.socials__link(href="#0")
+                        a.socials__link(href="#0", target="_blank")
                             +image('social-telegram.svg', 'icon', 'socials-icon')
-        .news__blocks.news__blocks--page
-            ul.block__list
-                li.block__item
-                    .block__img
-                        +image("news-network.png", "alt", "news-img")
-                    .block__content
-                        .block__content-text Почему по моим ссылкам никто не переходит или как не потратить кучу денег в пустую?
-                        .block__content-date 28 ноября 2018
-                li.block__item
-                    .block__img
-                        +image("news-context.png", "alt", "news-img")
-                    .block__content
-                        .block__content-text Почему контекстная реклама не дала вам результат? Разбираемся в проблеме
-                        .block__content-date 28 ноября 2018
-                li.block__item
-                    .block__img
-                        +image("news-dacha.png", "alt", "news-img")
-                    .block__content
-                        .block__content-text Как искать сайты на которых сидят ваши клиенты. Все оказалось просто... или нет?
-                        .block__content-date 28 ноября 2018
-                li.block__item
-                    .block__img
-                        +image("news-elephant.png", "alt", "news-img")
-                    .block__content
-                        .block__content-text Пришли клиенты из Индии? Поздравляем! На вас настроили СПАМ-атаку! Рассказываем как бороться
-                        .block__content-date 28 ноября 2018
-        .pagination-news
-            ul.pagination__list
-                li.pagination__item
-                li.pagination__item
-                li.pagination__item
-                li.pagination__item
-                li.pagination__item
-                li.pagination__item
+        .news__blocks--page
+            .news__blocks#news__blocks-tab1
+                ul.block__list
+                    li.block__item#news_1
+                        a(href="#0").block__item-link
+                            .block__img
+                                +image("news-network.png", "alt", "news-img")
+                            .block__content
+                                .block__content-text Почему по моим ссылкам никто не переходит или как не потратить кучу денег в пустую?
+                                .block__content-date 28 ноября 2018
+                    li.block__item#news_2
+                        a(href="#0").block__item-link
+                            .block__img
+                                +image("news-context.png", "alt", "news-img")
+                            .block__content
+                                .block__content-text Почему контекстная реклама не дала вам результат? Разбираемся в проблеме
+                                .block__content-date 28 ноября 2018
+                    li.block__item
+                        a(href="#0").block__item-link
+                            .block__img
+                                +image("news-dacha.png", "alt", "news-img")
+                            .block__content
+                                .block__content-text Как искать сайты на которых сидят ваши клиенты. Все оказалось просто... или нет?
+                                .block__content-date 28 ноября 2018
+                    li.block__item
+                        a(href="#0").block__item-link
+                            .block__img
+                                +image("news-elephant.png", "alt", "news-img")
+                            .block__content
+                                .block__content-text Пришли клиенты из Индии? Поздравляем! На вас настроили СПАМ-атаку! Рассказываем как бороться
+                                .block__content-date 28 ноября 2018
+            .news__blocks#news__blocks-tab2
+                ul.block__list
+                    li.block__item#news_1
+                        a(href="#0").block__item-link
+                            .block__img
+                                +image("news-network.png", "alt", "news-img")
+                            .block__content
+                                .block__content-text page2 Почему по моим ссылкам никто не переходит или как не потратить кучу денег в пустую?
+                                .block__content-date 28 ноября 2018
+                    li.block__item#news_2
+                        a(href="#0").block__item-link
+                            .block__img
+                                +image("news-context.png", "alt", "news-img")
+                            .block__content
+                                .block__content-text Почему контекстная реклама не дала вам результат? Разбираемся в проблеме
+                                .block__content-date 28 ноября 2018
+                    li.block__item
+                        a(href="#0").block__item-link
+                            .block__img
+                                +image("news-dacha.png", "alt", "news-img")
+                            .block__content
+                                .block__content-text Как искать сайты на которых сидят ваши клиенты. Все оказалось просто... или нет?
+                                .block__content-date 28 ноября 2018
+                    li.block__item
+                        a(href="#0").block__item-link
+                            .block__img
+                                +image("news-elephant.png", "alt", "news-img")
+                            .block__content
+                                .block__content-text Пришли клиенты из Индии? Поздравляем! На вас настроили СПАМ-атаку! Рассказываем как бороться
+                                .block__content-date 28 ноября 2018
+            .news__blocks#news__blocks-tab3
+                ul.block__list
+                    li.block__item#news_1
+                        a(href="#0").block__item-link
+                            .block__img
+                                +image("news-network.png", "alt", "news-img")
+                            .block__content
+                                .block__content-text page3 Почему по моим ссылкам никто не переходит или как не потратить кучу денег в пустую?
+                                .block__content-date 28 ноября 2018
+                    li.block__item#news_2
+                        a(href="#0").block__item-link
+                            .block__img
+                                +image("news-context.png", "alt", "news-img")
+                            .block__content
+                                .block__content-text Почему контекстная реклама не дала вам результат? Разбираемся в проблеме
+                                .block__content-date 28 ноября 2018
+                    li.block__item
+                        a(href="#0").block__item-link
+                            .block__img
+                                +image("news-dacha.png", "alt", "news-img")
+                            .block__content
+                                .block__content-text Как искать сайты на которых сидят ваши клиенты. Все оказалось просто... или нет?
+                                .block__content-date 28 ноября 2018
+                    li.block__item
+                        a(href="#0").block__item-link
+                            .block__img
+                                +image("news-elephant.png", "alt", "news-img")
+                            .block__content
+                                .block__content-text Пришли клиенты из Индии? Поздравляем! На вас настроили СПАМ-атаку! Рассказываем как бороться
+                                .block__content-date 28 ноября 2018
+            .news__blocks#news__blocks-tab4
+                ul.block__list
+                    li.block__item#news_1
+                        a(href="#0").block__item-link
+                            .block__img
+                                +image("news-network.png", "alt", "news-img")
+                            .block__content
+                                .block__content-text page 4 Почему по моим ссылкам никто не переходит или как не потратить кучу денег в пустую?
+                                .block__content-date 28 ноября 2018
+                    li.block__item#news_2
+                        a(href="#0").block__item-link
+                            .block__img
+                                +image("news-context.png", "alt", "news-img")
+                            .block__content
+                                .block__content-text Почему контекстная реклама не дала вам результат? Разбираемся в проблеме
+                                .block__content-date 28 ноября 2018
+                    li.block__item
+                        a(href="#0").block__item-link
+                            .block__img
+                                +image("news-dacha.png", "alt", "news-img")
+                            .block__content
+                                .block__content-text Как искать сайты на которых сидят ваши клиенты. Все оказалось просто... или нет?
+                                .block__content-date 28 ноября 2018
+                    li.block__item
+                        a(href="#0").block__item-link
+                            .block__img
+                                +image("news-elephant.png", "alt", "news-img")
+                            .block__content
+                                .block__content-text Пришли клиенты из Индии? Поздравляем! На вас настроили СПАМ-атаку! Рассказываем как бороться
+                                .block__content-date 28 ноября 2018
+            .news__pagination
+                button.news__pagination-btns.news__pagination-back <
+                ul.pagination__list
+                    li.news__pagination-item
+                        button.news__pagination-tab.news__pagination-tab--active#news__tab1(type="button" data-tab="news__blocks-tab1") 1
+                    li.news__pagination-item
+                        button.news__pagination-tab#news__tab2(type="button" data-tab="news__blocks-tab2") 2
+                    li.news__pagination-item
+                        button.news__pagination-tab#news__tab3(type="button" data-tab="news__blocks-tab3") 3
+                    li.news__pagination-item
+                        button.news__pagination-tab#news__tab4(type="button" data-tab="news__blocks-tab4") 4
+                button.news__pagination-btns.news__pagination-next >

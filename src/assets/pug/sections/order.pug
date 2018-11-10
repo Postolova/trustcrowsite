@@ -1,4 +1,4 @@
-section.main-section.order
+section.main-section.order#order
     .main-content
         h1.main-title--white.order__title Заказ крауд-маркетинга
         h5.order__subtitle Заполните форму ниже чтобы заказать услугу. После отправки с вами свяжется менеджер чтобы уточнить детали.
@@ -63,31 +63,55 @@ section.main-section.order
                             label.form__block-check 
                                 input(type="checkbox").form__checkbox
                                 span.form__checkbox--styling
-                                span.form__radio-name Размещение исключительно кликабельных ссылок
-                                    span.form__radio-percent +20% к стоимости
+                                span.form__radio-name Размещение исключительно кликабельных ссылок 
+                                span.form__radio-percent +20% к стоимости] 
                             label.form__block-check 
                                 input(type="checkbox").form__checkbox
                                 span.form__checkbox--styling
-                                span.form__radio-name Использование уникальных площадок без повторов в рамках одного проекта
-                                    span.form__radio-percent +25% к стоимости
+                                span.form__radio-name Использование уникальных площадок без повторов в рамках одного проекта 
+                                span.form__radio-percent +25% к стоимости
                             label.form__block-check 
                                 input(type="checkbox").form__checkbox
                                 span.form__checkbox--styling
-                                span.form__radio-name Использование уникальных площадок без повторов из прошлых проектов
-                                    span.form__radio-percent +30% к стоимости
+                                span.form__radio-name Использование уникальных площадок без повторов из прошлых проектов 
+                                span.form__radio-percent +30% к стоимости
                             label.form__block-check 
                                 input(type="checkbox").form__checkbox
                                 span.form__checkbox--styling
-                                span.form__radio-name Размещение в темах где нет не одной ссылки
-                                    span.form__radio-percent +30% к стоимости
+                                span.form__radio-name Размещение в темах где нет не одной ссылки 
+                                span.form__radio-percent +30% к стоимости
                         .form__row
                             label.form__block
                                 span.form__title Имя
-                                input(type="text").form__input
+                                input.form__input(
+                                    type="text",
+                                    name="name",
+                                    inputmode="text",
+                                    title="Введите Ваше имя. Поле должно содержать только буквы и иметь минимум два символа."
+                                    minlength="2",
+                                    spellcheck="true",
+                                    autocorrect="on",
+                                    pattern="[A-Za-zА-Яа-яЁё]+",
+                                    mozactionhint="send"
+                                    )
                             label.form__block
                                 span.form__title Email
-                                input(type="text").form__input
+                                input.form__input(
+                                    type="email",
+                                    name="email",
+                                    inputmode="email",
+                                    mozactionhint="send",
+                                    title="Введите Ваш Email. Поле обязательно должно содержать символ @ "
+                                )
                             label.form__block
                                 span.form__title Телефон
-                                input(type="text").form__input
+                                input.form__input(
+                                    type="tel",
+                                    name="phone",
+                                    inputmode="numeric",
+                                    spellcheck="true",
+                                    autocorrect="on",
+                                    mozactionhint="send",
+                                    title="Введите контактный номер телефона."
+                                )
                         button(type="submit").form__submit заказать
