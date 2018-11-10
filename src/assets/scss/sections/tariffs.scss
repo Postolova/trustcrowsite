@@ -204,6 +204,8 @@
     @include phones {
         min-height: 100%;
         margin-bottom: rem(30px);
+        display: flex;
+        overflow: auto;
     }
 }
 
@@ -223,6 +225,16 @@
         margin: rem(7px) rem(10px) 0 0;
         border-radius: 50%;
         border: 2px solid #3fad89;
+    }
+    @include phones {
+        min-width: rem(200px);
+        padding-right: rem(20px);
+        margin-right: rem(20px);
+        border-right: 1px solid #eeeeee;
+        border-radius: 4px;
+    }
+    @include phones-sm {
+        min-width: rem(180px);
     }
 }
 
@@ -309,6 +321,12 @@
 .tariffs__addServices-titles {
     margin-left: rem(30px);
     max-width: rem(550px);
+    @include phones {
+        margin-left: rem(20px);
+    }
+    @include phones-sm {
+        margin-left: 0;
+    }
 }
 
 .services-title {
@@ -325,6 +343,9 @@
     font-size: rem(18px);
     font-weight: 400;
     margin-bottom: rem(30px);
+    @include phones {
+        margin-bottom: rem(60px);
+    }
 }
 
 .steps__top {
@@ -334,6 +355,7 @@
     }
     @include phones {
         min-height: rem(167px);
+        min-width: rem(200px);
     }
 }
 
@@ -378,7 +400,7 @@
     width: 100%;
     margin-bottom: rem(40px);
     @include phones {
-        flex-direction: column;
+        overflow: auto;
     }
 }
 
@@ -393,14 +415,14 @@
         margin-right: 0;
     }
     @include phones {
-        width: 100%;
+        min-width: rem(230px);
     }
 }
 
 .steps__item-tariff {
     width: 24%;
     @include phones {
-        width: 100%;
+        min-width: rem(230px);
     }
 }
 

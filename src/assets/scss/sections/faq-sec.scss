@@ -7,7 +7,7 @@
         &::after {
             display: block;
             content: '';
-            height: 133px;
+            height: rem(133px);
         }
     }
 }
@@ -220,7 +220,7 @@
     text-align: left;
     outline: none;
     position: relative;
-    padding-top: 30px;
+    padding-top: rem(30px);
     transition: 0.4s;
     color: #35373a;
     font-family: "Druk-Wide";
@@ -230,10 +230,13 @@
     height: 100%;
     font-weight: 500;
     display: block;
-    padding-right: 100px;
+    padding-right: rem(100px);
     @include tablets {
         width: 90%;
         font-size: rem(12px);
+    }
+    @include phones {
+        padding-right: rem(70px);
     }
     transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     &:after {
@@ -247,12 +250,16 @@
 }
 
 .panel {
-    padding: 0 18px;
+    padding: 0 rem(18px);
     max-height: 0;
     width: 90%;
     overflow: hidden;
     transition: all 0.3s ease-out;
-    left: -18px;
+    left: rem(-18px);
     position: relative;
-    top: 10px;
+    top: rem(10px);
+    @include phones {
+        top: rem(15px);
+        width: 98%;
+    }
 }
