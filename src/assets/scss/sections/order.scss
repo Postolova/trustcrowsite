@@ -95,7 +95,7 @@
     @include tablets {
         width: 23%;
     }
-    @include tablets {
+    @include phones {
         min-width: rem(230px);
         margin-right: rem(20px);
     }
