@@ -1,5 +1,5 @@
 const newsBlocks = document.querySelectorAll('.news__blocks');
-const pagination = document.querySelector('.news__pagination');
+const pagination = document.querySelector('.pagination__box');
 const newsBtn = document.querySelectorAll('.news__pagination-tab');
 
 for (const block of newsBlocks) {
@@ -11,7 +11,6 @@ document.getElementById('news__blocks-tab1').style.display = 'block';
 function openBeforeBlock (e) {
 }
 function openNextBlock (e) {
-	console.log('after');
 }
 function openBlockNews (e) {
 	const currentIdNews = e.target.dataset.tab;
@@ -33,9 +32,9 @@ function openBlockNews (e) {
 pagination.addEventListener('click', e => {
 	if (e.target.className === 'news__pagination-tab') {
 		openBlockNews(e);
-	} else if (e.target.classList[1] === 'news__pagination-back') {
+	} else if (e.target.id === 'news__pagination-back') {
 		openBeforeBlock(e);
-	} else if (e.target.classList[1] === 'news__pagination-next') {
+	} else if (e.target.id === 'news__pagination-next') {
 		openNextBlock(e);
 	}
 });

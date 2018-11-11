@@ -146,14 +146,10 @@ section.main-section.news
                                 .block__content-text Пришли клиенты из Индии? Поздравляем! На вас настроили СПАМ-атаку! Рассказываем как бороться
                                 .block__content-date 28 ноября 2018
             .news__pagination
-                button.news__pagination-btns.news__pagination-back
-                ul.pagination__list
-                    li.news__pagination-item
-                        button.news__pagination-tab.news__pagination-tab--active#news__tab1(type="button" data-tab="news__blocks-tab1") 1
-                    li.news__pagination-item
-                        button.news__pagination-tab#news__tab2(type="button" data-tab="news__blocks-tab2") 2
-                    li.news__pagination-item
-                        button.news__pagination-tab#news__tab3(type="button" data-tab="news__blocks-tab3") 3
-                    li.news__pagination-item
-                        button.news__pagination-tab#news__tab4(type="button" data-tab="news__blocks-tab4") 4
-                button.news__pagination-btns.news__pagination-next
+                .pagination__box
+                    button.news__pagination-btns#news__pagination-back
+                    button.news__pagination-tab.news__pagination-tab--active#news__tab1(type="button" data-tab="news__blocks-tab1") 1
+                    button.news__pagination-tab#news__tab2(type="button" data-tab="news__blocks-tab2") 2
+                    button.news__pagination-tab#news__tab3(type="button" data-tab="news__blocks-tab3") 3
+                    button.news__pagination-tab#news__tab4(type="button" data-tab="news__blocks-tab4") 4
+                    button.news__pagination-btns#news__pagination-next
