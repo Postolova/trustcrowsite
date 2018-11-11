@@ -43,21 +43,18 @@
     transition: all .3s;
     width: 40px;
     height: 20px;
-    line-height: 1;
+    border-radius: 4px;
     background: transparent;
+    font-family: "Druk-Wide";
+    font-weight: 700;
+    font-size: 14px;
     &:hover {
-        width: 40px;
-        height: 20px;
         color: #31baff;
-        border-radius: 4px;
     }
 }
 
 .news__pagination-tab--active {
-    width: 40px;
-    height: 20px;
     color: #fff !important;
-    border-radius: 4px;
     background-color: #31baff;
 }
 

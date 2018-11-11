@@ -3,6 +3,9 @@
     min-height: rem(600px);
     padding-bottom: rem(51px);
     padding-top: rem(16px);
+    @include hd {
+        padding-bottom: rem(150px);
+    }
     @include tablets {
         &::after {
             display: block;

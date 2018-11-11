@@ -7,6 +7,14 @@
     font-style: normal;
     font-display: block;
 }
+@font-face {
+    font-family: "Druk-Wide";
+    src: url("./assets/fonts/Druk-Wide-Medium/DrukTextWide-Bold.woff") format("woff"), 
+    url("/Druk-Wide-Medium/DrukTextWide-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: block;
+}
 
 // Gotham-Pro Font
 @font-face {

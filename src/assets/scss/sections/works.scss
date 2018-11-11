@@ -49,6 +49,11 @@
     font-weight: 500;
     text-transform: uppercase;
     transition: all .3s;
+    @include hd {
+        height: 60px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
     @include tablets {
         width: 24%;
         margin-bottom: rem(30px);
@@ -145,11 +150,14 @@
 
 .works__pagination {
     position: absolute;
-    right: rem(20px);
+    left: rem(-40px)!important;
     z-index: 99;
+    @include hd {
+        left: -150px !important;
+    }
     @include tablets {
         bottom: 0px;
-        right: 0;
+        left: 0!important;
     }
 }
 
@@ -175,6 +183,9 @@
     z-index: 99;
     display: flex;
     flex-direction: column-reverse;
+    @include hd {
+        right: rem(210px);
+    }
     @include tablets {
         flex-direction: row;
         bottom: rem(100px);

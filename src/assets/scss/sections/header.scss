@@ -7,6 +7,7 @@
 .header {
     position: relative;
 }
+
 .header-shadow {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
@@ -92,6 +93,9 @@
 .header__logo {
     margin-right: rem(81px);
     width: rem(135px);
+    @include hd {
+        width: rem(200px);
+    }
 }
 
 .header__logo-link {
@@ -102,6 +106,9 @@
     font-size: rem(15px);
     &:first-child {
         margin-left: 1px;
+    }
+    @include hd {
+        font-size: rem(22px);
     }
 }
 
@@ -119,6 +126,9 @@
     position: relative;
     &:last-child {
         margin-right: 0;
+    }
+    @include hd {
+        font-size: rem(16px);
     }
     @include phones {
         margin: 0;
@@ -145,6 +155,9 @@
         border-radius: 0 0 5px 5px;
         transition: all .3s;
         opacity: 0;
+        @include hd {
+            top: -17px;
+        }
         @include phones {
             display: none;
         }
@@ -160,6 +173,9 @@
             height: 5px;
             background-color: #333589;
             border-radius: 0 0 5px 5px;
+            @include hd {
+                top: -17px;
+            }
             @include phones {
                 display: none;
             }
