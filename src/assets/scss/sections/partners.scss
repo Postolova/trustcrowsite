@@ -24,7 +24,7 @@
     }
 }
 
-.partners__logo-tabs {
+.partners__box {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -38,56 +38,56 @@
     }
 }
 
-.partners__logo-tab {
-    display: none;
-}
-
-.partners__logo-tab:checked+.partners__logo-tab--styling {
-    &::after {
-        position: relative;
-        top: -175px;
-        display: block;
-        height: 100%;
-        content: '';
-        background-image: radial-gradient(circle closest-side at center, #98ddff 0%, #ffffff 100%);
-        opacity: 0.3;
+.partners__tabs {
+    display: flex;
+    width: 100%;
+    @include phones {
+        overflow: auto;
     }
 }
 
-.partners__logo-tab--styling:hover {
-    &::after {
-        position: relative;
-        transition: all .3s;
-        top: -175px;
-        display: block;
-        height: 100%;
-        content: '';
-        transition: all .3s;
-        background-image: radial-gradient(circle closest-side at center, #98ddff 0%, #ffffff 100%);
-        opacity: 0.3;
-    }
-}
-
-.partners__logo-tab--styling {
-    display: block;
-    width: 18%;
-    max-height: 170px;
-    margin-bottom: 10px;
+.partners__tab {
+    width: 24%;
+    max-height: 180px;
+    margin-right: 20px;
     cursor: pointer;
     @include phones {
         min-width: 230px;
-        white-space: nowrap;
+    }
+    @include phones-sm {
+        min-width: 200px;
     }
     &::after {
+        transition: opacity .3s;
         position: relative;
-        transition: all .3s;
-        top: -175px;
         display: block;
-        height: 100%;
+        top: -9999px;
+        height: 180px;
         content: '';
-        transition: all .3s;
         background-image: radial-gradient(circle closest-side at center, #98ddff 0%, #ffffff 100%);
         opacity: 0;
+    }
+    &--active {
+        &::after {
+            position: relative;
+            display: block;
+            top: -180px;
+            height: 180px;
+            content: '';
+            background-image: radial-gradient(circle closest-side at center, #98ddff 0%, #ffffff 100%);
+            opacity: 0.3;
+        }
+    }
+    &:hover {
+        &::after {
+            position: relative;
+            display: block;
+            top: -180px;
+            height: 180px;
+            content: '';
+            background-image: radial-gradient(circle closest-side at center, #98ddff 0%, #ffffff 100%);
+            opacity: 0.3;
+        }
     }
 }
 
@@ -98,14 +98,6 @@
 }
 
 .partners__logo-desc {
-    display: none;
-}
-
-#partners__tab-1:checked~#partners__logo-tab1,
-#partners__tab-2:checked~#partners__logo-tab2,
-#partners__tab-3:checked~#partners__logo-tab3,
-#partners__tab-4:checked~#partners__logo-tab4,
-#partners__tab-5:checked~#partners__logo-tab5 {
     display: flex;
     bottom: 0px;
     width: 100%;
@@ -114,23 +106,6 @@
     position: relative;
     text-align: left;
     padding: 35px 25px 43px 50px;
-    &::after {
-        content: '\25B2';
-        position: absolute;
-        display: inline-block;
-        transform: scaleX(2.5);
-        color: #fff;
-        top: -34px;
-        left: 7%;
-        text-shadow: 0 -3px 3px rgba(255, 255, 255, 0.7), 0px -3px 4px rgba(0, 0, 0, 0.12);
-        font-size: rem(32px);
-        z-index: 9999;
-        @include tablets {
-            font-size: rem(28px);
-            top: -28px;
-            left: 5%;
-        }
-    }
     @include tablets {
         display: flex;
         flex-direction: column;
@@ -140,15 +115,43 @@
         padding: 20px;
     }
     @include phones {
-        display: block;
+        display: flex;
         position: absolute;
-        bottom: 0px;
+        bottom: -25px;
         left: 5px;
         padding: 20px;
     }
+    @include phones-sm {
+        bottom: -110px;
+    }
 }
 
-#partners__tab-2:checked~#partners__logo-tab2 {
+.partners__logo-desc--active1 {
+    &::after {
+        content: '\25B2';
+        position: absolute;
+        display: inline-block;
+        transform: scaleX(2.5);
+        color: #fff;
+        top: -34px;
+        left: 8%;
+        text-shadow: 0 -3px 3px rgba(255, 255, 255, 0.7), 0px -3px 4px rgba(0, 0, 0, 0.12);
+        font-size: rem(32px);
+        z-index: 9999;
+        @include tablets {
+            font-size: rem(28px);
+            top: -28px;
+            left: 7%;
+        }
+        @include phones {
+            font-size: rem(28px);
+            top: -28px;
+            left: 40%;
+        }
+    }
+}
+
+.partners__logo-desc--active2 {
     &::after {
         content: '\25B2';
         position: absolute;
@@ -163,12 +166,17 @@
         @include tablets {
             font-size: rem(28px);
             top: -28px;
-            left: 26%;
+            left: 27%;
+        }
+        @include phones {
+            font-size: rem(28px);
+            top: -28px;
+            left: 40%;
         }
     }
 }
 
-#partners__tab-3:checked~#partners__logo-tab3 {
+.partners__logo-desc--active3 {
     &::after {
         content: '\25B2';
         position: absolute;
@@ -183,12 +191,17 @@
         @include tablets {
             font-size: rem(28px);
             top: -28px;
-            left: 45%;
+            left: 47%;
+        }
+        @include phones {
+            font-size: rem(28px);
+            top: -28px;
+            left: 40%;
         }
     }
 }
 
-#partners__tab-4:checked~#partners__logo-tab4 {
+.partners__logo-desc--active4 {
     &::after {
         content: '\25B2';
         position: absolute;
@@ -203,12 +216,17 @@
         @include tablets {
             font-size: rem(28px);
             top: -28px;
-            left: 65%;
+            left: 67%;
+        }
+        @include phones {
+            font-size: rem(28px);
+            top: -28px;
+            left: 40%;
         }
     }
 }
 
-#partners__tab-5:checked~#partners__logo-tab5 {
+.partners__logo-desc--active5 {
     &::after {
         content: '\25B2';
         position: absolute;
@@ -223,7 +241,10 @@
         @include tablets {
             font-size: rem(28px);
             top: -28px;
-            left: 85%;
+            left: 89%;
+        }
+        @include phones {
+            display: none;
         }
     }
 }
