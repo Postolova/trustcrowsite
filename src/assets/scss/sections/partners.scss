@@ -30,14 +30,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
-    @include phones {
-        // margin-bottom: 0;
-        // flex-wrap: nowrap;
-        // min-height: 670px;
-    }
-    @include phones-sm {
-        // min-height: 730px;
-    }
 }
 
 .partners__tabs {
