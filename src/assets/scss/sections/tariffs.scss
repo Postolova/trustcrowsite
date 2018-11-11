@@ -416,6 +416,8 @@
     }
     @include phones {
         min-width: rem(230px);
+        margin-left: rem(5px);
+        margin-bottom: rem(15px);
     }
 }
 
@@ -423,6 +425,8 @@
     width: 24%;
     @include phones {
         min-width: rem(230px);
+        margin-left: rem(5px);
+        margin-bottom: rem(15px);
     }
 }
 
