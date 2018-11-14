@@ -1,0 +1,214 @@
+.news-link {
+    @include phones {
+        padding-top: 0;
+    }
+}
+
+.news-link__header {
+    @include phones {
+        box-shadow: none;
+    }
+}
+
+.news-link__main-content {
+    @include phones {
+        width: 100%;
+    }
+}
+
+.news-link__pic {
+    background: url('./assets/images/news-link_pic.png') center no-repeat;
+    width: 100%;
+    height: 675px;
+    margin-top: 15px;
+    border-radius: 4px;
+    background-size: cover;
+    @include tablets {
+        height: 470px;
+    }
+    @include phones {
+        height: 184px;
+        min-width: 100%;
+        margin-top: 0;
+    }
+}
+
+.news-link__head {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    @include phones {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.news-link__title {
+    width: 71%;
+    margin-bottom: 25px;
+    margin-top: 40px;
+}
+
+.news-link__socials {
+    margin-top: 50px;
+    width: 29%;
+    text-align: right;
+}
+
+.news-link__date {
+    margin-bottom: 20px;
+    opacity: 0.45;
+    color: #35373a;
+    font-size: 18px;
+}
+
+.news-link__content {
+    display: flex;
+    justify-content: space-between;
+    @include phones {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.news-link__list {
+    display: list-item;
+    width: 65%;
+    @include phones {
+        width: 100%;
+    }
+}
+
+.news-link__item {
+    margin-bottom: 45px;
+    font-size: 18px;
+    &:last-child {
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+}
+
+.news-link__form {
+    width: 35%;
+    margin-top: 0;
+    margin-left: 85px;
+}
+
+.news-link__form-title {
+    min-width: 100%;
+}
+
+.news-link__item-title {
+    width: 494px;
+    color: #1f364a;
+    font-size: 24px;
+    font-family: "Druk-Wide";
+    font-weight: 500;
+    margin-bottom: 19px;
+    @include phones {
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+.news-link__item-desc {
+    color: #35373a;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.news-link__item-list {
+    display: list-item;
+    list-style-position: inside;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.news-link__item-item {
+    color: #35373a;
+    line-height: 40px;
+}
+
+.news-link__item-item--num {
+    list-style-type: decimal;
+    font-family: "Druk-Wide";
+    font-weight: 600;
+    color: #00a0e0;
+    line-height: 40px;
+}
+
+.news-link__item-item--disc {
+    list-style-type: disc;
+    color: #00a0e0;
+}
+
+.news-link__item-text {
+    color: #35373a;
+    font-family: "SourceSansPro";
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.news-link__item-text--left {
+    padding-left: 7px;
+}
+
+.news-link__item-subtitle {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.news-link__author {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    &::before {
+        display: block;
+        width: 100%;
+        content: '';
+        height: 4px;
+        border-radius: 10px;
+        background-color: #e6e6e6;
+        margin-bottom: 30px;
+    }
+    @include phones {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.news-link__author-avatar {
+    width: 85px;
+    height: 85px;
+    margin-right: 20px;
+    background: url('./assets/images/news-link_ava.png') center no-repeat;
+    @include phones {
+        margin-right: 10px;
+    }
+}
+
+.news-link__author-about {
+    font-size: 18px;
+    @include tablets {
+        width: 50%;
+        font-size: 16px;
+    }
+    @include phones {
+        width: 65%;
+        font-size: 14px;
+    }
+}
+
+.news-link__author-name {
+    margin-bottom: 10px;
+    color: #1f364a;
+    font-family: "Druk-Wide";
+    font-weight: 500;
+    @include phones {
+        margin-bottom: 5px;
+    }
+}
+
+.news-link__author-desc {
+    color: #35373a;
+    font-weight: 400;
+}

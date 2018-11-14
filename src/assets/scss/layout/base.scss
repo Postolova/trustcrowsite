@@ -9,7 +9,7 @@ html {
     height: 100%;
     padding: 0;
     margin: 0;
-    font-size: rem(16px);
+    font-size: 16px;
 }
 
 body {
@@ -95,7 +95,7 @@ input:invalid {
 
 .main-section {
     width: 100%;
-    padding-bottom: rem(30px);
+    padding-bottom: 30px;
 }
 
 .main-content {
@@ -115,7 +115,7 @@ input:invalid {
     color: #1f364a;
     font-size: 38px;
     @include phones {
-        font-size: rem(28px);
+        font-size: 28px;
     }
 }
 
@@ -125,6 +125,6 @@ input:invalid {
     color: #fff;
     font-size: 38px;
     @include phones {
-        font-size: rem(28px);
+        font-size: 28px;
     }
 }

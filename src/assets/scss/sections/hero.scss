@@ -13,30 +13,30 @@
 }
 
 .hero__title {
-    margin-top: rem(140px);
+    margin-top: 140px;
     @include phones {
         margin: 0;
-        font-size: rem(30px);
+        font-size: 30px;
     }
 }
 
 .hero__subtitle {
-    margin-top: rem(27px);
-    margin-bottom: rem(34px);
-    font-size: rem(18px);
+    margin-top: 27px;
+    margin-bottom: 34px;
+    font-size: 18px;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 700;
     @include phones {
-        font-size: rem(24px);
+        font-size: 24px;
     }
 }
 
 .hero__subtitle--add-text {
-    font-size: rem(24px);
+    font-size: 24px;
     font-weight: 400;
     text-transform: lowercase;
     @include phones {
-        font-size: rem(24px);
+        font-size: 24px;
     }
 }
 
@@ -44,15 +44,15 @@
     display: block;
     text-align: center;
     padding-top: 11px;
-    width: rem(214px);
-    height: rem(40px);
+    width: 214px;
+    height: 40px;
     text-transform: uppercase;
     font-family: 'Druk-Wide';
     font-weight: 500;
     border-radius: 4px;
     background-color: #44bbff;
     color: #ffffff;
-    font-size: rem(12px);
+    font-size: 12px;
     transition: all .3s;
     &:hover {
         background-color: #31dbff;

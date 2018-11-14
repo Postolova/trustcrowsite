@@ -7,7 +7,8 @@ module.exports = {
 		common: './src/common.js',
 		index: './src/index.js',
 		faq: './src/faq.js',
-		news: './src/news.js'
+		news: './src/news.js',
+		news_link: './src/news_link.js'
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
@@ -44,6 +45,11 @@ module.exports = {
 			template: './src/news.pug',
 			chunks: ['news', 'common'],
 			filename: 'news.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/news_link.pug',
+			chunks: ['news_link', 'common'],
+			filename: 'news_link.html'
 		}),
 		new HtmlWebpackPlugin({
 			template: './src/faq.pug',

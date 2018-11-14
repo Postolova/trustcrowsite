@@ -15,14 +15,14 @@
 .popup-menu {
     width: 90%;
     position: absolute;
-    height: rem(300px);
+    height: 300px;
     top: -9999px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    font-size: rem(12px);
+    font-size: 12px;
     font-weight: 500;
     transition: height .7s;
     z-index: 100;
@@ -38,8 +38,8 @@
 
 .close-btn {
     position: absolute;
-    width: rem(40px);
-    height: rem(40px);
+    width: 40px;
+    height: 40px;
     top: -44px;
     right: 22px;
 }
@@ -59,8 +59,8 @@
 }
 
 .hamburger__button {
-    width: rem(40px);
-    height: rem(40px);
+    width: 40px;
+    height: 40px;
     border: 1px solid #eee;
     border-radius: 50%;
     display: flex;
@@ -74,7 +74,7 @@
 }
 
 .line {
-    width: rem(20px);
+    width: 20px;
     height: 2px;
     border-radius: 1px;
     background-color: #3fad89;
@@ -91,10 +91,10 @@
 }
 
 .header__logo {
-    margin-right: rem(81px);
-    width: rem(135px);
+    margin-right: 81px;
+    width: 135px;
     @include hd {
-        width: rem(200px);
+        width: 200px;
     }
 }
 
@@ -108,7 +108,7 @@
         margin-left: 1px;
     }
     @include hd {
-        font-size: rem(22px);
+        font-size: 22px;
     }
 }
 
@@ -121,14 +121,14 @@
 }
 
 .header__item {
-    margin-right: rem(40px);
-    font-size: rem(12px);
+    margin-right: 40px;
+    font-size: 12px;
     position: relative;
     &:last-child {
         margin-right: 0;
     }
     @include hd {
-        font-size: rem(16px);
+        font-size: 16px;
     }
     @include phones {
         margin: 0;
@@ -194,7 +194,7 @@
         top: -38px;
         left: 50%;
         transform: translateX(-50%);
-        width: rem(80px);
+        width: 80px;
         height: 5px;
         background-color: #333589;
         border-radius: 0 0 5px 5px;

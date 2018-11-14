@@ -1,26 +1,26 @@
 .partners {
-    padding: rem(80px) 0;
+    padding: 80px 0;
     text-align: center;
     @include tablets {
-        padding: rem(30px) 0;
+        padding: 30px 0;
     }
 }
 
 .partners-title {
-    margin-bottom: rem(19px);
+    margin-bottom: 19px;
 }
 
 .partners__subtitle {
-    width: rem(451px);
+    width: 451px;
     margin: 0 auto;
     height: 58px;
     color: #5d6368;
-    font-size: rem(20px);
+    font-size: 20px;
     font-weight: 400;
     line-height: 30px;
     @include phones {
         width: 100%;
-        margin-bottom: rem(30px);
+        margin-bottom: 30px;
     }
 }
 
@@ -37,27 +37,27 @@
     width: 100%;
     @include phones {
         overflow: auto;
-        min-height: rem(185px);
+        min-height: 185px;
     }
 }
 
 .partners__tab {
     width: 24%;
-    max-height: rem(180px);
-    margin-right: rem(20px);
+    max-height: 180px;
+    margin-right: 20px;
     cursor: pointer;
     @include phones {
-        min-width: rem(240px);
+        min-width: 240px;
     }
     @include phones-sm {
-        min-width: rem(210px);
+        min-width: 210px;
     }
     &::after {
         transition: opacity .3s;
         position: relative;
         display: block;
         top: -9999px;
-        height: rem(180px);
+        height: 180px;
         content: '';
         background-image: radial-gradient(circle closest-side at center, #98ddff 0%, #ffffff 100%);
         opacity: 0;
@@ -66,8 +66,8 @@
         &::after {
             position: relative;
             display: block;
-            top: rem(-180px);
-            height: rem(180px);
+            top: -180px;
+            height: 180px;
             content: '';
             background-image: radial-gradient(circle closest-side at center, #98ddff 0%, #ffffff 100%);
             opacity: 0.3;
@@ -77,8 +77,8 @@
         &::after {
             position: relative;
             display: block;
-            top: rem(-180px);
-            height: rem(180px);
+            top: -180px;
+            height: 180px;
             content: '';
             background-image: radial-gradient(circle closest-side at center, #98ddff 0%, #ffffff 100%);
             opacity: 0.3;
@@ -100,17 +100,17 @@
     border-radius: 3px;
     position: relative;
     text-align: left;
-    padding: rem(35px) rem(25px) rem(43px) rem(50px);
+    padding: 35px 25px 43px 50px;
     @include tablets {
         display: flex;
         flex-direction: column;
         bottom: 0px;
         left: 5px;
         max-width: 98%;
-        padding: rem(20px);
+        padding: 20px;
     }
     @include phones {
-        margin-bottom: rem(10px);
+        margin-bottom: 10px;
     }
 }
 
@@ -124,16 +124,14 @@
         top: -34px;
         left: 8%;
         text-shadow: 0 -3px 3px rgba(255, 255, 255, 0.7), 0px -3px 4px rgba(0, 0, 0, 0.12);
-        font-size: rem(32px);
+        font-size: 32px;
         z-index: 9999;
         @include tablets {
-            font-size: rem(28px);
+            font-size: 28px;
             top: -28px;
             left: 7%;
         }
         @include phones {
-            font-size: rem(28px);
-            top: -28px;
             left: 33%;
         }
     }
@@ -149,16 +147,14 @@
         top: -34px;
         left: 28%;
         text-shadow: 0 -3px 3px rgba(255, 255, 255, 0.7), 0px -3px 4px rgba(0, 0, 0, 0.12);
-        font-size: rem(32px);
+        font-size: 32px;
         z-index: 9999;
         @include tablets {
-            font-size: rem(28px);
+            font-size: 28px;
             top: -28px;
             left: 27%;
         }
         @include phones {
-            font-size: rem(28px);
-            top: -28px;
             left: 33%;
         }
     }
@@ -174,16 +170,14 @@
         top: -34px;
         left: 50%;
         text-shadow: 0 -3px 3px rgba(255, 255, 255, 0.7), 0px -3px 4px rgba(0, 0, 0, 0.12);
-        font-size: rem(32px);
+        font-size: 32px;
         z-index: 9999;
         @include tablets {
-            font-size: rem(28px);
+            font-size: 28px;
             top: -28px;
             left: 47%;
         }
         @include phones {
-            font-size: rem(28px);
-            top: -28px;
             left: 33%;
         }
     }
@@ -199,16 +193,14 @@
         top: -34px;
         left: 69%;
         text-shadow: 0 -3px 3px rgba(255, 255, 255, 0.7), 0px -3px 4px rgba(0, 0, 0, 0.12);
-        font-size: rem(32px);
+        font-size: 32px;
         z-index: 9999;
         @include tablets {
-            font-size: rem(28px);
+            font-size: 28px;
             top: -28px;
             left: 67%;
         }
         @include phones {
-            font-size: rem(28px);
-            top: -28px;
             left: 33%;
         }
     }
@@ -224,16 +216,14 @@
         top: -34px;
         left: 88%;
         text-shadow: 0 -3px 3px rgba(255, 255, 255, 0.7), 0px -3px 4px rgba(0, 0, 0, 0.12);
-        font-size: rem(32px);
+        font-size: 32px;
         z-index: 9999;
         @include tablets {
-            font-size: rem(28px);
+            font-size: 28px;
             top: -28px;
             left: 89%;
         }
         @include phones {
-            font-size: rem(28px);
-            top: -28px;
             left: 33%;
         }
     }
@@ -252,7 +242,7 @@
 }
 
 .desc-text__content {
-    margin-right: rem(60px);
+    margin-right: 60px;
     color: #35373a;
     font-size: 18px;
     font-weight: 400;
@@ -272,16 +262,16 @@
     border-left: 4px solid #ebebeb80;
     border-radius: 4px;
     &__name {
-        width: rem(96px);
+        width: 96px;
         color: #3fad89;
         font-family: "Druk-Wide";
-        font-size: rem(14px);
+        font-size: 14px;
         font-weight: 500;
-        margin-bottom: rem(22px);
+        margin-bottom: 22px;
     }
     &__position {
         color: #5d6368;
-        font-size: rem(14px);
+        font-size: 14px;
         line-height: 20px;
     }
     @include tablets {
@@ -289,6 +279,6 @@
         border-left: none;
         border-top: 4px solid #ebebeb80;
         padding-left: 0;
-        padding-top: rem(20px);
+        padding-top: 20px;
     }
 }

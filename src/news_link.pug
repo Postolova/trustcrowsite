@@ -1,0 +1,133 @@
+include ./assets/pug/common/_mixins
+<!DOCTYPE html>
+html(lang="ru-RU")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Blog|Article
+    body
+        .wrapper
+            main.main
+                header.header.header-shadow.news-link__header
+                    .header__content
+                        .popup-menu
+                        .header__logo
+                            a.header__logo-link(href="index.html") 
+                                div trustcrow
+                                div.header_logo-link--color .link
+                        nav.header__nav
+                            ul.header__list
+                                li.header__item
+                                    a.header__link(href="#0") работы
+                                li.header__item
+                                    a.header__link(href="#0") тарифы
+                                li.header__item
+                                    a.header__link(href="faq.html") faq
+                                li.header__item
+                                    a.header__link(href="news.html") новости
+                        .hamburger(data-count='0')
+                            .hamburger__button
+                                .lines
+                                    .line.line__top
+                                    .line.line__middle
+                                    .line.line__bottom
+                section.main-section.news.news-link
+                    .main-content.news-link__main-content
+                        .bread-crumbs
+                            ul.bread-crumbs__list
+                                li.bread-crumbs__item
+                                    a.home-btn(href="index.html")
+                                        +image('home-icon.svg', 'icon', 'home-icon__image')
+                                li.bread-crumbs__item
+                                    a.bread-crumbs__link(href="news.html") Новости
+                                li.bread-crumbs__item
+                                    p.bread-crumbs__link Какие анкоры использовать в крауд-ссылках?
+                        .news-link__pic
+                        .news-page__heading.news-link__head
+                            h1.main-title.news-page__title.news-link__title Какие анкоры использовать в крауд-ссылках?
+                            .news__socials.news-link__socials
+                                span.news__socials-title Быстрее в наших социальных сетях:
+                                ul.socials__list
+                                    li.socials__item
+                                        a.socials__link(href="#0", target="_blank")
+                                            +image('social-fb.svg', 'icon', 'socials-icon')
+                                    li.socials__item
+                                        a.socials__link(href="#0", target="_blank")
+                                            +image('social-twitter.svg', 'icon', 'socials-icon')
+                                    li.socials__item
+                                        a.socials__link(href="#0", target="_blank")
+                                            +image('social-insta.svg', 'icon', 'socials-icon')
+                                    li.socials__item
+                                        a.socials__link(href="#0", target="_blank")
+                                            +image('social-telegram.svg', 'icon', 'socials-icon')
+                            time.news-link__date(pubdate)  21 октября 2018
+                        .news-link__content
+                            ul.news-link__list
+                                li.news-link__item
+                                    .news-link__item-desc Один из самых популярных вопросов клиентов — как правильно составить анкор лист для крауд маркетинга. Все хотят преследовать несколько важных целей:
+                                        ul.news-link__item-list
+                                            li.news-link__item-item.news-link__item-item--num 
+                                                span.news-link__item-text--left.news-link__item-text Не попасть под санкции
+                                            li.news-link__item-item.news-link__item-item--num 
+                                                span.news-link__item-text Получить рост позиций по ключам в анкорах
+                                            li.news-link__item-item.news-link__item-item--num 
+                                                span.news-link__item-text Получить переходы по ссылкам из крауд постов на свой сайт
+                                    .news-link__item-subtitle В этой статье я кратко расскажу, как сделать всё правильно и ничего не пропустить.
+                                li.news-link__item
+                                    .news-link__item-title Какие бывают типы анкоров
+                                    .news-link__item-desc Какие бывают типы анкоров
+                                        ul.news-link__item-list
+                                            li.news-link__item-item.news-link__item-item--disc 
+                                                span.news-link__item-text текст с запросом (ключевой фразой)
+                                            li.news-link__item-item.news-link__item-item--disc 
+                                                span.news-link__item-text естественный текст
+                                            li.news-link__item-item.news-link__item-item--disc 
+                                                span.news-link__item-text сама ссылка (безанкор)
+                                            li.news-link__item-item.news-link__item-item--disc 
+                                                span.news-link__item-text картинка
+                                    .news-link__item-subtitle Быстро пройдёмся по каждому типу отдельно.
+                                li.news-link__item
+                                    .news-link__item-title Текст с запросом
+                                    .news-link__item-desc Просто вписываем фразу с интересующим нас ключом. Обычно берётся запрос из title / h1 страницы, как наиболее приоритетный.
+                                    .news-link__item-subtitle Например: купить квартиру в Киеве
+                                li.news-link__item
+                                    .news-link__item-title Естественный текст
+                                    .news-link__item-desc В анкор идут любые быстрые фразы, к которым люди обычно прикрепляют ссылки.
+                                    .news-link__item-subtitle Например: тут, на сайте, по ссылке и так далее.
+                                li.news-link__item
+                                    .news-link__item-title Безанкор
+                                    .news-link__item-desc В анкор идёт сама же ссылка.
+                                    .news-link__item-subtitle Пример: #[a(href="https://crowd-marketing.pro/").steps__link https://crowd-marketing.pro/]
+                                li.news-link__item
+                                    .news-link__item-title Картинка
+                                    .news-link__item-desc В пост вставляется тематическая картинка и на неё вешается ссылка на продвигаемую страницу сайта. Ключевая фраза уместно вписывается в околоанкорный текст поста и по-прежнему помогает двигать позиции.
+                                    .news-link__item-subtitle Это просто крутейший лайфак для крауд-маркетолога, так как на ресурсах, где всегда удаляют обычные ссылки, нормально пропускают и разрешают постить ссылки-картинки.
+                                li.news-link__item
+                                    .news-link__item-title Как распределять анкоры, чтобы не попасть под санкции
+                                    .news-link__item-desc Крауд-маркетинг максимально безопасный способ набрать качественную ссылочную массу. В нашей практике нет случаев, когда клиентский сайт получал пессимизацию после проведения размещений.
+                                    .news-link__item-desc Тем не менее, я максимально уверен, то стоит соблюдать элементарные правила распределения анкоров, тем самым избежать всех рисков и получать максимальный эффект от ссылок.
+                                    .news-link__item-desc Основной упор стоит делать на безанкорные ссылки, как на самые безопасные и продуктивнее. Такие ссылки хорошо воспринимаются поисковыми системами и отлично видны в тексте поста (на них кликают).
+                                    .news-link__item-subtitle Дальше по приоритету — анкорные ссылки и ссылки с естественным анкором.
+                            form.faq__form.news-link__form
+                                h2.faq__form-title.news-link__form-title Нужна такая услуга?
+                                span.faq__form-subtitle Закажите ее в этой форме
+                                label.faq-label 
+                                    span.faq-name Имя
+                                    input(type="text").faq-input
+                                label.faq-label 
+                                    span.faq-name Email
+                                    input(type="email").faq-input
+                                label.faq-label 
+                                    span.faq-name Адрес вашего сайта
+                                    input(type="text").faq-input
+                                label.faq-label 
+                                    span.faq-name Задача
+                                    input(type="text").faq-input
+                                button(type="submit").faq-submit Отправить
+                        .news-link__author
+                            .news-link__author-avatar
+                            .news-link__author-about
+                                .news-link__author-name Василий Романов
+                                .news-link__author-desc Основатель сервисов крауд-маркетинга trustcrowd.link
+            include ./assets/pug/sections/footer.pug

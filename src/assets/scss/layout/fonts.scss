@@ -9,9 +9,9 @@
 }
 @font-face {
     font-family: "Druk-Wide";
-    src: url("./assets/fonts/Druk-Wide-Medium/DrukTextWide-Bold.woff") format("woff"), 
-    url("/Druk-Wide-Medium/DrukTextWide-Bold.woff2") format("woff2");
-    font-weight: 700;
+    src: url("./assets/fonts/Druk-Wide-Medium/DrukWide-Bold.woff") format("woff"), 
+    url("/Druk-Wide-Medium/DrukWide-Bold.woff2") format("woff2");
+    font-weight: 600;
     font-style: normal;
     font-display: block;
 }
@@ -40,7 +40,7 @@
     font-family: "SourceSansPro";
     src: url("./assets/fonts/SourceSansPro/SourceSansPro-Semibold.woff") format("woff"), 
     url("./assets/fonts/SourceSansPro/SourceSansPro-Semibold.woff2") format("woff2");
-    font-weight: 800;
+    font-weight: 700;
     font-style: normal;
     font-display: block;
 }

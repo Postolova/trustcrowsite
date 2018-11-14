@@ -1,11 +1,11 @@
 .order {
-    min-height: rem(650px);
+    min-height: 650px;
     background-color: #333589;
-    padding: rem(60px) 0 rem(50px) 0;
+    padding: 60px 0 50px 0;
 }
 
 .order__title {
-    margin-bottom: rem(20px);
+    margin-bottom: 20px;
     @include tablets {
         text-align: center;
     }
@@ -13,9 +13,9 @@
 
 .order__subtitle {
     color: #fff;
-    font-size: rem(18px);
-    max-width: rem(660px);
-    margin-bottom: rem(30px);
+    font-size: 18px;
+    max-width: 660px;
+    margin-bottom: 30px;
     @include tablets {
         text-align: center;
     }
@@ -23,7 +23,7 @@
 
 .order-box {
     width: 100%;
-    min-height: rem(500px);
+    min-height: 500px;
     background-color: #f9f9f9;
     border-radius: 4px;
     display: flex;
@@ -44,28 +44,28 @@
     border-radius: 4px;
     width: 25%;
     height: 100%;
-    padding: rem(25px) rem(10px) rem(25px) rem(25px);
+    padding: 25px 10px 25px 25px;
     @include tablets {
         width: 95%;
         margin: 0 auto;
-        padding: rem(25px) rem(0px) rem(0px) rem(0px);
+        padding: 25px 0px 0px 0px;
     }
 }
 
 .order__options-title {
-    margin-bottom: rem(15px);
+    margin-bottom: 15px;
     text-transform: uppercase;
     font-family: "Druk-Wide";
     font-weight: 500;
-    margin-bottom: rem(30px);
+    margin-bottom: 30px;
     color: #1f364a;
 }
 
 .form-main {
     width: 73%;
     color: #1f364a;
-    padding: rem(30px) 0;
-    margin: rem(10px);
+    padding: 30px 0;
+    margin: 10px;
     border-radius: 3px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     background-color: #fff;
@@ -91,13 +91,13 @@
 }
 
 .options__item {
-    margin-bottom: rem(10px);
+    margin-bottom: 10px;
     @include tablets {
         width: 23%;
     }
     @include phones {
-        min-width: rem(230px);
-        margin-right: rem(20px);
+        min-width: 230px;
+        margin-right: 20px;
     }
 }
 
@@ -111,8 +111,8 @@
 .option__item-tariff:checked+.option__item-tariff--styling::before {
     transform: scale(1);
     background-color: #fff;
-    height: rem(30px);
-    width: rem(30px);
+    height: 30px;
+    width: 30px;
     @include tablets {
         transform: rotate(90deg);
     }
@@ -135,12 +135,12 @@
     display: block;
     background-color: #fff;
     width: 100%;
-    height: rem(80px);
+    height: 80px;
     border-radius: 4px;
-    margin-bottom: rem(10px);
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    padding: rem(15px) 0 rem(15px) rem(20px);
+    padding: 15px 0 15px 20px;
     color: #35373a;
     font-weight: 600;
     position: relative;
@@ -151,41 +151,40 @@
         text-align: center;
         content: url('assets/images/arrow.svg');
         position: absolute;
-        top: rem(24px);
-        right: rem(24px);
-        padding-left: rem(2px);
-        padding-top: rem(6px);
+        top: 24px;
+        right: 24px;
+        padding-left: 2px;
+        padding-top: 6px;
         background-color: #fff;
         border-radius: 50%;
-        width: rem(17px);
-        height: rem(17px);
+        width: 17px;
+        height: 17px;
         transform: scale(0);
     }
     @include tablets {
         width: 100%;
-        padding: rem(15px) 0 rem(15px) rem(10px);
+        padding: 15px 0 15px 10px;
         &::before {
-            top: rem(32px);
-            right: rem(7px);
+            top: 32px;
+            right: 7px;
         }
     }
     @include phones {
-        padding: rem(15px) 0 rem(15px) rem(20px);
+        padding: 15px 0 15px 20px;
         &::before {
-            top: rem(24px);
-            right: rem(24px);
+            top: 24px;
+            right: 24px;
         }
     }
 }
 
 .option__item-arrow {
-    width: rem(30px);
-    height: rem(30px);
+    width: 30px;
+    height: 30px;
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    display: flex;
-    justify-content: center;
+    display: flex; justify-content: cente;
     align-items: center;
     right: 5%;
     top: 22%;
@@ -195,20 +194,20 @@
     font-family: "Druk-Wide";
     font-weight: 500;
     text-transform: uppercase;
-    font-size: rem(12px);
+    font-size: 12px;
     color: #3fad89;
     @include tablets {
-        font-size: rem(12px);
+        font-size: 12px;
     }
 }
 
 .option__item-price {
-    font-size: rem(24px);
+    font-size: 24px;
     color: #35373a;
 }
 
 .right-arrow {
-    height: rem(25px);
+    height: 25px;
     fill: #44bbff;
 }
 
@@ -216,18 +215,18 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin-right: rem(10px);
+    margin-right: 10px;
     position: relative;
     @include phones {
         margin-right: 0;
-        margin-bottom: rem(20px);
+        margin-bottom: 20px;
     }
 }
 
 .form__row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: rem(25px) 0;
+    margin: 25px 0;
     @include phones {
         display: flex;
         flex-direction: column;
@@ -237,7 +236,7 @@
 .form__row-areas {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin-bottom: rem(20px);
+    margin-bottom: 20px;
     @include phones {
         display: flex;
         flex-direction: column;
@@ -246,8 +245,8 @@
 
 .form__input {
     width: 100%;
-    height: rem(45px);
-    padding-left: rem(10px);
+    height: 45px;
+    padding-left: 10px;
     border-radius: 4px;
     border: 1px solid #ddd;
     background-color: #fff;
@@ -261,7 +260,7 @@
 }
 
 .form__title {
-    margin-bottom: rem(10px);
+    margin-bottom: 10px;
 }
 
 .form__select {
@@ -276,10 +275,10 @@
 
 .form__select-arrow-circle {
     display: block;
-    width: rem(24px);
-    height: rem(24px);
-    right: rem(9px);
-    top: rem(41px);
+    width: 24px;
+    height: 24px;
+    right: 9px;
+    top: 41px;
     border-radius: 50%;
     background-color: #3fad89;
     position: absolute;
@@ -289,17 +288,17 @@
     display: block;
     right: 0px;
     top: 1px;
-    width: rem(24px);
-    height: rem(24px);
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
     position: absolute;
     background: url('./assets/images/arrow-down.svg') center no-repeat;
 }
 
 .form__area {
-    height: rem(100px);
+    height: 100px;
     resize: none;
-    padding: rem(5px);
+    padding: 5px;
 }
 
 .form__input-file {
@@ -308,10 +307,10 @@
 
 .form__block-label {
     border: 1px dashed #3fad89;
-    height: rem(100px);
+    height: 100px;
     display: flex;
     border-radius: 4px;
-    font-size: rem(14px);
+    font-size: 14px;
     align-items: center;
     font-weight: 600;
     text-align: center;
@@ -321,10 +320,10 @@
 
 .form__filename {
     display: block;
-    padding: rem(32px) rem(10px);
+    padding: 32px 10px;
     text-align: center;
     color: #3fad89;
-    font-size: rem(14px);
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -332,14 +331,14 @@
     border-radius: 4px;
     border-top: 4px solid #eeeeee;
     border-bottom: 4px solid #eeeeee;
-    padding: rem(15px) 0;
+    padding: 15px 0;
 }
 
 .form__block-check {
     display: inline-block;
     vertical-align: middle;
     color: #000;
-    margin: rem(10px) 0;
+    margin: 10px 0;
     cursor: pointer;
 }
 
@@ -364,12 +363,12 @@
 .form__checkbox--styling {
     display: inline-block;
     position: relative;
-    min-width: rem(19px);
-    max-width: rem(19px);
-    top: rem(3px);
-    height: rem(19px);
+    min-width: 19px;
+    max-width: 19px;
+    top: 3px;
+    height: 19px;
     border-radius: 50%;
-    margin-right: rem(8px);
+    margin-right: 8px;
     border: 1px solid #eeeeee;
     background: url('./assets/images/checkmark.svg') center center no-repeat;
     &::before {
@@ -378,8 +377,8 @@
         background: url('./assets/images/checkmark.svg') center center no-repeat;
         background-color: #44bbff;
         border-radius: 50%;
-        width: rem(17px);
-        height: rem(17px);
+        width: 17px;
+        height: 17px;
         transform: scale(0);
     }
 }
@@ -395,7 +394,7 @@
     color: #fff;
     font-family: "Druk-Wide";
     text-transform: uppercase;
-    height: rem(50px);
+    height: 50px;
     border-radius: 4px;
     transition: all .3s;
     &:hover {
@@ -407,5 +406,5 @@
 .form__radio-percent {
     font-weight: 600;
     color: #3fad89;
-    margin-left: rem(15px);
+    margin-left: 15px;
 }

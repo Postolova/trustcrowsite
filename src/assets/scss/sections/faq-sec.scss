@@ -1,16 +1,16 @@
 .faq {
     background-color: #f9f9f9;
-    min-height: rem(600px);
-    padding-bottom: rem(51px);
-    padding-top: rem(16px);
+    min-height: 600px;
+    padding-bottom: 51px;
+    padding-top: 16px;
     @include hd {
-        padding-bottom: rem(150px);
+        padding-bottom: 150px;
     }
     @include tablets {
         &::after {
             display: block;
             content: '';
-            height: rem(133px);
+            height: 133px;
         }
     }
 }
@@ -38,13 +38,13 @@
 
 .faq-title {
     width: 100%;
-    margin: rem(24px) 0 rem(0px) 0;
-    padding-bottom: rem(28px);
+    margin: 24px 0 0px 0;
+    padding-bottom: 28px;
     border-bottom: 4px solid #e6e6e6;
     border-radius: 4px;
     @include phones {
         margin: 0;
-        font-size: rem(26px);
+        font-size: 26px;
     }
 }
 
@@ -69,7 +69,7 @@
 
 .question {
     width: 100%;
-    padding-bottom: rem(30px);
+    padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -100,9 +100,9 @@
     width: 30%;
     height: 100%;
     background-color: #fff;
-    padding: rem(20px);
+    border-radius: 4px;
+    padding: 20px;
     margin-top: 30px;
-    border: 1px solid lightgrey;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     @include tablets {
         display: none;
@@ -111,15 +111,15 @@
 
 .faq__form-title {
     font-family: "Druk-Wide";
-    font-size: rem(18px);
+    font-size: 18px;
     font-weight: 500;
     color: #1f364a;
-    max-width: rem(201px);
-    margin-bottom: rem(18px);
+    max-width: 201px;
+    margin-bottom: 18px;
 }
 
 .faq__form-subtitle {
-    max-width: rem(308px);
+    max-width: 308px;
     color: #35373a;
 }
 
@@ -127,19 +127,19 @@
     display: flex;
     flex-direction: column;
     color: #35373a;
-    margin: rem(15px) 0;
+    margin: 15px 0;
 }
 
 .faq-name {
-    margin-bottom: rem(5px);
+    margin-bottom: 5px;
     font-weight: 600;
-    font-size: rem(14px);
+    font-size: 14px;
 }
 
 .faq-input {
-    height: rem(50px);
-    border-radius: rem(4px);
-    padding-left: rem(10px);
+    height: 50px;
+    border-radius: 4px;
+    padding-left: 10px;
     border: 1px solid lightgrey;
     &:hover {
         border: 1px solid #31baff;
@@ -150,22 +150,22 @@
 }
 
 .faq-area {
-    height: rem(100px);
+    height: 100px;
     resize: none;
-    border-radius: rem(4px);
-    padding: rem(10px);
+    border-radius: 4px;
+    padding: 10px;
 }
 
 .faq-submit {
     width: 100%;
-    height: rem(50px);
+    height: 50px;
     text-transform: uppercase;
     font-family: 'Druk-Wide';
     font-weight: 500;
     border-radius: 4px;
     background-color: #44bbff;
     color: #ffffff;
-    font-size: rem(12px);
+    font-size: 12px;
     transition: all .3s;
     &:hover {
         background-color: #31dbff;
@@ -174,8 +174,8 @@
 }
 
 .home-icon__image {
-    width: rem(13px);
-    height: rem(13px);
+    width: 13px;
+    height: 13px;
 }
 
 .bread-crumbs__list {
@@ -191,7 +191,7 @@
 }
 
 .bread-crumbs__item {
-    font-size: rem(12px);
+    font-size: 12px;
     display: flex;
     align-items: center;
     &:last-child {
@@ -202,9 +202,9 @@
     &:after {
         content: "";
         display: inline-block;
-        width: rem(4px);
-        height: rem(4px);
-        margin: 0 rem(10px);
+        width: 4px;
+        height: 4px;
+        margin: 0 10px;
         background-color: #333589;
         border-radius: 50%;
         vertical-align: middle;
@@ -233,13 +233,13 @@
     height: 100%;
     font-weight: 500;
     display: block;
-    padding-right: rem(100px);
+    padding-right: 100px;
     @include tablets {
         width: 90%;
-        font-size: rem(12px);
+        font-size: 12px;
     }
     @include phones {
-        padding-right: rem(70px);
+        padding-right: 70px;
     }
     transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     &:after {
@@ -247,22 +247,22 @@
         content: url("./assets/images/plus.svg");
         position: absolute;
         right: 0;
-        top: rem(30px);
+        top: 30px;
         transition: all .3s;
     }
 }
 
 .panel {
-    padding: 0 rem(18px);
+    padding: 0 18px;
     max-height: 0;
     width: 90%;
     overflow: hidden;
     transition: all 0.3s ease-out;
-    left: rem(-18px);
+    left: -18px;
     position: relative;
-    top: rem(10px);
+    top: 10px;
     @include phones {
-        top: rem(15px);
+        top: 15px;
         width: 98%;
     }
 }
