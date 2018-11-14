@@ -4,6 +4,9 @@
     @include tablets {
         padding: 30px 0;
     }
+    @include phones {
+        padding: 50px 0;
+    }
 }
 
 .partners-title {
@@ -12,15 +15,14 @@
 
 .partners__subtitle {
     width: 451px;
-    margin: 0 auto;
-    height: 58px;
+    margin: 0 auto 42px auto;
     color: #5d6368;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
     @include phones {
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 57px;
     }
 }
 
@@ -111,6 +113,7 @@
     }
     @include phones {
         margin-bottom: 10px;
+        padding-bottom: 24px;
     }
 }
 
@@ -268,11 +271,17 @@
         font-size: 14px;
         font-weight: 500;
         margin-bottom: 22px;
+        @include phones {
+            margin-bottom: 12px;
+        }
     }
     &__position {
         color: #5d6368;
         font-size: 14px;
         line-height: 20px;
+        @include phones {
+            width: 140px;
+        }
     }
     @include tablets {
         width: 100%;

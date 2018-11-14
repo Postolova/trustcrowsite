@@ -1,7 +1,9 @@
 const newsBlocks = document.querySelectorAll('.news__blocks');
 const pagination = document.querySelector('.pagination__box');
 const newsBtn = document.querySelectorAll('.news__pagination-tab');
-
+if (document.getElementById('news__pagination-back').hasAttribute('disabled')) {
+	this.style.cursor = 'none';
+}
 for (const block of newsBlocks) {
 	block.style.display = 'none';
 }

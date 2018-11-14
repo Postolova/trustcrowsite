@@ -1,11 +1,14 @@
 .order {
     min-height: 650px;
     background-color: #333589;
-    padding: 60px 0 50px 0;
+    padding: 80px 0;
+    @include phones {
+        padding: 60px 0 56px 0;
+    }
 }
 
 .order__title {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     @include tablets {
         text-align: center;
     }
@@ -18,7 +21,7 @@
     color: #fff;
     font-size: 20px;
     max-width: 660px;
-    margin-bottom: 32px;
+    margin-bottom: 2px;
     @include tablets {
         text-align: center;
     }
@@ -51,7 +54,7 @@
     border-radius: 4px;
     width: 25%;
     height: 100%;
-    padding: 25px 10px 25px 25px;
+    padding: 30px 10px 25px 30px;
     @include tablets {
         width: 95%;
         margin: 0 auto;
@@ -78,7 +81,7 @@
 .form-main {
     width: 73%;
     color: #1f364a;
-    padding: 30px 0;
+    padding: 18px 0;
     margin: 10px;
     border-radius: 3px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -89,6 +92,8 @@
     }
     @include phones {
         width: 100%;
+        padding-top: 0;
+        ;
     }
 }
 
@@ -237,17 +242,19 @@
     position: relative;
     @include phones {
         margin-right: 0;
-        margin-bottom: 20px;
+        margin-bottom: 9px;
     }
 }
 
 .form__row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 25px 0;
+    margin: 20px 0;
     @include phones {
         display: flex;
         flex-direction: column;
+        margin: 0;
+        padding-top: 20px;
     }
 }
 
@@ -258,6 +265,7 @@
     @include phones {
         display: flex;
         flex-direction: column;
+        margin-bottom: 10px;
     }
 }
 
@@ -278,9 +286,16 @@
 }
 
 .form__title {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     font-size: 14px;
     font-weight: 600;
+    width: 75%;
+    @include tablets {
+        width: 86%;
+    }
+    @include phones {
+        width: 95%;
+    }
 }
 
 .form__select {
@@ -292,6 +307,7 @@
     position: relative;
     color: #35373a;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .form__select-arrow-circle {
@@ -353,6 +369,9 @@
     border-top: 4px solid #eeeeee;
     border-bottom: 4px solid #eeeeee;
     padding: 15px 0;
+    @include phones {
+        padding: 20px 0;
+    }
 }
 
 .form__block-check {
@@ -361,13 +380,15 @@
     color: #000;
     margin: 10px 0;
     cursor: pointer;
-}
-
-.form__radio-name:hover~.form__checkbox--styling::before {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: red;
+    @include phones {
+        margin-top: 0;
+        margin-bottom: 17px;
+        display: flex;
+        flex-wrap: wrap;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .form__checkbox {
@@ -391,6 +412,7 @@
     border-radius: 50%;
     margin-right: 8px;
     border: 1px solid #eeeeee;
+    transition: all .3s;
     background: url('./assets/images/checkmark.svg') center center no-repeat;
     &::before {
         display: block;
@@ -404,11 +426,6 @@
     }
 }
 
-.form__checkbox--styling:hover {
-    background-color: #44bbff;
-    opacity: 0.3;
-}
-
 .form__submit {
     width: 100%;
     background-color: #44bbff;
@@ -420,9 +437,19 @@
     transition: all .3s;
     font-size: 12px;
     font-weight: 500;
+    @include phones {
+        margin-top: 11px;
+    }
     &:hover {
         background-color: #31dbff;
         box-shadow: 0px 1px 7px #44bbff;
+    }
+}
+
+.form__radio-name {
+    @include phones {
+        display: block;
+        width: 207px;
     }
 }
 
@@ -430,4 +457,8 @@
     font-weight: 600;
     color: #3fad89;
     margin-left: 15px;
+    @include phones {
+        display: block;
+        margin-left: 25px;
+    }
 }

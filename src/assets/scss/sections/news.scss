@@ -4,6 +4,9 @@
     @include tablets {
         padding: 40px 0;
     }
+    @include phones {
+        padding: 50px 0 25px 0;
+    }
 }
 
 .news__header {
@@ -11,6 +14,9 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 45px;
+    @include phones {
+        margin-bottom: 35px;
+    }
 }
 
 .news__socials {
@@ -66,6 +72,9 @@
     background-color: #fff;
     width: 100%;
     margin-bottom: 20px;
+    @include phones {
+        margin-bottom: 10px;
+    }
     &-link {
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
         border-radius: 4px;
@@ -136,8 +145,10 @@
     padding-right: 5px;
     padding-bottom: 15px;
     line-height: 28px;
+    font-size: 18px;
     @include phones {
-        margin-bottom: 33px;
+        margin-bottom: 10px;
+        color: #35373a;
     }
 }
 

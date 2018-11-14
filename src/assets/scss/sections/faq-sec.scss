@@ -13,6 +13,12 @@
             height: 133px;
         }
     }
+    @include phones {
+        padding-top: 20px;
+        &::after {
+            display: none
+        }
+    }
 }
 
 .header__faq {
@@ -38,7 +44,7 @@
 
 .faq-title {
     width: 100%;
-    margin: 24px 0 0px 0;
+    margin-top: 24px;
     padding-bottom: 28px;
     border-bottom: 4px solid #e6e6e6;
     border-radius: 4px;
@@ -69,7 +75,6 @@
 
 .question {
     width: 100%;
-    padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -101,7 +106,7 @@
     height: 100%;
     background-color: #fff;
     border-radius: 4px;
-    padding: 20px;
+    padding: 36px 30px 30px 30px;
     margin-top: 30px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     @include tablets {
@@ -127,7 +132,7 @@
     display: flex;
     flex-direction: column;
     color: #35373a;
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 .faq-name {
@@ -140,7 +145,7 @@
     height: 50px;
     border-radius: 4px;
     padding-left: 10px;
-    border: 1px solid lightgrey;
+    border: 1px solid #dddddd;
     &:hover {
         border: 1px solid #31baff;
     }
@@ -223,11 +228,11 @@
     text-align: left;
     outline: none;
     position: relative;
-    padding-top: rem(30px);
+    padding-top: 31px;
     transition: 0.4s;
     color: #35373a;
     font-family: "Druk-Wide";
-    font-size: rem(14px);
+    font-size: 14px;
     text-transform: uppercase;
     display: block;
     height: 100%;
@@ -253,14 +258,15 @@
 }
 
 .panel {
-    padding: 0 18px;
+    padding: 0px 18px 0 18px;
     max-height: 0;
     width: 90%;
     overflow: hidden;
     transition: all 0.3s ease-out;
     left: -18px;
     position: relative;
-    top: 10px;
+    top: 20px;
+    margin-bottom: 30px;
     @include phones {
         top: 15px;
         width: 98%;

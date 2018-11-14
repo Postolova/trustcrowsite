@@ -107,4 +107,8 @@
 
 .footer__linl-pointer {
     transition: all .3s;
+    opacity: 0.8;
+    &:hover {
+        opacity: 1;
+    }
 }
