@@ -29,7 +29,7 @@
 }
 
 .popup-links {
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: center;
     flex-direction: column;
     text-align: center;
@@ -132,6 +132,10 @@
     }
     @include phones {
         margin: 0;
+        margin-bottom: 39px;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 

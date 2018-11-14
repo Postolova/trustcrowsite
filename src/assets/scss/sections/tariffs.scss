@@ -2,7 +2,7 @@
     text-align: center;
     padding-bottom: 80px;
     @include tablets {
-        padding: 23px 0 50px 0;
+        padding: 22px 0 50px 0;
     }
 }
 
@@ -53,7 +53,6 @@
 
 .tariffs__subtitle {
     width: 60%;
-    height: 58px;
     margin: 0 auto;
     margin-bottom: 60px;
     color: #5d6368;
@@ -61,6 +60,8 @@
     font-weight: 400;
     @include phones {
         width: 100%;
+        font-size: 18px;
+        margin-bottom: 30px;
     }
 }
 
@@ -69,6 +70,9 @@
     margin-bottom: 70px;
     @include tablets {
         flex-direction: column;
+    }
+    @include phones {
+        margin-bottom: 36px;
     }
 }
 
@@ -167,7 +171,7 @@
 }
 
 .tariff-title {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 }
 
 .tariffs__item-name {
@@ -227,14 +231,11 @@
         border: 2px solid #3fad89;
     }
     @include phones {
-        min-width: 200px;
+        min-width: 210px;
         padding-right: 20px;
         margin-right: 20px;
-        border-right: 1px solid #eeeeee;
+        border-right: 4px solid #eeeeee;
         border-radius: 4px;
-    }
-    @include phones-sm {
-        min-width: 180px;
     }
 }
 
@@ -269,6 +270,9 @@
     border-radius: 4px;
     background-color: #eeeeee;
     margin-bottom: 15px;
+    @include phones {
+        display: none;
+    }
 }
 
 .tariffs__comments {
@@ -335,6 +339,10 @@
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 19px;
+    @include phones {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
 }
 
 .services-subtitle {
@@ -344,7 +352,8 @@
     font-weight: 400;
     margin-bottom: 30px;
     @include phones {
-        margin-bottom: 60px;
+        margin-bottom: 20px;
+        font-size: 12px;
     }
 }
 
@@ -354,8 +363,7 @@
         min-height: 240px;
     }
     @include phones {
-        min-height: 167px;
-        min-width: 200px;
+        min-height: 150px;
     }
 }
 
@@ -365,7 +373,7 @@
     height: 4px;
     border-radius: 4px;
     background-color: #eeeeee;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 }
 
 .step__sale {
@@ -388,6 +396,9 @@
     font-family: "Druk-Wide";
     font-weight: 500;
     margin-bottom: 30px;
+    @include phones {
+        margin-bottom: 15px;
+    }
 }
 
 .steps__link {
@@ -401,6 +412,7 @@
     margin-bottom: 40px;
     @include phones {
         overflow: auto;
+        margin-bottom: 30px;
     }
 }
 
@@ -415,7 +427,8 @@
         margin-right: 0;
     }
     @include phones {
-        min-width: 230px;
+        padding-left: 20px;
+        min-width: 250px;
         margin-left: 5px;
         margin-bottom: 15px;
     }
@@ -424,7 +437,7 @@
 .steps__item-tariff {
     width: 24%;
     @include phones {
-        min-width: 230px;
+        min-width: 250px;
         margin-left: 5px;
         margin-bottom: 15px;
     }

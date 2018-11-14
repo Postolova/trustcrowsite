@@ -3,6 +3,9 @@
     height: 100%;
     background-color: #f4f4f4;
     text-align: center;
+    @include phones {
+        padding: 60px 0 38px 0;
+    }
 }
 
 .works__title {
@@ -14,8 +17,8 @@
     @include tablets {
         margin-bottom: 70px;
     }
-    @include phones-sm {
-        margin-bottom: 80px;
+    @include phones {
+        margin-bottom: 26px;
     }
 }
 
@@ -61,6 +64,7 @@
     @include phones {
         min-width: 160px;
         margin-right: 20px;
+        margin-bottom: 20px;
     }
     &:hover {
         background-color: #31baff;
@@ -132,6 +136,7 @@
     }
     @include phones {
         margin-bottom: 15px;
+        width: 75%;
     }
 }
 
@@ -194,7 +199,7 @@
         color: rgba(0, 0, 0, 0.100);
     }
     @include phones {
-        bottom: 110px;
+        bottom: 120px;
     }
 }
 

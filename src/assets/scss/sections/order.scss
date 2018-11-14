@@ -9,15 +9,22 @@
     @include tablets {
         text-align: center;
     }
+    @include phones {
+        margin-bottom: 24px;
+    }
 }
 
 .order__subtitle {
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     max-width: 660px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     @include tablets {
         text-align: center;
+    }
+    @include phones {
+        font-size: 18px;
+        margin-bottom: 20px;
     }
 }
 
@@ -50,6 +57,9 @@
         margin: 0 auto;
         padding: 25px 0px 0px 0px;
     }
+    @include phones {
+        padding: 20px 0px 0px 20px;
+    }
 }
 
 .order__options-title {
@@ -59,6 +69,10 @@
     font-weight: 500;
     margin-bottom: 30px;
     color: #1f364a;
+    font-size: 14px;
+    @include phones {
+        margin-bottom: 15px;
+    }
 }
 
 .form-main {
@@ -72,6 +86,9 @@
     @include tablets {
         width: 95%;
         margin: 0 auto;
+    }
+    @include phones {
+        width: 100%;
     }
 }
 
@@ -184,7 +201,8 @@
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    display: flex; justify-content: cente;
+    display: flex;
+    justify-content: cente;
     align-items: center;
     right: 5%;
     top: 22%;
@@ -261,16 +279,19 @@
 
 .form__title {
     margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .form__select {
     border: 1px solid #ddd;
     background-color: transparent;
-    color: #1f364a;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     position: relative;
+    color: #35373a;
+    font-size: 18px;
 }
 
 .form__select-arrow-circle {
@@ -397,6 +418,8 @@
     height: 50px;
     border-radius: 4px;
     transition: all .3s;
+    font-size: 12px;
+    font-weight: 500;
     &:hover {
         background-color: #31dbff;
         box-shadow: 0px 1px 7px #44bbff;
