@@ -43,7 +43,7 @@ html(lang="ru-RU")
                                     a.bread-crumbs__link(href="news.html") Новости
                                 li.bread-crumbs__item
                                     p.bread-crumbs__link Какие анкоры использовать в крауд-ссылках?
-                        .news-link__pic
+                        .news-link__pic(style="background-image:url(./images/news-link_pic.png)")
                         .news-page__heading.news-link__head
                             h1.main-title.news-page__title.news-link__title Какие анкоры использовать в крауд-ссылках?
                             .news__socials.news-link__socials
@@ -62,72 +62,65 @@ html(lang="ru-RU")
                                         a.socials__link(href="#0", target="_blank")
                                             +image('social-telegram.svg', 'icon', 'socials-icon')
                             time.news-link__date(pubdate)  21 октября 2018
-                        .news-link__content
-                            ul.news-link__list
-                                li.news-link__item
-                                    .news-link__item-desc Один из самых популярных вопросов клиентов — как правильно составить анкор лист для крауд маркетинга. Все хотят преследовать несколько важных целей:
-                                        ul.news-link__item-list
-                                            li.news-link__item-item.news-link__item-item--num 
-                                                span.news-link__item-text--left.news-link__item-text Не попасть под санкции
-                                            li.news-link__item-item.news-link__item-item--num 
-                                                span.news-link__item-text Получить рост позиций по ключам в анкорах
-                                            li.news-link__item-item.news-link__item-item--num 
-                                                span.news-link__item-text Получить переходы по ссылкам из крауд постов на свой сайт
-                                    .news-link__item-subtitle В этой статье я кратко расскажу, как сделать всё правильно и ничего не пропустить.
-                                li.news-link__item
-                                    .news-link__item-title Какие бывают типы анкоров
-                                    .news-link__item-desc Какие бывают типы анкоров
-                                        ul.news-link__item-list
-                                            li.news-link__item-item.news-link__item-item--disc 
-                                                span.news-link__item-text текст с запросом (ключевой фразой)
-                                            li.news-link__item-item.news-link__item-item--disc 
-                                                span.news-link__item-text естественный текст
-                                            li.news-link__item-item.news-link__item-item--disc 
-                                                span.news-link__item-text сама ссылка (безанкор)
-                                            li.news-link__item-item.news-link__item-item--disc 
-                                                span.news-link__item-text картинка
-                                    .news-link__item-subtitle Быстро пройдёмся по каждому типу отдельно.
-                                li.news-link__item
-                                    .news-link__item-title Текст с запросом
-                                    .news-link__item-desc Просто вписываем фразу с интересующим нас ключом. Обычно берётся запрос из title / h1 страницы, как наиболее приоритетный.
-                                    .news-link__item-subtitle Например: купить квартиру в Киеве
-                                li.news-link__item
-                                    .news-link__item-title Естественный текст
-                                    .news-link__item-desc В анкор идут любые быстрые фразы, к которым люди обычно прикрепляют ссылки.
-                                    .news-link__item-subtitle Например: тут, на сайте, по ссылке и так далее.
-                                li.news-link__item
-                                    .news-link__item-title Безанкор
-                                    .news-link__item-desc В анкор идёт сама же ссылка.
-                                    .news-link__item-subtitle Пример: #[a(href="https://crowd-marketing.pro/").steps__link https://crowd-marketing.pro/]
-                                li.news-link__item
-                                    .news-link__item-title Картинка
-                                    .news-link__item-desc В пост вставляется тематическая картинка и на неё вешается ссылка на продвигаемую страницу сайта. Ключевая фраза уместно вписывается в околоанкорный текст поста и по-прежнему помогает двигать позиции.
-                                    .news-link__item-subtitle Это просто крутейший лайфак для крауд-маркетолога, так как на ресурсах, где всегда удаляют обычные ссылки, нормально пропускают и разрешают постить ссылки-картинки.
-                                li.news-link__item
-                                    .news-link__item-title Как распределять анкоры, чтобы не попасть под санкции
-                                    .news-link__item-desc Крауд-маркетинг максимально безопасный способ набрать качественную ссылочную массу. В нашей практике нет случаев, когда клиентский сайт получал пессимизацию после проведения размещений.
-                                    .news-link__item-desc Тем не менее, я максимально уверен, то стоит соблюдать элементарные правила распределения анкоров, тем самым избежать всех рисков и получать максимальный эффект от ссылок.
-                                    .news-link__item-desc Основной упор стоит делать на безанкорные ссылки, как на самые безопасные и продуктивнее. Такие ссылки хорошо воспринимаются поисковыми системами и отлично видны в тексте поста (на них кликают).
-                                    .news-link__item-subtitle Дальше по приоритету — анкорные ссылки и ссылки с естественным анкором.
-                            form.faq__form.news-link__form
-                                h2.faq__form-title.news-link__form-title Нужна такая услуга?
-                                span.faq__form-subtitle Закажите ее в этой форме
-                                label.faq-label 
-                                    span.faq-name Имя
-                                    input(type="text").faq-input
-                                label.faq-label 
-                                    span.faq-name Email
-                                    input(type="email").faq-input
-                                label.faq-label 
-                                    span.faq-name Адрес вашего сайта
-                                    input(type="text").faq-input
-                                label.faq-label 
-                                    span.faq-name Задача
-                                    input(type="text").faq-input
-                                button(type="submit").faq-submit Отправить
-                        .news-link__author
-                            .news-link__author-avatar
-                            .news-link__author-about
-                                .news-link__author-name Василий Романов
-                                .news-link__author-desc Основатель сервисов крауд-маркетинга trustcrowd.link
+                        .news-link__wrapper
+                            .news-link__content
+                                p Один из самых популярных вопросов клиентов — как правильно составить анкор лист для крауд маркетинга. Все хотят преследовать несколько важных целей:
+                                ol
+                                    li Не попасть под санкции
+                                    li Получить рост позиций по ключам в анкорах
+                                    li Получить переходы по ссылкам из крауд постов на свой сайт
+                                p В этой статье я кратко расскажу, как сделать всё правильно и ничего не пропустить.
+                                h2 Какие бывают типы анкоров
+                                p Сразу определимся, что есть несколько типов анкоров ссылок:
+                                ul
+                                    li текст с запросом (ключевой фразой)
+                                    li естественный текст
+                                    li сама ссылка (безанкор)
+                                    li картинка
+                                p Быстро пройдёмся по каждому типу отдельно.
+                                h2 Текст с запросом
+                                p Просто вписываем фразу с интересующим нас ключом. Обычно берётся запрос из title / h1 страницы, как наиболее приоритетный.
+                                p Например: купить квартиру в Киеве
+                                h2 Естественный текст
+                                p В анкор идут любые быстрые фразы, к которым люди обычно прикрепляют ссылки.
+                                p Например: тут, на сайте, по ссылке и так далее.
+                                h2 Безанкор
+                                p В анкор идёт сама же ссылка. Пример: #[a(href="https://crowd-marketing.pro/") https://crowd-marketing.pro/]
+                                h2 Картинка
+                                p В пост вставляется тематическая картинка и на неё вешается ссылка на продвигаемую страницу сайта. Ключевая фраза уместно вписывается в околоанкорный текст поста и по-прежнему помогает двигать позиции.
+                                p Это просто крутейший лайфак для крауд-маркетолога, так как на ресурсах, где всегда удаляют обычные ссылки, нормально пропускают и разрешают постить ссылки-картинки.
+                                h2 Как распределять анкоры, чтобы не попасть под санкции
+                                p Крауд-маркетинг максимально безопасный способ набрать качественную ссылочную массу. В нашей практике нет случаев, когда клиентский сайт получал пессимизацию после проведения размещений.
+                                p Тем не менее, я максимально уверен, то стоит соблюдать элементарные правила распределения анкоров, тем самым избежать всех рисков и получать максимальный эффект от ссылок.
+                                p Основной упор стоит делать на безанкорные ссылки, как на самые безопасные и продуктивнее. Такие ссылки хорошо воспринимаются поисковыми системами и отлично видны в тексте поста (на них кликают).
+                                p Дальше по приоритету — анкорные ссылки и ссылки с естественным анкором.
+                                
+                                .news-link__author
+                                    .news-link__author-avatar(style="background-image: url(./images/news-link_ava.png)")
+                                    .news-link__author-about
+                                        .news-link__author-name Василий Романов
+                                        .news-link__author-desc Основатель сервисов крауд-маркетинга trustcrowd.link
+
+                            .news-link__sidebar
+                                .form__success
+                                    img(src="images/success.svg", alt="Success")
+                                    .success__heading Спасибо!<br>Ваша заявка отправлена
+                                    .success__text Мы скоро свяжемся с вами
+                                form.faq__form.news-link__form
+                                    h2.faq__form-title.news-link__form-title Нужна такая услуга?
+                                    span.faq__form-subtitle Закажите ее в этой форме
+                                    label.input-wrap
+                                        span Имя
+                                        input(type="text").faq-input
+                                    label.input-wrap
+                                        span Email
+                                        input(type="email").faq-input
+                                    label.input-wrap 
+                                        span Адрес вашего сайта
+                                        input(type="text").faq-input
+                                    label.input-wrap
+                                        span Задача
+                                        input(type="text").faq-input
+                                    button(type="submit").faq-submit Отправить
+                        
             include ./assets/pug/sections/footer.pug

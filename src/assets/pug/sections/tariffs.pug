@@ -1,4 +1,4 @@
-section.main-section.tariffs
+section.main-section.tariffs#tariffs
     .main-content
         header.tariffs__header
             ul.tariffs__header-list
@@ -14,8 +14,8 @@ section.main-section.tariffs
                     .tariffs__header-icon
                         +image("features-group.png", "распространения информации лого", "tariffs__header-icon-img")
                     .tariffs__header-desc Быстрое распространение информации по вашей ЦА
-        h2.main-title.tariffs-title Тарифы
-        h3.tariffs__subtitle Удобная сетка тарифов под ваши потребности, подберите самый оптимальный план для своего бизнеса
+        .main-title.tariffs-title Тарифы
+        .tariffs__subtitle Удобная сетка тарифов под ваши потребности, подберите самый оптимальный план для своего бизнеса
         .tariffs__box
             .tariffs__forum
                 h2.tariffs__forum-title Форумы
@@ -35,7 +35,7 @@ section.main-section.tariffs
                                 li.tariffs__item-item На 4-5 день публикуется ответ с аккаунта №1.
                                 li.tariffs__item-item Объем текста поста по ссылкой: от 350 символов.
                             .tariffs__item-line
-                            button.tariffs__item-btn(type="button") Заказать
+                            a(href="#order" data-order="tariff-1").tariffs__item-btn Заказать
                     li.tariffs__forum-item
                         .tariffs__item-top
                             .tariffs__item-popular популярный
@@ -49,7 +49,7 @@ section.main-section.tariffs
                                 li.tariffs__item-item Посты публикуются в обсуждаемых темах, где последний пост оставлен не позднее 30 дней назад.
                                 li.tariffs__item-item Объем текста поста по ссылкой: от 350 символов.
                             .tariffs__item-line
-                            button.tariffs__item-btn(type="button") Заказать
+                            a(href="#order" data-order="tariff-2").tariffs__item-btn Заказать
                     li.tariffs__forum-item
                         .tariffs__item-top
                             .tariffs__item-icon
@@ -65,9 +65,9 @@ section.main-section.tariffs
                                 li.tariffs__item-item Черный список сайтов запрещенных для публикации.
                                 li.tariffs__item-item В этот тариф включена дополнительная услуга: Улучшенные посты.
                             .tariffs__item-line
-                            button.tariffs__item-btn(type="button") Заказать
+                            a(href="#order" data-order="tariff-3").tariffs__item-btn Заказать
             .tariffs__comments
-                h2.tariffs__comments-title Комментарии в статьях
+                .tariffs__comments-title Комментарии в статьях
                 .tariffs__comments-item
                     .tariffs__item-top
                         .tariffs__item-icon
@@ -78,11 +78,11 @@ section.main-section.tariffs
                     ul.tariffs__item-list.tariffs__comments-list
                         li.tariffs__item-item Комментарий размещается в статье где есть свежие комментарии за последние 30 дней.
                         li.tariffs__item-item Объем текста поста по ссылкой: от 350 символов.
-                    button.tariffs__item-btn.tariffs__item-btn--width(type="button") Заказать
+                    a(href="#order"  data-order="tariff-4").tariffs__item-btn.tariffs__item-btn--width Заказать
         .tariffs__addServices
             .tariffs__addServices-titles
-                h2.services-title Дополнительные услуги
-                h3.services-subtitle При необходимости подключения каких-либо дополнительных услуг напишите об этом Вашему персональному менеджеру
+                .services-title Дополнительные услуги
+                .services-subtitle При необходимости подключения каких-либо дополнительных услуг напишите об этом Вашему персональному менеджеру
             .steps__box
                 ul.steps__list
                     li.steps__item.steps__item-tariff

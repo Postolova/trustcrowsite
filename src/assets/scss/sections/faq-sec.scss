@@ -6,19 +6,6 @@
     @include hd {
         padding-bottom: 150px;
     }
-    @include tablets {
-        &::after {
-            display: block;
-            content: '';
-            height: 133px;
-        }
-    }
-    @include phones {
-        padding-top: 20px;
-        &::after {
-            display: none
-        }
-    }
 }
 
 .header__faq {
@@ -30,28 +17,20 @@
     }
 }
 
-.active {
-    color: #3fad89 !important;
-}
+
 
 .accordion:hover {
     color: #3fad89;
+
+    .active:after {
+        transform: rotate(-45deg);
+    }
 }
 
-.active:after {
-    transform: rotate(-45deg);
-}
+
 
 .faq-title {
-    width: 100%;
-    margin-top: 24px;
-    padding-bottom: 28px;
     border-bottom: 4px solid #e6e6e6;
-    border-radius: 4px;
-    @include phones {
-        margin: 0;
-        font-size: 26px;
-    }
 }
 
 .faq__board {
@@ -59,6 +38,10 @@
     height: 100%;
     display: flex;
     justify-content: space-between;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .questions {
@@ -102,30 +85,24 @@
 }
 
 .faq__form {
-    width: 30%;
-    height: 100%;
     background-color: #fff;
+    padding: 30px;
     border-radius: 4px;
-    padding: 36px 30px 30px 30px;
-    margin-top: 30px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    @include tablets {
-        display: none;
+
+    &-title {
+        font-family: "Druk-Wide";
+        font-size: 18px;
+        font-weight: 500;
+        color: #1f364a;
+        margin-bottom: 18px;
     }
-}
 
-.faq__form-title {
-    font-family: "Druk-Wide";
-    font-size: 18px;
-    font-weight: 500;
-    color: #1f364a;
-    max-width: 201px;
-    margin-bottom: 18px;
-}
-
-.faq__form-subtitle {
-    max-width: 308px;
-    color: #35373a;
+    &-subtitle {
+        display: block;
+        color: #35373a;
+        margin-bottom: 20px;
+    }
 }
 
 .faq-label {
@@ -133,25 +110,6 @@
     flex-direction: column;
     color: #35373a;
     margin: 20px 0;
-}
-
-.faq-name {
-    margin-bottom: 5px;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.faq-input {
-    height: 50px;
-    border-radius: 4px;
-    padding-left: 10px;
-    border: 1px solid #dddddd;
-    &:hover {
-        border: 1px solid #31baff;
-    }
-    &:focus {
-        border: 1px solid #31baff;
-    }
 }
 
 .faq-area {
@@ -195,6 +153,19 @@
     opacity: 0.5;
 }
 
+.faq__sidebar {
+    padding-left: 60px;
+    margin-top: 30px;
+
+    @include tablets {
+        padding-left: 0;
+    }
+}
+
+.home-btn {
+    line-height: 0;
+}
+
 .bread-crumbs__item {
     font-size: 12px;
     display: flex;
@@ -223,6 +194,7 @@
 
 .accordion {
     cursor: pointer;
+    padding-bottom: 20px;
     min-width: 100%;
     border: none;
     text-align: left;
@@ -239,14 +211,17 @@
     font-weight: 500;
     display: block;
     padding-right: 100px;
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
     @include tablets {
         width: 90%;
         font-size: 12px;
     }
+
     @include phones {
         padding-right: 70px;
     }
-    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
     &:after {
         display: block;
         content: url("./assets/images/plus.svg");
@@ -258,15 +233,11 @@
 }
 
 .panel {
-    padding: 0px 18px 0 18px;
-    max-height: 0;
+    display: none;
     width: 90%;
-    overflow: hidden;
-    transition: all 0.3s ease-out;
-    left: -18px;
     position: relative;
-    top: 20px;
     margin-bottom: 30px;
+    
     @include phones {
         top: 15px;
         width: 98%;

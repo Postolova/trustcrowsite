@@ -4,11 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 	entry: {
-		common: './src/common.js',
-		index: './src/index.js',
-		faq: './src/faq.js',
-		news: './src/news.js',
-		news_link: './src/news_link.js'
+		common: './src/common.js'
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),

@@ -1,13 +1,11 @@
-const accordions = document.querySelectorAll('.accordion');
+var $ = require('jquery');
 
-for (const accordion of accordions) {
-	accordion.addEventListener('click', function () {
-		this.classList.toggle('active');
-		const panel = this.nextElementSibling;
-		if (panel.style.maxHeight) {
-			panel.style.maxHeight = null;
-		} else {
-			panel.style.maxHeight = panel.scrollHeight + 'px';
-		}
-	});
-}
+$('.question__item').click(function () {
+	if (!$(this).find('.accordion').hasClass('active')) {
+		$('.accordion').removeClass('active');
+		$('.answer').slideUp();
+
+		$(this).find('.accordion').addClass('active');
+		$(this).find('.answer').slideDown();
+	}
+});

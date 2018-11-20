@@ -1,0 +1,32 @@
+input, textarea {
+    border: 1px solid #dddddd;
+    transition: border-color .3s;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    
+    &:hover {
+        border: 1px solid #31baff;
+    }
+    &:focus {
+        border: 1px solid #31baff;
+    }
+
+    &.wpcf7-not-valid {
+        border-color: #ff9292;
+    }
+}
+
+.input-wrap {
+    display: block;
+    margin-bottom: 20px;
+
+    span {
+        color: #35373a;
+        display: block;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+

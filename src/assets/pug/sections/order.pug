@@ -1,34 +1,34 @@
 section.main-section.order#order
     .main-content
-        h1.main-title--white.order__title Заказ крауд-маркетинга
-        h5.order__subtitle Заполните форму ниже чтобы заказать услугу. После отправки с вами свяжется менеджер чтобы уточнить детали.
-        .order-box
+        .main-title--white.order__title Заказ крауд-маркетинга
+        .order__subtitle Заполните форму ниже чтобы заказать услугу. После отправки с вами свяжется менеджер чтобы уточнить детали.
+        #order.order-box
             form.form(action="form")
                 aside.order__options
                     .order__options-title Выберите тариф
                     .options
                         ul.options__list
-                            li.options__item
-                                label.option__label
-                                    input.option__item-tariff(type="radio", name="radio" checked)
+                            li.options__item.active
+                                label.option__label(data-ordered="tariff-1")
+                                    input.option__item-tariff(type="radio" name="radio" checked)
                                     span.option__item-tariff--styling
                                         span.option__item-name Новые темы
                                         span.option__item-price 3,5$/1,1$
                             li.options__item
-                                label.option__label
-                                    input.option__item-tariff(type="radio", name="radio")
+                                label.option__label(data-ordered="tariff-2")
+                                    input.option__item-tariff(type="radio" name="radio")
                                     span.option__item-tariff--styling
                                         span.option__item-name Обычный 
                                         span.option__item-price 4$/1,25$
                             li.options__item
-                                label.option__label
-                                    input.option__item-tariff(type="radio", name="radio")
+                                label.option__label(data-ordered="tariff-3")
+                                    input.option__item-tariff(type="radio" name="radio")
                                     span.option__item-tariff--styling
                                         span.option__item-name VIP
                                         span.option__item-price 8$/3,5$
                             li.options__item
-                                label.option__label
-                                    input.option__item-tariff(type="radio", name="radio")
+                                label.option__label(data-ordered="tariff-4")
+                                    input.option__item-tariff(type="radio" name="radio")
                                     span.option__item-tariff--styling
                                         span.option__item-name Комментарии
                                         span.option__item-price 3,5$
@@ -61,22 +61,30 @@ section.main-section.order#order
                                     span.form__filename Перетащите или кликните сюда чтобы выбрать .xls файл
                         .form__row-checkbox
                             label.form__block-check 
-                                input(type="checkbox").form__checkbox
+                                span
+                                    span                                    
+                                        input(type="checkbox").form__checkbox
                                 span.form__checkbox--styling
                                 span.form__radio-name Размещение исключительно кликабельных ссылок 
                                 span.form__radio-percent +20% к стоимости] 
                             label.form__block-check 
-                                input(type="checkbox").form__checkbox
+                                span
+                                    span
+                                        input(type="checkbox").form__checkbox
                                 span.form__checkbox--styling
                                 span.form__radio-name Использование уникальных площадок без повторов в рамках одного проекта 
                                 span.form__radio-percent +25% к стоимости
                             label.form__block-check 
-                                input(type="checkbox").form__checkbox
+                                span
+                                    span
+                                        input(type="checkbox").form__checkbox
                                 span.form__checkbox--styling
                                 span.form__radio-name Использование уникальных площадок без повторов из прошлых проектов 
                                 span.form__radio-percent +30% к стоимости
-                            label.form__block-check 
-                                input(type="checkbox").form__checkbox
+                            label.form__block-check
+                                span
+                                    span
+                                        input(type="checkbox").form__checkbox
                                 span.form__checkbox--styling
                                 span.form__radio-name Размещение в темах где нет не одной ссылки 
                                 span.form__radio-percent +30% к стоимости
